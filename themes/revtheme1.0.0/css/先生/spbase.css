@@ -1,0 +1,294 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*IE*/
+@font-face {
+font-family: mplus-1p-light;
+src: url("mplus-1p-light.eot");
+}
+/* Firefox, Opera, Safari */
+@font-face {
+font-family:mplus-1p-light;
+src:url("http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-light.ttf") format("truetype")
+}
+
+/* common */
+
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'mplus-1p-light' , sans-serif;
+	font-size: 1.05rem;
+	color: #2c3e50;
+	height: 100%;
+}
+
+.position{
+	position: relative;
+	width: 100%;
+}
+.container{
+	width: 100%;
+}
+
+/* header */
+header div.container div.row div.col-xs-12{
+	text-align: center;
+	background-color: #2f54a3;
+	padding:5% 0;
+}
+
+header div.container div.row div.col-xs-12 img{
+}
+
+header div.container div.row div.col-xs-12 a span{
+	font-size:3.1rem;
+	color: white;
+	margin: 0 auto;
+}
+
+/* index-article */
+h1{
+	font-size: 4.5rem;
+}
+
+.postTitle {
+	margin-top: 10%;
+}
+
+.postHeader {
+	font-size: 3rem;
+	margin:3% 0 0 0;
+}
+
+.subcopy {
+	font-size: 3rem;
+	color: #7f8c8d;
+	margin-top:3rem;
+	margin-bottom: 3rem;
+}
+
+
+/*social button */
+/*.button{
+  display: inline-block;
+  width: 98%;
+  background:#3B5998;
+  box-shadow:0 5px 0 #203d79;
+  -moz-box-shadow:0 5px 0 #203d79;
+  -webkit-box-shadow:0 5px 0 #203d79;
+  font-size: 150%;
+  text-align: center;
+
+}*/
+.t-button {
+  display: block;
+  width: 100%;
+  height: 108px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 108px;
+  outline: none;
+  font-size: 3.3rem;
+  vertical-align: middle;
+  background-color: #55ACEE;
+}
+
+.f-button {
+  display: block;
+  width: 100%;
+  height: 108px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 108px;
+  outline: none;
+  font-size: 3.3rem;
+  vertical-align: middle;
+  background-color: #2f54a3;
+}
+
+.scl-button{
+	vertical-align: middle;
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  border: 2px solid #55ACEE;
+  color: #fff;
+  line-height: 50px;
+}
+.twitter:hover {
+  background-color: #fff;
+  border-color: #55ACEE;
+  color: #55ACEE;
+}
+
+.facebook {
+  background-color: #2f54a3;
+  border: 2px solid #2f54a3;
+  color: #fff;
+  line-height: 50px;
+}
+.facebook:hover {
+  background-color: #fff;
+  border-color: #2f54a3;
+  color: #2f54a3;
+}
+
+.social i {
+	margin-top:1%;
+}
+
+.social ul {
+display: -webkit-box;
+display: -moz-box;
+width: 100%;
+list-style:none;
+}
+
+.social li {
+-webkit-box-flex: 1;
+-moz-box-flex: 1;
+}
+
+/* 動画 */
+
+
+.flame{
+  background-image: url('gba.png');
+  background-repeat: no-repeat;
+  -moz-background-size:100% auto;
+  background-size:100% auto;
+  width:732px; 
+  height: 438px;
+  
+}
+
+.retro_video_preview {
+    position: relative;
+    margin: 0 17px 2px 0;
+    border-radius: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.retro_video_preview .retro_thumbnail,
+.retro_video_preview .retro_fuzz,
+.retro_video_preview .safety_glass {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+}
+.retro_video_preview .retro_fuzz,
+.retro_video_preview .safety_glass {
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.retro_video_preview .retro_thumbnail {
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+.retro_video_preview .retro_fuzz {
+    opacity: .08;
+    background: transparent url('../video_static_animated.gif') 0 0 repeat;
+}
+.ie .retro_video_preview .retro_fuzz { display: none }
+.retro_video_preview .safety_glass {
+    background: -moz-linear-gradient(top,rgba(255,255,255,0.17) 0,rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,0.17)),color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(top,rgba(255,255,255,0.17) 0,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(top,rgba(255,255,255,0.17) 0,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(top,rgba(255,255,255,0.17) 0,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom,rgba(255,255,255,0.17) 0,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#12ffffff',endColorstr='#00ffffff',GradientType=0);
+}
+.retro_video_preview .big_play_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 57px;
+    height: 57px;
+    padding: 1px;
+    margin: -30px 0 0 -30px;
+    opacity: 1;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.retro_video_preview .big_play_button span {
+    display: block;
+    position: absolute;
+    opacity: .8;
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -13px;
+    opacity: 1;
+    border-radius:100px;
+    background: url('../tumblr_video_player_sprite.png') 0 -32px no-repeat;
+
+    overflow: hidden;
+    text-indent: -5000px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.retro_video_preview:hover .big_play_button {
+    background-color: rgba(245, 100, 100, 0.85);
+    border-color: #f5f5f5;
+    border-radius:200px;
+}
+.retro_video_preview:hover .big_play_button span { background-position: 0 -64px }
+.video_thumbnail {
+    float: left;
+    position: relative;
+    width: 150px;
+    margin: 0 17px 2px 0;
+    background-color: #fff;
+}
+
+

@@ -1,0 +1,29 @@
+/*
+Theme Name: rv_makemiracle
+Theme URI: http://wordpresscollege.org/bootstrap/
+Author: Miyagi, Ryota
+Author URI: https://plus.google.com/116247090380673156258/
+Description: For makemracle template:);
+Version: 0.1.0
+*/
+
+body{
+ background-image: url('http://localhost:8888/dev_makemiracle/wordpress/wp-content/themes/revtheme1.0.0/img/bg.png');
+ background-repeat: repeat;
+}
+
+.video-wrap {
+  position: relative;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  padding-top: 69px;
+  padding-bottom: 50%;
+  overflow: hidden;
+}
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
