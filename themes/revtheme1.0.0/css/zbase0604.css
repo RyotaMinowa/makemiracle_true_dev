@@ -59,7 +59,7 @@ h1{
 
 
 .post-content{
-  background-image: url('http://makemiracle.us/wp-content/themes/revtheme/img/tvideo.png');
+  background-image: url('http://localhost:8888/dev_makemiracle/wordpress/wp-content/themes/revtheme1.0.0/img/tvideo.png');
   background-repeat: no-repeat;
   -moz-background-size:100% auto;
   background-size:100% auto;
@@ -147,7 +147,7 @@ h1{
     margin: -16px 0 0 -13px;
     opacity: 1;
     border-radius:100px;
-    background: url('http://makemiracle.us/wp-content/themes/revtheme/img/tumblr_video_player_sprite.png') 0 -32px no-repeat;
+    background: url('http://localhost:8888/dev_makemiracle/wordpress/wp-content/themes/revtheme1.0.0/img/tumblr_video_player_sprite.png') 0 -32px no-repeat;
 
     overflow: hidden;
     text-indent: -5000px;
