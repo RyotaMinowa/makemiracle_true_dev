@@ -6,7 +6,7 @@
 }
 
 html {
-    font-size : 20px; 
+    font-size : 12px; 
 }
  
 section{
@@ -42,14 +42,14 @@ section{
 
 
 .post-content{
-  background-image: url('http://localhost:8888/dev_makemiracle/wordpress/wp-content/themes/revtheme1.0.0/img/tvideo.png');
+  background-image: url('http://makemiracle.us/wp-content/themes/revtheme/img/tvideo.png');
   background-repeat: no-repeat;
   -moz-background-size:100% auto;
   background-size:100% auto;
   height:560px;
 }
 
-/* 動画 */
+/* 蜍慕判 */
 .retro_video_preview {
     position: relative;
     width: 100%;
@@ -130,7 +130,7 @@ section{
     margin: -16px 0 0 -13px;
     opacity: 1;
     border-radius:100px;
-    background: url('http://localhost:8888/dev_makemiracle/wordpress/wp-content/themes/revtheme1.0.0/img/tumblr_video_player_sprite.png') 0 -32px no-repeat;
+    background: url('http://makemiracle.us/wp-content/themes/revtheme/img/tumblr_video_player_sprite.png') 0 -32px no-repeat;
 
     overflow: hidden;
     text-indent: -5000px;
@@ -222,4 +222,9 @@ list-style:none;
 .social li {
 -webkit-box-flex: 1;
 -moz-box-flex: 1;
+}
+
+/* likebox */
+.fb-like-box,.fb-like-box span, .fb-like-box iframe {
+ width: 100% !important;
 }
