@@ -120,15 +120,21 @@
 	<!-- /pager     -->
 	<?php get_footer(); ?>
 	<!-- Latest compiled and minified JavaScript -->
-	<script src=
-	"http://localhost:8888/dev_makemiracle/wordpress/wp-content/themes/revtheme1.0.0/js/jquery.js"></script><script src=
-"http://localhost:8888/dev_makemiracle/wordpress/wp-content/themes/revtheme1.0.0/js/bootstrap.min.js"></script><script type="text/javascript">
-$(function(){
-		var baseWidth = $('.post-content').width();
-		var ratio = 1;
-		var frameHeight = baseWidth*ratio;
-		$('.post-content').css('height', frameHeight);
-		var baseWidth = $('.button').width();
-		var rspblText = baseWidth/12;
-		$('.share_text').css('font-size', rspblText);
-		var baseWidth = $('.post-content').w
+	<script type="text/javascript">
+    	$(function(){
+
+    		var baseWidth = $('.post-content').width();
+    		var ratio = 1;
+			var frameHeight = baseWidth*ratio;
+			$('.post-content').css('height', frameHeight);
+			var baseWidth = $('.button').width();
+			var rspblText = baseWidth/12;
+			$('.share_text').css('font-size', rspblText);
+			var baseWidth = $('.post-content').width();
+			var rspblText = baseWidth/20;
+			$('.post-subcopy').css('font-size', rspblText);
+		});
+    </script>
+<?php get_footer(); ?>
+</body>
+</html>
