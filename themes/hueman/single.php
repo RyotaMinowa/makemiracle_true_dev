@@ -1,7 +1,15 @@
 <?php get_header(); ?>
+<!--facebook-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=292292120944179&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <section class="content">
-	
 	<?php get_template_part('inc/page-title'); ?>
 	
 	<div class="pad group">
@@ -41,12 +49,80 @@
 				<div class="clear"></div>
 			</div>
 		<?php endif; ?>
-		
+<ul class="single-social">
+    <li>
+        <a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>"onclick="window.open(this.href, 'FBwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" class="single-social-facebook" target="blank">
+            <img src="http://makemiracle.us/wp-content/uploads/2014/06/0074faa90e66050f76cd179404a9d348.png" alt="facebookにシェア" width="30" height="30">
+            <span>シェア!!</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=makemiracle90s" 
+	onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" class="single-social-twitter">
+            <img src="http://makemiracle.us/wp-content/uploads/2014/06/cd261185960f37fa1c130d50494ce736.png" alt="Twitterにシェア" width="30" height="30">
+            <span >シェア!!</span>
+        </a>
+    </li>
+</ul>
+<br>
+
+<style type="text/css">
+    .single-social li {
+            float:left;
+            width:48%;
+            margin-left: 2%;
+            font-size: 30px;
+            vertical-align: middle;
+
+    }
+
+    .single-social a{
+        display:block;
+        color:#fff;
+        text-decoration:none;
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+        border-radius:10px;
+        padding:10px 0;
+        text-align:center;
+        height:30px;
+        line-height:24px;
+    }
+
+    .single-social-facebook{
+        background:#3B5998 ;
+        box-shadow:0 5px 0 #203d79 ;
+        -moz-box-shadow:0 5px 0 #203d79 ;
+        -webkit-box-shadow:0 5px 0 #203d79 ;
+    }
+
+    .single-social-twitter{
+        background:#00acee ;
+        box-shadow:0 5px 0 #0193cb ;
+        -moz-box-shadow:0 5px 0 #0193cb ;
+        -webkit-box-shadow:0 5px 0 #0193cb ;
+    }
+
+    .single-social a img,{padding-right:10px}
+
+    .subscribe-social-text{
+        font-size:15px;
+        vertical-align:middle;
+    }
+
+    .single-social a:hover{
+        box-shadow:none;
+        -moz-box-shadow:none;
+        -webkit-box-shadow:none;
+        margin:5px 0 -5px 0}
+
+</style>
+
 		<?php if ( ot_get_option( 'post-nav' ) == 'content') { get_template_part('inc/post-nav'); } ?>
 		
 		<?php if ( ot_get_option( 'related-posts' ) != '1' ) { get_template_part('inc/related-posts'); } ?>
 		
-		<?php comments_template('/comments.php',true); ?>
+		
 		
 	</div><!--/.pad-->
 	
