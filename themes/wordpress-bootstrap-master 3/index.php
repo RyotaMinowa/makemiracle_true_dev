@@ -206,11 +206,11 @@
 					</article>
 					
 					<?php endif; ?>
-			
+				<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>		
 				</div> <!-- end #main -->
-    
+    			
 				<!-- <?php get_sidebar(); // sidebar 1 ?> -->
-    
+    		
 			</div> <!-- end #content -->
 
 <?php get_footer(); ?>
