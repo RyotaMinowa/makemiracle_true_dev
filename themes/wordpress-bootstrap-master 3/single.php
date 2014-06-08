@@ -4,6 +4,7 @@
 			
 				<div id="main" class="col-sm-8 clearfix" role="main">
 
+				<?php the_excerpt(); ?>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -40,7 +41,6 @@
 					
 					</article> <!-- end article -->
 					
-					<?php comments_template('',true); ?>
 					
 					<?php endwhile; ?>			
 					
@@ -60,8 +60,6 @@
 					<?php endif; ?>
 			
 				</div> <!-- end #main -->
-    
-				<?php get_sidebar(); // sidebar 1 ?>
     
 			</div> <!-- end #content -->
 
