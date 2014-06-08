@@ -124,3 +124,17 @@ list-style:none;
 .fb-like-box,.fb-like-box span, .fb-like-box iframe {
  width: 100% !important;
 }
+
+/* Header */
+.navbar-default {
+  background-color: #FED900;
+  border-color: #e7e7e7;
+  height: 6em;
+}
+
+.navbar-brand {
+  float: left;
+  padding: 15px 15px;
+  font-size: 2em;
+  line-height: 30px;
+}
