@@ -124,3 +124,7 @@ list-style:none;
 .fb-like-box,.fb-like-box span, .fb-like-box iframe {
  width: 100% !important;
 }
+
+iframe {
+	width: 100%;
+}
