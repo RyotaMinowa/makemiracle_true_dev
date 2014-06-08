@@ -125,6 +125,7 @@ list-style:none;
  width: 100% !important;
 }
 
+<<<<<<< HEAD
 /* Header */
 .navbar-default {
   background-color: #FED900;
@@ -137,4 +138,8 @@ list-style:none;
   padding: 15px 15px;
   font-size: 2em;
   line-height: 30px;
+=======
+iframe {
+	width: 100%;
+>>>>>>> 9ed29cf42c05763038a081909922b09942a3ec4a
 }
