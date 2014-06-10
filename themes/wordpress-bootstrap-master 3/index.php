@@ -16,7 +16,7 @@
 <!-- start new topic -->
 <section>
 	<div class="row">
-		<div class="topics col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="label col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<span class="enheader">NEW TOPICS</span><span class="jpheader">新着記事</span>
 		</div>
 	</div>
@@ -49,7 +49,7 @@
 	</section><!-- end new topic -->
 	<section><!-- start all topic -->
 		<div class="row">
-			<div class="topics col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="label col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<span class="enheader">ALL TOPICS</span><span class="jpheader">記事一覧</span>
 			</div>
 		</div>');} ?>
