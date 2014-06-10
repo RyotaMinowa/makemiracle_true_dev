@@ -23,7 +23,6 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); $loopcounter++;?>
 		<?php if($loopcounter < 3) : ?>
 	<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix"<?php post_class('clearfix'); ?> role="article">
-		<header>
 			<div class="row">
 				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 					<img class="thumb" src="http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg" alt="alt here..." />
@@ -43,10 +42,6 @@
 			</div>
 			<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
 			<!--<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>-->
-		</header> <!-- end article header -->
-		<footer>
-			<p class="tags"><?php the_tags('<span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', ''); ?></p>
-		</footer> <!-- end article footer -->
 		<hr />
 	</article> <!-- end article -->
 	<?php else : ?>
