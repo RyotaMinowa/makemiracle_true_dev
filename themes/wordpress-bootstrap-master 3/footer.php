@@ -1,4 +1,4 @@
-<section>
+<footer class="row">
 	<div class="fb-like-box col-xs-12 col-sm-12 col-md-12 col-lg-12 commentarea">
 	    <div class="fb-like-box" data-href="https://www.facebook.com/makemiracle90s" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-width="100%"></div>
 	</div>
@@ -14,8 +14,6 @@
 			<i class="fa fa-facebook" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
 		</div>
 	</a>
-</section>
-<footer class="row">
 	<div id="category" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" role="contentinfo">
 		<span class="enheader">Category</span><span class="jpheader">カテゴリ</span>
 	</div>
