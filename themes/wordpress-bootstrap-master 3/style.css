@@ -17,9 +17,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 
 
-.info {
-	font-size:1.2rem;
-}
 
 .categorytag {
 	margin-left: 2%;
@@ -130,10 +127,30 @@ iframe {
   font-family:'titlefont';
   src: url(http://localhost:8888/dev_makemiracle/wordpress/wp-content/uploads/2014/06/1519749041.ttf) format('truetype');
 }
+*{
+  margin:0;
+  padding: 0;
+}
+
 
 .container{
   margin:0;
   padding: 0;
+}
+
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+position: relative;
+min-height: 1px;
+padding: 0px;
+}
+
+.row{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #2a80b9;
 }
 
 
@@ -143,6 +160,7 @@ iframe {
   border:none;
   width: 100%;
   padding:3% 0 3% 0; 
+  margin: 0;
 }
 
 .navbar-header a img{
@@ -161,21 +179,70 @@ iframe {
 /* Contents */
 .topicthumb {
   width:100%;
+  margin-bottom: -46px;
 }
 
 .topiclabel {
   background-color: #fed900;
+  color:#54003c;
 }
 
 div.topiclabel{
-  font-size:16px; 
+  font-size:24px; 
   -webkit-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0.29);
   -moz-box-shadow:    0px -1px 8px 0px rgba(48, 50, 50, 0.29);
   box-shadow:         0px -1px 8px 0px rgba(48, 50, 50, 0.29);
 }
 span.enheader{
   font-family:'titlefont';
-  font-size: 30px;
+  font-size: 36px;
+  margin-left: 15px;
 }
 
+span.jpheader{
+  margin-left: 15px;
+}
+
+.topicoverlay{
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+.topictitle{
+  font-size: 24px;
+  margin: 0px;
+}
+
+article.article-card{
+  height: 170px;
+  padding-top: 29px;
+  border-top: #898989 solid 1px;
+}
+
+article .card-contents{
+  height:112px; 
+  position: relative;
+}
+
+article .card-contents .card-desc{
+  height: 100%;
+}
+
+article .card-contents .card-desc .article-meta{
+  position: absolute;
+  bottom:0px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 17px;
+  color:#4e5659;
+}
+
+span.category{
+  background-color: #fed900;
+  color:#54003c;
+  padding: 0 1em;
+}
 

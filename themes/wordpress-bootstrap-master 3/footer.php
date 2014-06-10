@@ -30,7 +30,6 @@
 </div> <!-- end #page in header -->
 </div><!-- end row in header -->		
 </div> <!-- end row in container -->	
-
 </body>
 
 </html>

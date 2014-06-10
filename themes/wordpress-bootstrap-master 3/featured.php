@@ -29,15 +29,15 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
     <article>
 	    <div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<img class="topicthumb" src="http://i.ytimg.com/vi/AmPXa52DcFg/0.jpg" alt=""  />
-			</div>
-		</div>
-	    <div class="topicoverlay">
+				<img class="topicthumb" src="https://farm6.staticflickr.com/5174/5506170466_e3566819e9_n.jpg" alt=""  />
+				<div class="topicoverlay">
 		    <h1 class="topictitle">
-		    	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+		    	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="color:white; vertical-align: middle;">
 		    	<?php the_title(); ?>
 		    	</a>
 		    </h1>
+		</div>
+			</div>
 		</div>
 	</article>
 	<!-- feature first article -->
@@ -53,19 +53,21 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 	<?php $featureLoopCounter++; ?>
 	<?php else : ?>
 	<!-- feature second-thrid article start-->
-	<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix"<?php post_class('clearfix'); ?> role="article">
-		<div class="row">
-			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-				<img class="thumb" src="http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg" alt="alt here..." />
+	<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix article-card"<?php post_class('clearfix'); ?> role="article">
+		<div class="row card-contents">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style=" height:100%; ">
+				<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
+  -moz-background-size:100% auto; background-position:50% 50%;
+  background-size:100% auto;background-color:#000;"></div>
 			</div>
-			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 card-desc">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<h1 class="topictitle"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 					</div>
 				</div>
-				<div class="row">
-					<div class="info col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="row article-meta">
+					<div class="info col-xs-12 col-sm-12 col-md-12 col-lg-12 article-meta">
 						2014.05.29 <span class="category">オモチャ</span>
 					</div>
 				</div>
