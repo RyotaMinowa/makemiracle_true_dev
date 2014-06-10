@@ -18,6 +18,7 @@ $args = array(
         ),
     ),
 );
+
 $myposts = get_posts($args);
 foreach ( $myposts as $post ) :setup_postdata( $post ); $featureLoopCounter++; ?>
 	<?php if($featureLoopCounter == 0) : ?>
