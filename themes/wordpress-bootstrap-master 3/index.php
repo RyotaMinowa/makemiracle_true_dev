@@ -1,4 +1,3 @@
-
 <?php get_header(); ?>
 <!--facebooklikebox -->
 <div id="fb-root"></div>
