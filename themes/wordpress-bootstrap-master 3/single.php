@@ -90,13 +90,12 @@
     
 			</div> <!-- end #content -->
 			<div class="row">
-					<div class="popular col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<span class="enheader">NEW TOPICS</span><span class="jpheader">新着記事</span>
+					<div class="topics col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<span class="enheader">MIRACLE TOPICS</span><span class="jpheader">オススメ記事</span>
 					</div>
 				</div>
 			<div id="content" class="clearfix row">
-
-					<?php query_posts('showposts=1'); if (have_posts()) : while (have_posts()) : the_post(); $loopcounter++;?>
+					<?php query_posts( 'posts_per_page=3&orderby=rand'); if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix"<?php post_class('clearfix'); ?> role="article">
 								<header>
 									<div class="row">
@@ -129,25 +128,24 @@
 								</footer> <!-- end article footer -->
 							<hr />
 							</article> <!-- end article -->
-
 		<?php endwhile; ?>
 		<?php endif; ?>
-					<div class="fb-like-box col-xs-12 col-sm-12 col-md-12 col-lg-12 commentarea">
-			            <div class="fb-like-box" data-href="https://www.facebook.com/makemiracle90s" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-width="100%"></div>
-			        </div>
+			<div class="fb-like-box col-xs-12 col-sm-12 col-md-12 col-lg-12 commentarea">
+	            <div class="fb-like-box" data-href="https://www.facebook.com/makemiracle90s" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-width="100%"></div>
+	        </div>
 
-			        <!-- Social account button start -->
-				        <a class="" href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
-					        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 button twitter">
-			           			<i class="fa fa-twitter" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　メークミラクル公式Twitterをフォロー</span>
-					        </div>
-				        </a>
-				        <a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>"onclick="window.open(this.href, 'FBwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
-				        	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 button facebook" >
-				        		<i class="fa fa-facebook" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
-				        	</div>
-				        </a>
-				    <!-- Social account button end -->
-			    	</div>
+	        <!-- Social account button start -->
+		        <a class="" href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
+			        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 button twitter">
+	           			<i class="fa fa-twitter" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　メークミラクル公式Twitterをフォロー</span>
+			        </div>
+		        </a>
+		        <a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>"onclick="window.open(this.href, 'FBwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
+		        	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 button facebook" >
+		        		<i class="fa fa-facebook" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
+		        	</div>
+		        </a>
+		    <!-- Social account button end -->
+	    	</div>
 		</div>
 <?php get_footer(); ?>
