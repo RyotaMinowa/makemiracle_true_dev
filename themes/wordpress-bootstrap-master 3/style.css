@@ -11,49 +11,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 */
 
 /* HEADS UP: Everything that you will normally find here can be found in the library/less/wp.less */
-.topicthumb {
-	width:100%;
-}
-
-.topiclabel {
-	height:40px;
-	background-color: #F8C832;
-}
-
-.enheader {
-	font-size:2.4rem;
-	font-weight: 900;
-}
-
-/*
-.enheader {
-  font-size:1.8rem;
-  font-weight: 900;
-}
-*/
-
-.jpheader {
-	margin-left: 1%;	
-	font-size:2rem;
-	font-weight: 900;
-}
-
-/*
-.jpheader {
-  margin-left: 1%;  
-  font-size:1.25rem;
-  font-weight: 900;
-}
-*/
 
 .thumb {
 	width:100%;
 }
 
-.topictitle {
-	font-size:2.0rem;
-	line-height: 28px;
-}
 
 .info {
 	font-size:1.2rem;
@@ -163,11 +125,30 @@ iframe {
 	background-color: #F8C832;
 }
 
+/* general*/
+@font-face {
+  font-family:'titlefont';
+  src: url(http://localhost:8888/dev_makemiracle/wordpress/wp-content/uploads/2014/06/1519749041.ttf) format('truetype');
+}
+
+.container{
+  margin:0;
+  padding: 0;
+}
+
+
 /* Header */
 .navbar-default {
-  background-color: #FED900;
-  border-color: #e7e7e7;
-  height: 7em;
+  background-color: #fed900;
+  border:none;
+  width: 100%;
+  padding:3% 0 3% 0; 
+}
+
+.navbar-header a img{
+  width: 60%;
+  margin-left: 20%;
+
 }
 
 .navbar-brand {
@@ -176,3 +157,25 @@ iframe {
   font-size: 2em;
   line-height: 30px;
 }
+
+/* Contents */
+.topicthumb {
+  width:100%;
+}
+
+.topiclabel {
+  background-color: #fed900;
+}
+
+div.topiclabel{
+  font-size:16px; 
+  -webkit-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  -moz-box-shadow:    0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  box-shadow:         0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+}
+span.enheader{
+  font-family:'titlefont';
+  font-size: 30px;
+}
+
+

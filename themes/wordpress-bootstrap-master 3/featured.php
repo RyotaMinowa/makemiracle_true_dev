@@ -32,7 +32,7 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 				<img class="topicthumb" src="http://i.ytimg.com/vi/AmPXa52DcFg/0.jpg" alt=""  />
 			</div>
 		</div>
-	    <div>
+	    <div class="topicoverlay">
 		    <h1 class="topictitle">
 		    	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 		    	<?php the_title(); ?>
