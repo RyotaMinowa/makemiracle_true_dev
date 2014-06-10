@@ -65,3 +65,5 @@
 		</header> <!-- end header -->
 		
 		<div class="container">
+			<div class="row">
+				<div class="page col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-offset-8">
