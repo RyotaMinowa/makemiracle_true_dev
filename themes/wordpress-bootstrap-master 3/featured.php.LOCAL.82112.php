@@ -44,7 +44,7 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 	<!-- feature label start-->
 	<section>
 	<div class="row">
-		<div class="topiclabel col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="label col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<span class="enheader">MIRACLE TOPICS</span><span class="jpheader">人気記事</span>
 		</div>
 	</div>

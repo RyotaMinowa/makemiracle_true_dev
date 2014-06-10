@@ -19,17 +19,16 @@ $args = array(
     ),
 );
 
-$featureLoopCounter = 0;
 $myposts = get_posts($args);
-foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
-	<?php if($featureLoopCounter == 0): ?>
+foreach ( $myposts as $post ) :setup_postdata( $post ); $featureLoopCounter++; ?>
+	<?php if($featureLoopCounter == 0) : ?>
 
     <!-- feature first article -->
 
     <article>
 	    <div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<img class="topicthumb" src="http://i.ytimg.com/vi/AmPXa52DcFg/0.jpg" alt=""  />
+				<img class="topicthumb" src="http://i.ytimg.com/vi/cfpX8lkaSdk/0.jpg" alt=""  />
 			</div>
 		</div>
 	    <div>
@@ -41,16 +40,15 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 		</div>
 	</article>
 	<!-- feature first article -->
+
 	<!-- feature label start-->
-	<section>
 	<div class="row">
-		<div class="topiclabel col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="label col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<span class="enheader">MIRACLE TOPICS</span><span class="jpheader">人気記事</span>
 		</div>
 	</div>
-</section>
 	<!-- feature label end-->
-	<?php $featureLoopCounter++; ?>
+
 	<?php else : ?>
 	<!-- feature second-thrid article start-->
 	<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix"<?php post_class('clearfix'); ?> role="article">
