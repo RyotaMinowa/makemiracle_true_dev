@@ -21,27 +21,27 @@
 		</div>
 	</div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); $loopcounter++;?>
-		<?php if($loopcounter < 3) : ?>
+	<?php if($loopcounter < 3) : ?>
 	<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix"<?php post_class('clearfix'); ?> role="article">
-			<div class="row">
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-					<img class="thumb" src="http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg" alt="alt here..." />
-				</div>
-				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<h1 class="topictitle"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-						</div>
+		<div class="row">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<img class="thumb" src="http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg" alt="alt here..." />
+			</div>
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h1 class="topictitle"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 					</div>
-					<div class="row">
-						<div class="info col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							2014.05.29 <span class="category">オモチャ</span>
-						</div>
+				</div>
+				<div class="row">
+					<div class="info col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						2014.05.29 <span class="category">オモチャ</span>
 					</div>
 				</div>
 			</div>
-			<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
-			<!--<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>-->
+		</div>
+		<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
+		<!--<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>-->
 		<hr />
 	</article> <!-- end article -->
 	<?php else : ?>
@@ -52,10 +52,8 @@
 			<div class="topics col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<span class="enheader">ALL TOPICS</span><span class="jpheader">記事一覧</span>
 			</div>
-		</div>
-	
-		');} ?>
-	<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix"<?php post_class('clearfix'); ?> role="article">
+		</div>');} ?>
+		<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix"<?php post_class('clearfix'); ?> role="article">
 			<div class="row">
 				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 					<img class="thumb" src="http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg" alt="alt here..." />
@@ -74,15 +72,13 @@
 				</div>
 			</div>
 			<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
-			
 			<!--<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>-->
-	</article>
-
+		</article>
+		<?php endif; ?>
+	<?php endwhile; ?>
 	<?php endif; ?>
-<?php endwhile; ?>
-<?php endif; ?>
-</section><!-- end all topic -->
-<?php wp_reset_query(); ?>
+	</section><!-- end all topic -->
+	<?php wp_reset_query(); ?>
     <p id="more"><a href="#">もっと表示する</a></p>
 	
 	
