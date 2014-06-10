@@ -130,7 +130,7 @@ list-style:none;
 .navbar-default {
   background-color: #FED900;
   border-color: #e7e7e7;
-  height: 6em;
+  height: 7em;
 }
 
 .navbar-brand {
@@ -138,6 +138,7 @@ list-style:none;
   padding: 15px 15px;
   font-size: 2em;
   line-height: 30px;
+}
 =======
 iframe {
 	width: 100%;

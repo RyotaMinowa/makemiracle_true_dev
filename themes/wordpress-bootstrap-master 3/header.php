@@ -44,7 +44,8 @@
 							<span class="icon-bar"></span>
 						</button>
 
-						<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+						<!--<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>-->
+						<img class="logo" src="http://localhost:8888/dev_makemiracle/wordpress/wp-content/uploads/2014/06/logo.png" alt="">
 					</div>
 
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
