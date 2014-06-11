@@ -19,9 +19,11 @@
 	</div>
 	<div calss="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 		<?php $cat_all = get_terms( "category", "fields=all&get=all" );foreach($cat_all as $value):?>
-		<div class="categoryitem col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-			<a href="<?php echo get_category_link($value->term_id); ?>"><?php echo $value->name;?></a>
-		</div>
+		<a href="<?php echo get_category_link($value->term_id); ?>">
+			<div class="categoryitem col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+				<?php echo $value->name;?>
+			</div>
+		</a>
 		<?php endforeach; ?>
 	</div>
 </footer> <!-- end footer -->
