@@ -45,19 +45,6 @@
 	    				</a>
 						<!--<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>-->
 					</div>
-
-					<div class="collapse navbar-collapse navbar-responsive-collapse">
-						<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-
-						<?php //if(of_get_option('search_bar', '1')) {?>
-						<form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-							<div class="form-group">
-								<input name="s" id="s" type="text" class="search-query form-control" autocomplete="off" placeholder="<?php _e('Search','wpbootstrap'); ?>" data-provide="typeahead" data-items="4" data-source='<?php echo $typeahead_data; ?>'>
-							</div>
-						</form>
-						<?php //} ?>
-					</div>
-
 				</div> <!-- end .container -->
 			</div> <!-- end .navbar -->
 		</header> <!-- end header -->
@@ -71,5 +58,3 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 		<div class="container">
-		<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-offset-8 col-lg-offset-2 col-lg-8"> <!-- end #page in header -->
