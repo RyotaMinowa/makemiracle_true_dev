@@ -10,7 +10,11 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title><?php wp_title( '|', true, 'right' ); ?></title>	
+<<<<<<< HEAD
 		<meta name="viewport" content="width=640px">
+=======
+		<meta name="viewport" content="width=device-width">
+>>>>>>> 0ffe1efa351d96e11e0b6a6f8e25e6e83d131c9e
 				
 		<!-- media-queries.js (fallback) -->
 		<!--[if lt IE 9]>
@@ -45,6 +49,7 @@
 	    				</a>
 						<!--<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>-->
 					</div>
+<<<<<<< HEAD
 
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
 						<!--<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
@@ -58,6 +63,8 @@
 						<?php //} ?>-->
 					</div>
 
+=======
+>>>>>>> 0ffe1efa351d96e11e0b6a6f8e25e6e83d131c9e
 				</div> <!-- end .container -->
 			</div> <!-- end .navbar -->
 		</header> <!-- end header -->
@@ -70,6 +77,10 @@
 		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=452572048204794&version=v2.0";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
+<<<<<<< HEAD
 		<div class="container">
 		<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-offset-8 col-lg-offset-2 col-lg-8"> <!-- end #page in header -->
+=======
+		
+>>>>>>> 0ffe1efa351d96e11e0b6a6f8e25e6e83d131c9e
