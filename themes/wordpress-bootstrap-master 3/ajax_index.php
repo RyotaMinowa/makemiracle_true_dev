@@ -1,8 +1,8 @@
 
 <!-- http://koukitips.net/ajax-more-read/を参照　-->
 
-<section id="content">
-  
+<section id="content" class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+<!--
     <?php query_posts('posts_per_page=3'); ?>
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
@@ -18,5 +18,5 @@
     <?php endif; ?>
     <?php wp_reset_query(); ?>
     <p id="more"><a href="#">もっと表示する</a></p>
-      
+-->
 </section>
