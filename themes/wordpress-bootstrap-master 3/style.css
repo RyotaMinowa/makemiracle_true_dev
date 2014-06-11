@@ -122,6 +122,8 @@ iframe {
 	background-color: #F8C832;
 }
 
+
+
 /* general*/
 @font-face {
   font-family:'titlefont';
@@ -132,6 +134,10 @@ iframe {
   padding: 0;
 }
 
+
+body{
+  padding-top: 0px !important;
+}
 
 .container{
   margin:0;
@@ -155,17 +161,38 @@ a {
 
 
 /* Header */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  h1{
+      font-size: 30px;
+      
+    }
+}
+@media only screen and (min-width: 1200px) {
+h1{
+      font-size: 30px;
+      
+    }
+}
+
+
+
+
 .navbar-default {
   background-color: #fed900;
   border:none;
   width: 100%;
   padding:3% 0 3% 0; 
   margin: 0;
+  max-height: 120px;
 }
 
 .navbar-header a img{
   width: 60%;
   margin-left: 20%;
+  max-width: 640px;
 
 }
 
@@ -212,7 +239,7 @@ span.jpheader{
 }
 
 .topictitle{
-  font-size: 24px;
+  font-size: 20px;
   margin: 0px;
 }
 

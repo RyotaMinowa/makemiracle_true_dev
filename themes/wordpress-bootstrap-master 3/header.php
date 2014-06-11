@@ -29,12 +29,21 @@
 		<!-- end of wordpress head -->
 		
 	</head>
-	<body <?php body_class(); ?>>			
+	<body <?php body_class(); ?>>
+	<!--facebooklikebox -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=452572048204794&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>			
 		<header role="banner">		
-			<div class="navbar navbar-default navbar-fixed-top">
+			<div class="navbar navbar-default">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+						<button type="button" id="drawerbtn" class="navbar-toggle" >
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -45,14 +54,24 @@
 						<!--<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>-->
 					</div>
 				</div> <!-- end .container -->
+			</div>
+			<div class="collapse navbar-collapse navbar-responsive-collapse">
+				<div class="row">
+					<div class="fb-like-box col-xs-12 col-sm-12 col-md-12 col-lg-12 commentarea">
+					    <div class="fb-like-box" data-href="https://www.facebook.com/makemiracle90s" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-width="100%"></div>
+					</div>
+
+					<!-- Social account button start -->
+					<a class="" href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
+					    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  button twitter">
+								<i class="fa fa-twitter" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　メークミラクル公式Twitterをフォロー</span>
+					    </div>
+					</a>
+					<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>"onclick="window.open(this.href, 'FBwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 button facebook" >
+							<i class="fa fa-facebook" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
+						</div>
+					</a>
+				</div>		
 			</div> <!-- end .navbar -->
 		</header> <!-- end header -->
-		<!--facebooklikebox -->
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=452572048204794&version=v2.0";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
