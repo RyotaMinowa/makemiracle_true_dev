@@ -1,4 +1,4 @@
-<footer class="row">
+<footer class="col-xs-12 col-sm-12 col-md-offset-8 col-md-2 col-lg-offset-2 col-lg-8">
 	<div class="fb-like-box col-xs-12 col-sm-12 col-md-12 col-lg-12 commentarea">
 	    <div class="fb-like-box" data-href="https://www.facebook.com/makemiracle90s" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-width="100%"></div>
 	</div>
