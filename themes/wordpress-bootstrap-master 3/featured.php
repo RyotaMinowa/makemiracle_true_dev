@@ -1,5 +1,5 @@
 <!-- feature section start-->
-<section>
+<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
 <?php
 $args = array(
     'post_type' => '',
@@ -25,7 +25,6 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 	<?php if($featureLoopCounter == 0): ?>
 
     <!-- feature first article -->
-
     <article>
 	    <div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -42,18 +41,16 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 	</article>
 	<!-- feature first article -->
 	<!-- feature label start-->
-	<section>
 	<div class="row">
 		<div class="topiclabel col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<span class="enheader">MIRACLE TOPICS</span><span class="jpheader">人気記事</span>
 		</div>
 	</div>
-</section>
 	<!-- feature label end-->
 	<?php $featureLoopCounter++; ?>
 	<?php else : ?>
 	<!-- feature second-thrid article start-->
-	<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix article-card"<?php post_class('clearfix'); ?> role="article">
+	<article id="post-<?php the_ID(); ?>" class="clearfix article-card"<?php post_class('clearfix'); ?> role="article">
 		<div class="row card-contents">
 			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style=" height:100%; ">
 				<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
@@ -62,12 +59,12 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 			</div>
 			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 card-desc">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
 						<h1 class="topictitle"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 					</div>
 				</div>
 				<div class="row article-meta">
-					<div class="info col-xs-12 col-sm-12 col-md-12 col-lg-12 article-meta">
+					<div class="info col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 article-meta">
 						2014.05.29 <span class="category">オモチャ</span>
 					</div>
 				</div>
