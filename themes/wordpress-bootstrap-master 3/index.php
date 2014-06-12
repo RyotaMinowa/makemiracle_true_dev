@@ -26,10 +26,17 @@
 						</div>
 					</div>
 					<div class="row article-meta">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							2014.05.29 <span class="category">オモチャ</span>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								2014.05.29 
+								<?php
+									$cat = get_the_category();
+    								$cat = $cat[0];
+								?>
+								<span class="<?php echo $cat->category_nicename; ?> category">
+									<?php echo $cat->cat_name; ?>
+								</span>
+							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 		</a>	
@@ -60,7 +67,10 @@
 						</div>
 						<div class="row article-meta">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								2014.05.29 <span class="category">オモチャ</span>
+								2014.05.29 
+								<span class="category">	
+										<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
+								</span>
 							</div>
 						</div>
 					</div>
