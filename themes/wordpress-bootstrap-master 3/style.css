@@ -34,6 +34,25 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
   text-decoration: none;
   line-height: 54px;
   outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #3B5998;
+  box-shadow: 0 5px 0 #203d79;
+  -moz-box-shadow: 0 5px 0 #203d79;
+  -webkit-box-shadow: 0 5px 0 #203d79;
+}
+
+.button:hover{
+  background: #3B5998;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
 }
 
 .button::before,
@@ -42,6 +61,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
   z-index: -1;
   display: block;
   content: '';
+
 }
 
 .button,
@@ -59,6 +79,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
   border: 2px solid #55ACEE;
   color: #fff;
   line-height: 50px;
+  box-shadow: 0 5px 0 #478EBA;
+  -moz-box-shadow: 0 5px 0 #478EBA;
+  -webkit-box-shadow: 0 5px 0 #478EBA;
 }
 .twitter:hover {
   background-color: #fff;
@@ -104,7 +127,10 @@ iframe {
 }
 
 #category {
- background-color: #F8C832; 
+ background-color: #F8C832;
+  -webkit-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  -moz-box-shadow:    0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  box-shadow:         0px -1px 8px 0px rgba(48, 50, 50, 0.29);
 }
 
 .categoryitem {
@@ -181,7 +207,7 @@ h1{
 
 
 .navbar-default {
-  background-color: #fed900;
+  background-color: #F8C832;
   border:none;
   width: 100%;
   padding:3% 0 3% 0; 
@@ -210,7 +236,7 @@ h1{
 }
 
 .topiclabel {
-  background-color: #fed900;
+  background-color: #F8C832;
   color:#54003c;
 }
 
@@ -268,7 +294,7 @@ article .card-contents .card-desc .article-meta{
 }
 
 span.category{
-  background-color: #fed900;
+  background-color: #F8C832;
   color:#54003c;
   padding: 0 1em;
 }
