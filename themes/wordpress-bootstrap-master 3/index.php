@@ -15,9 +15,9 @@
 		<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 			<div class="row card-contents">
 				<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 " style="height:100%; ">
-					<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
-	  -moz-background-size:100% auto; background-position:50% 50%;
-	  background-size:100% auto;background-color:#000;"></div>
+					<div class=thumb-area><?php the_post_thumbnail(); ?></div>
+					<!--<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
+	  -moz-background-size:100% auto; background-position:50% 50%; background-size:100% auto;background-color:#000;"></div>-->
 				</div>
 				<div class="col-xs-9 col-sm-9 col-md-10 col-lg-10 card-desc">
 					<div class="row ">
@@ -45,6 +45,7 @@
 	<?php else : ?>
 		<?php if ($loopcounter == 3) {echo ('
 	</section><!-- end new topic -->
+
 	<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8"><!-- start all topic -->
 		<div class="row">
 			<div class="topiclabel col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -55,9 +56,10 @@
 			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 				<div class="row card-contents">
 					<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2" style="height:100%; ">
-						<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
+						<div class=thumb-area><?php the_post_thumbnail(); ?></div>
+						<!--<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
 	  -moz-background-size:100% auto; background-position:50% 50%;
-	  background-size:100% auto;background-color:#000;"></div>
+	  background-size:100% auto;background-color:#000;"></div>-->
 					</div>
 					<div class="col-xs-9 col-sm-9 col-md-10 col-lg-10 card-desc">
 						<div class="row">
@@ -82,8 +84,7 @@
 	<?php endif; ?>
 	</section><!-- end all topic -->
 	<?php wp_reset_query(); ?>
-    <p id="more"><a href="#">もっと表示する</a></p>
-	
-	<!--<?php get_template_part('ajax_index'); ?>-->
+
+	<?php get_template_part('ajax_index'); ?>
 	
 <?php get_footer(); ?>

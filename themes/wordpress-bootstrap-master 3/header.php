@@ -24,6 +24,12 @@
 		
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<link rel="stylesheet" type="text/css" href="<?php get_stylesheet_directory_uri(); ?>/font-awesome/css/font-awesome.css">
+
+		<!-- 自作js の追加 
+		<?php  wp_enqueue_script('jquery'); ?>
+		<?php wp_enqueue_script('style',get_bloginfo('template_url').'/library/js/style.js', array('jquery')); ?>
+		-->
+		
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
