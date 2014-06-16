@@ -74,9 +74,13 @@
 						</div>
 						<div class="row article-meta">
 							<div class="col-xs-12 col-sm-12 col-md-12 ">
-								<?php echo get_post_time('Y.m.d'); ?>
-								<span class="category">	
-										<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
+								<?php echo get_post_time('Y.m.d'); ?> 
+								<?php
+									$cat = get_the_category();
+									$cat = $cat[0];
+								?>
+								<span class="<?php echo $cat->category_nicename; ?> category">
+									<?php echo $cat->cat_name; ?>
 								</span>
 							</div>
 						</div>
