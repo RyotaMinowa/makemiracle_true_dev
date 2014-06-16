@@ -72,17 +72,17 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 						</div>
 					</div>
 					<div class="row article-meta">
-						<div class="info col-xs-12 col-sm-12 col-md-12 article-meta">
-							<?php echo get_post_time('Y.m.d'); ?>
+						<div class="col-xs-12 col-sm-12 col-md-12 ">
+							<?php echo get_post_time('Y.m.d'); ?> 
 							<?php
 								$cat = get_the_category();
 								$cat = $cat[0];
 							?>
 							<span class="<?php echo $cat->category_nicename; ?> category">
-								<!--<?php echo $cat->cat_name; ?>-->
-								<?php the_category(', '); ?>
+								<?php echo $cat->cat_name; ?>
 							</span>
 						</div>
+					</div>
 					</div>
 				</div>
 			</div>
