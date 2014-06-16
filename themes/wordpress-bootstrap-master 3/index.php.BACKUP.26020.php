@@ -68,9 +68,15 @@
 							</div>
 						</div>
 						<div class="row article-meta">
+<<<<<<< HEAD
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<?php echo get_post_time('Y.m.d'); ?>
+								<span class="cate-gory">	
+=======
 							<div class="col-xs-12 col-sm-12 col-md-12 ">
 								2014.05.29 
 								<span class="category">	
+>>>>>>> 005021b3bac74a0c681ce9dfbc90ff66ea967c1e
 										<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
 								</span>
 							</div>
