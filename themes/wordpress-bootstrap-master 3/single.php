@@ -16,11 +16,7 @@
 					<article id="post-<?php the_ID(); ?>" class="clearfix col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8"role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						
 						<header>
-						
-							<?php the_post_thumbnail( 'wpbs-featured' ); ?>
-							
-							<div class="page-header"><h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1></div>
-							<?php the_excerpt(); ?>							
+							<div class="page-header"><h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1></div>				
 							<p class="<?php echo $cat->category_nicename; ?> category meta text-right"><?php the_category(', '); ?></p>
 						
 						</header> <!-- end article header -->
