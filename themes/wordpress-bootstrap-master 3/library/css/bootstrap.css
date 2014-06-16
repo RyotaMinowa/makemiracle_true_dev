@@ -3665,10 +3665,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
     box-shadow: none;
   }
   .navbar-collapse.collapse {
-    display: block !important;
+    display: none;
     height: auto !important;
     padding-bottom: 0;
-    overflow: visible !important;
+    overflow: none;
   }
   .navbar-collapse.in {
     overflow-y: visible;

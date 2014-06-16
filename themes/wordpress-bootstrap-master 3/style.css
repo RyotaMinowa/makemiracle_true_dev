@@ -196,12 +196,18 @@ a {
       font-size: 30px;
       
     }
+  .navbar-responsive-collapse{
+    display: none;
+  }
 }
 @media only screen and (min-width: 1200px) {
 h1{
       font-size: 30px;
       
     }
+  .navbar-responsive-collapse{
+    display: none ;
+  }
 }
 
 
@@ -300,6 +306,16 @@ span.category{
   background-color: #F8C832;
   color:#54003c;
   padding: 0 1em;
+}
+
+.thumb-area{
+  width;100%; height:100%;
+  background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg');
+  background-repeat: no-repeat;
+  -moz-background-size:100% auto; 
+  background-position:50% 50%;
+  background-size:100% auto;
+  background-color:#000;
 }
 
 

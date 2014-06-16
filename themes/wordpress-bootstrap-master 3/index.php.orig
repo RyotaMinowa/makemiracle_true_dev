@@ -84,5 +84,10 @@
 	<?php endif; ?>
 	</section>
 	<?php wp_reset_query(); ?>
+<<<<<<< HEAD
+=======
+
+	<?php get_template_part('ajax_index'); ?>
+>>>>>>> 005021b3bac74a0c681ce9dfbc90ff66ea967c1e
 	
 <?php get_footer(); ?>
