@@ -69,7 +69,7 @@
 						</div>
 						<div class="row article-meta">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<?php the_date(); ?> 
+								<?php echo get_post_time('Y.m.d'); ?>
 								<span class="cate-gory">	
 										<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
 								</span>
