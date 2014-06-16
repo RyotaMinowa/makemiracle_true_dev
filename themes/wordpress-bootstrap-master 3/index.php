@@ -3,7 +3,7 @@
 
 <?php get_template_part('featured'); ?>
 <!-- start new topic -->
-<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8  ">
+<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
 	<div class="row">
 		<div class="topiclabel col-xs-12 col-sm-12 col-md-12 ">
 			<span class="enheader">NEW TOPICS</span><span class="jpheader">新着記事</span>
@@ -74,9 +74,13 @@
 						</div>
 						<div class="row article-meta">
 							<div class="col-xs-12 col-sm-12 col-md-12 ">
-								<?php echo get_post_time('Y.m.d'); ?>
-								<span class="category">	
-										<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
+								<?php echo get_post_time('Y.m.d'); ?> 
+								<?php
+									$cat = get_the_category();
+									$cat = $cat[0];
+								?>
+								<span class="<?php echo $cat->category_nicename; ?> category">
+									<?php echo $cat->cat_name; ?>
 								</span>
 							</div>
 						</div>
