@@ -76,6 +76,7 @@
 							<i class="fa fa-facebook" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
 						</div>
 					</a>
+					<div class="clearfix"></div>
 					<div id="category" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" role="contentinfo">
 						<span class="enheader">Category</span><span class="jpheader">カテゴリ</span>
 					</div>

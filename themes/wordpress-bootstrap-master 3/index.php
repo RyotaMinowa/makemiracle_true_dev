@@ -80,10 +80,7 @@
 		<?php endif; ?>
 	<?php endwhile; ?>
 	<?php endif; ?>
-	</section><!-- end all topic -->
+	</section>
 	<?php wp_reset_query(); ?>
-    <p id="more"><a href="#">もっと表示する</a></p>
-	
-	<!--<?php get_template_part('ajax_index'); ?>-->
 	
 <?php get_footer(); ?>

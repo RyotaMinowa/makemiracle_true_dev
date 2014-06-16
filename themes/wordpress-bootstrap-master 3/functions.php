@@ -457,9 +457,12 @@ if( !function_exists("theme_styles") ) {
          // For child themes
         wp_register_style( 'sidr-style', get_stylesheet_directory_uri() . '/library/css/jquery.sidr.light.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'sidr-style' );
+
+        wp_register_style( 'font-awesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'font-awesome' );
     }
 }
-add_action( 'wp_enqueue_scripts', 'theme_styles' ,'sidr-style' );
+add_action( 'wp_enqueue_scripts', 'theme_styles' ,'sidr-style','font-awesome' );
 
 // enqueue javascript
 if( !function_exists( "theme_js" ) ) {  
