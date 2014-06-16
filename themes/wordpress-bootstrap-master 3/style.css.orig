@@ -1,0 +1,305 @@
+/*
+Theme Name: wp-bootstrap
+Theme URI: http://320press.com/wpbs
+Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
+Version: 3.0
+Author: 320press
+Author URI: http://320press.com
+Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
+License: GNU General Public License v2.0 & Apache License 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+/* HEADS UP: Everything that you will normally find here can be found in the library/less/wp.less */
+
+.thumb {
+	width:100%;
+}
+
+
+
+.categorytag {
+	margin-left: 2%;
+	font-weight: 900;
+	background-color: #F8C832;
+}
+
+/* social button*/
+/* social */
+.button {
+  display: inline-block;
+  height: 54px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #3B5998;
+  box-shadow: 0 5px 0 #203d79;
+  -moz-box-shadow: 0 5px 0 #203d79;
+  -webkit-box-shadow: 0 5px 0 #203d79;
+}
+
+.button:hover{
+  background: #3B5998;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+
+}
+
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  border: 2px solid #55ACEE;
+  color: #fff;
+  line-height: 50px;
+  box-shadow: 0 5px 0 #478EBA;
+  -moz-box-shadow: 0 5px 0 #478EBA;
+  -webkit-box-shadow: 0 5px 0 #478EBA;
+}
+.twitter:hover {
+  background-color: #fff;
+  border-color: #55ACEE;
+  color: #55ACEE;
+}
+
+.facebook {
+  background-color: #2f54a3;
+  border: 2px solid #2f54a3;
+  color: #fff;
+  line-height: 50px;
+}
+.facebook:hover {
+  background-color: #fff;
+  border-color: #2f54a3;
+  color: #2f54a3;
+}
+
+.social i {
+    margin-top:1%;
+}
+
+.social ul {
+display: -webkit-box;
+display: -moz-box;
+width: 100%;
+list-style:none;
+}
+
+.social li {
+-webkit-box-flex: 1;
+-moz-box-flex: 1;
+}
+
+/* likebox */
+.fb-like-box,.fb-like-box span, .fb-like-box iframe {
+ width: 100% !important;
+}
+
+iframe {
+	width: 100%;
+}
+
+#category {
+ background-color: #F8C832;
+  -webkit-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  -moz-box-shadow:    0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  box-shadow:         0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+}
+
+.categoryitem {
+  background-color: #F8C832;
+  font-size: 26px;
+  color: #54003c;
+  margin:auto;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+/* ↓↓↓conflicct */
+
+.popular {
+	height:40px;
+	background-color: #F8C832;
+}
+
+
+
+/* general*/
+@font-face {
+  font-family:'titlefont';
+  src: url(http://localhost:8888/dev_makemiracle/wordpress/wp-content/uploads/2014/06/1519749041.ttf) format('truetype');
+}
+*{
+  margin:0;
+  padding: 0;
+}
+
+
+body{
+  padding-top: 0px !important;
+}
+
+.container{
+  margin:0;
+  padding: 0;
+}
+
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+position: relative;
+min-height: 1px;
+padding: 0px;
+}
+
+.row{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #2a80b9;
+}
+
+
+/* Header */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  h1{
+      font-size: 30px;
+      
+    }
+}
+@media only screen and (min-width: 1200px) {
+h1{
+      font-size: 30px;
+      
+    }
+}
+
+
+
+
+.navbar-default {
+  background-color: #F8C832;
+  border:none;
+  width: 100%;
+  padding:3% 0 3% 0; 
+  margin: 0;
+  max-height: 120px;
+}
+
+.navbar-header a img{
+  width: 60%;
+  margin-left: 20%;
+  max-width: 640px;
+
+}
+
+.navbar-brand {
+  float: left;
+  padding: 15px 15px;
+  font-size: 2em;
+  line-height: 30px;
+}
+
+/* Contents */
+.topicthumb {
+  width:100%;
+  margin-bottom: -100px;
+}
+
+.topiclabel {
+  background-color: #F8C832;
+  color:#54003c;
+}
+
+div.topiclabel{
+  font-size:24px; 
+  -webkit-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  -moz-box-shadow:    0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  box-shadow:         0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+}
+span.enheader{
+  font-family:'titlefont';
+  font-size: 36px;
+  margin-left: 15px;
+  color: #54003c;
+}
+
+span.jpheader{
+  margin-left: 15px;
+}
+
+.topicoverlay{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.topictitle{
+  font-size: 20px;
+  margin: 0px;
+}
+
+article.article-card{
+  height: 170px;
+  padding-top: 29px;
+  border-top: #898989 solid 1px;
+}
+
+article .card-contents{
+  height:112px; 
+  position: relative;
+}
+
+article .card-contents .card-desc{
+  height: 100%;
+}
+
+article .card-contents .card-desc .article-meta{
+  position: absolute;
+  bottom:0px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 17px;
+  color:#4e5659;
+}
+
+span.category{
+  background-color: #F8C832;
+  color:#54003c;
+  padding: 0 1em;
+}
+
+
