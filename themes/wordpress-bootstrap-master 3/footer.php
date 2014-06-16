@@ -36,7 +36,7 @@
 	<?php wp_footer(); // js scripts are inserted using this function ?>
 </div> <!-- end #page in header -->
 </div><!-- end row in header -->		
-</div> <!-- end row in container -->
+</div> <!-- end row in container --></div> <!-- end row in container -->
 <script type="text/javascript">
 	jQuery(document).ready(function() {
     	jQuery('#drawerbtn').sidr({

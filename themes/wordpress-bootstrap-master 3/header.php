@@ -33,7 +33,8 @@
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->		
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> >
+	
 	<!--facebooklikebox -->
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
