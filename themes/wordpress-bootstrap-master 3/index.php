@@ -3,7 +3,7 @@
 
 <?php get_template_part('featured'); ?>
 <!-- start new topic -->
-<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8  ">
+<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
 	<div class="row">
 		<div class="topiclabel col-xs-12 col-sm-12 col-md-12 ">
 			<span class="enheader">NEW TOPICS</span><span class="jpheader">新着記事</span>
