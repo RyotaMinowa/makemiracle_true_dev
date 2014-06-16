@@ -79,7 +79,8 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 								$cat = $cat[0];
 							?>
 							<span class="<?php echo $cat->category_nicename; ?> category">
-								<?php echo $cat->cat_name; ?>
+								<!--<?php echo $cat->cat_name; ?>-->
+								<?php the_category(', '); ?>
 							</span>
 						</div>
 					</div>

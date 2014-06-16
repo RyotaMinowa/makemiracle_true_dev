@@ -87,7 +87,9 @@
 		<?php endif; ?>
 	<?php endwhile; ?>
 	<?php endif; ?>
-	</section>
+	</section><!-- end all topic -->
 	<?php wp_reset_query(); ?>
+
+	<?php get_template_part('ajax_index'); ?>
 	
 <?php get_footer(); ?>
