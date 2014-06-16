@@ -25,19 +25,15 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 	<?php if($featureLoopCounter == 0): ?>
 
     <!-- feature first article -->
-    <article>
+    <article class="col-xs-12 col-sm-12 col-md-12">
     	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="color:white; vertical-align: middle;">
-		    <div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 ">
-					<?php
-						$image_id = get_post_thumbnail_id();
-						$image_url = wp_get_attachment_image_src($image_id, true);
-					?>
-					<img class="topicthumb" src="<?php echo $image_url[0]; ?>" alt=""  />
-					<div class="topicoverlay">
-			    		<h1 class="topictitle"><?php the_title(); ?></h1>
-					</div>
-				</div>
+			<?php
+				$image_id = get_post_thumbnail_id();
+				$image_url = wp_get_attachment_image_src($image_id, true);
+			?>
+			<img class="topicthumb" src="<?php echo $image_url[0]; ?>" alt=""  />
+			<div class="topicoverlay">
+	    		<h1 class="topictitle"><?php the_title(); ?></h1>
 			</div>
 		</a>
 	</article>
@@ -72,8 +68,8 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 						</div>
 					</div>
 					<div class="row article-meta">
-						<div class="info col-xs-12 col-sm-12 col-md-12 article-meta">
-							<?php echo get_post_time('Y.m.d'); ?>
+						<div class="col-xs-12 col-sm-12 col-md-12 ">
+							<?php echo get_post_time('Y.m.d'); ?> 
 							<?php
 								$cat = get_the_category();
 								$cat = $cat[0];
@@ -82,6 +78,7 @@ foreach ( $myposts as $post ) :setup_postdata( $post ); ?>
 								<?php echo $cat->cat_name; ?>
 							</span>
 						</div>
+					</div>
 					</div>
 				</div>
 			</div>

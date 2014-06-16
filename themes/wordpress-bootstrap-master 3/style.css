@@ -101,6 +101,19 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
   color: #2f54a3;
 }
 
+.line{
+  background-color: #2ecc71;
+  border: 2px solid #2ecc71;
+  color: #fff;
+  line-height: 50px;
+}
+
+.line:hover {
+  background-color: #fff;
+  border-color: #27ae60;
+  color: #27ae60;
+}
+
 .social i {
     margin-top:1%;
 }
@@ -311,6 +324,15 @@ span.category{
   color:#54003c;
   padding: 0 1em;
 }
+
+/* single */
+@media only screen and (min-width: 992px) {
+  #single-content iframe {
+    width:70% !important;
+    height:500px;
+  }
+}
+
 
 
 
