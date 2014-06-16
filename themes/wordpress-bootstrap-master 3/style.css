@@ -102,10 +102,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 
 .line{
-  background-color: #2ecc71;
-  border: 2px solid #2ecc71;
+  background-color: #1EC221;
+  border: 2px solid #1EC221;
   color: #fff;
   line-height: 50px;
+  box-shadow: 0 5px 0 #179519;
+  -moz-box-shadow: 0 5px 0 #179519;
+  -webkit-box-shadow: 0 5px 0 #179519;
 }
 
 .line:hover {
@@ -201,13 +204,72 @@ a {
 
 
 /* Header */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+.navbar-default {
+  background-color: #F8C832;
+  border:none;
+  width: 100%;
+  padding:0 0 0 0; 
+  margin: 0;
+  max-height: 120px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+.navbar-header{
+  text-align: center;
+}
+
+.navbar-brand {
+  float: left;
+  padding: 15px 15px;
+  font-size: 2em;
+  line-height: 30px;
+}
+
+  div.toggle-area{
+    height: 96px;
+    -webkit-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  -moz-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0.29);
+  vertical-align: middle;
+}
+  header{
+    height:96px;
+  }
+
+  img.logos{
+    width:400px;
+    margin-top: 1%;
+  }
+
+button.navbar-toggle{
+  color: white;
+  border: none;
+  font-size: 34px;
+}
+
+@media only screen and (min-width: 748px) and (max-width: 991px) {
   h1{
       font-size: 30px;
-      
     }
+
+    div.toggle-area{
+     -webkit-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0);
+  -moz-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0);
+  box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0);
+}
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h1{
+      font-size: 30px;
+    }
+
+    div.toggle-area{
+     -webkit-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0);
+  -moz-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0);
+  box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0);
+}
+
   .navbar-responsive-collapse{
     display: none;
   }
@@ -219,39 +281,15 @@ h1{
   .navbar-responsive-collapse{
     display: none ;
   }
-}
 
-
-
-
-  .navbar-default .container{
-      height: 100%
+  div.toggle-area{
+    -webkit-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0);
+    -moz-box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0);
+    box-shadow: 0px -1px 8px 0px rgba(48, 50, 50, 0);
   }
 
-
-.navbar-default {
-  background-color: #F8C832;
-  border:none;
-  width: 100%;
-  padding:0 0 3% 0; 
-  margin: 0;
-  max-height: 120px;
 }
 
-.navbar-header a img{
-  margin-top:20px;
-  width: 60%;
-  margin-left: 20%;
-  max-width: 640px;
-
-}
-
-.navbar-brand {
-  float: left;
-  padding: 15px 15px;
-  font-size: 2em;
-  line-height: 30px;
-}
 
 /* Contents */
 .topicthumb {
