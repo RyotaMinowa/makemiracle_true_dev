@@ -50,9 +50,7 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" id="drawerbtn" class="navbar-toggle" >
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
+							<i class="fa fa-check-circle"></i>
 						</button>
 						<a href="#" class="text-center">
 		    				<img src="http://localhost:8888/dev_makemiracle/wordpress/wp-content/uploads/2014/06/logo.png">
