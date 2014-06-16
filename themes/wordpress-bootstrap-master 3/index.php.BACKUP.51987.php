@@ -14,6 +14,17 @@
 	<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-6  clearfix article-card"<?php post_class('clearfix'); ?> role="article">
 		<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 			<div class="row card-contents">
+<<<<<<< HEAD
+				<div class="col-xs-3 col-sm-3 col-md-3 thumb-area">
+					<?php the_post_thumbnail(); ?>
+					<?php
+						$image_id = get_post_thumbnail_id();
+						$image_url = wp_get_attachment_image_src($image_id, true);
+						$thumurl = implode( 'a', $image_url )
+					?>
+					<div class="thumb-area" style="width;100%; height:100%; background-image:url('<?php echo $thumurl; ?>'); background-repeat: no-repeat;
+	  -moz-background-size:100% auto; background-position:50% 50%; background-size:100% auto;background-color:#000;"></div>
+=======
 				<div class="col-xs-3 col-sm-3 col-md-3 thumb-area" style="height:100%;">
 					<?php
 						$image_id = get_post_thumbnail_id();
@@ -21,6 +32,7 @@
 					?>
 					<!--<?php the_post_thumbnail(); ?>-->
 					<div class="thumb-area" style="width:100%; height:100%; background-image:url('<?php echo $image_url[0]; ?>'); background-repeat: no-repeat;-moz-background-size:100% auto; background-position:50% 50%; background-size:100% auto;background-color:#000;"></div>
+>>>>>>> ae69f8babfbda83a9c89fe72ae60deea901bd225
 				</div>
 				<div class="col-xs-9 col-sm-9 col-md-9 card-desc">
 					<div class="row ">
@@ -58,6 +70,13 @@
 		<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-6  clearfix article-card"<?php post_class('clearfix'); ?> role="article">
 			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 				<div class="row card-contents">
+<<<<<<< HEAD
+					<div class="col-xs-3 col-sm-3 col-md-3 thumb-area">
+<img src="<?php echo $image_url[0]; ?>" class="thumb">
+						<!--<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
+	  -moz-background-size:100% auto; background-position:50% 50%;
+	  background-size:100% auto;background-color:#000;"></div>-->
+=======
 					<div class="col-xs-3 col-sm-3 col-md-3 thumb-area" style="height:100%;">
 						<?php
 							$image_id = get_post_thumbnail_id();
@@ -65,6 +84,7 @@
 						?>
 						<!--<?php the_post_thumbnail(); ?>-->
 						<div class="thumb-area" style="width:100%; height:100%; background-image:url('<?php echo $image_url[0]; ?>'); background-repeat: no-repeat;-moz-background-size:100% auto; background-position:50% 50%; background-size:100% auto;background-color:#000;"></div>
+>>>>>>> ae69f8babfbda83a9c89fe72ae60deea901bd225
 					</div>
 					<div class="col-xs-9 col-sm-9 col-md-9  card-desc">
 						<div class="row">
