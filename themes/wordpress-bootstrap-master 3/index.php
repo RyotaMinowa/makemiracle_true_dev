@@ -15,7 +15,7 @@
 		<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 			<div class="row card-contents">
 				<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 " style="height:100%; ">
-					<div class=thumb-area><?php the_post_thumbnail(); ?></div>
+					<div class="thumb-area"><?php the_post_thumbnail(); ?></div>
 					<!--<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
 	  -moz-background-size:100% auto; background-position:50% 50%; background-size:100% auto;background-color:#000;"></div>-->
 				</div>
@@ -56,7 +56,7 @@
 			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 				<div class="row card-contents">
 					<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2" style="height:100%; ">
-						<div class=thumb-area><?php the_post_thumbnail(); ?></div>
+						<div class="thumb-area"><?php the_post_thumbnail(); ?></div>
 						<!--<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
 	  -moz-background-size:100% auto; background-position:50% 50%;
 	  background-size:100% auto;background-color:#000;"></div>-->
@@ -69,8 +69,8 @@
 						</div>
 						<div class="row article-meta">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								2014.05.29 
-								<span class="category">	
+								<?php the_date(); ?> 
+								<span class="cate-gory">	
 										<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
 								</span>
 							</div>
