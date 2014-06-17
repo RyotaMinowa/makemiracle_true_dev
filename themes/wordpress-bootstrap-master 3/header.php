@@ -33,7 +33,8 @@
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->		
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> >
+	
 	<!--facebooklikebox -->
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
@@ -47,15 +48,17 @@
 			<div class="navbar navbar-default">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" id="drawerbtn" class="navbar-toggle" >
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a href="#" class="text-center">
-		    				<img src="http://localhost:8888/dev_makemiracle/wordpress/wp-content/uploads/2014/06/logo.png">
-	    				</a>
+						<div class="col-xs-10" >
+							<a href="#" class="text-center">
+			    				<img class="logos" src="http://localhost:8888/dev_makemiracle/wordpress/wp-content/uploads/2014/06/logo.png">
+		    				</a>
 						<!--<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>-->
+						</div>
+						<div class="col-xs-2 toggle-area">
+							<button type="button" id="drawerbtn" class="navbar-toggle" >
+								<i class="fa fa-check-circle"></i>
+							</button>
+						</div>
 					</div>
 				</div> <!-- end .container -->
 			</div>

@@ -1,8 +1,9 @@
 
 <?php get_header(); ?>
+
 <?php get_template_part('featured'); ?>
 <!-- start new topic -->
-<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
+<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
 	<div class="row">
 		<div class="topiclabel col-xs-12 col-sm-12 col-md-12 ">
 			<span class="enheader">NEW TOPICS</span><span class="jpheader">新着記事</span>
@@ -13,15 +14,17 @@
 	<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-6  clearfix article-card"<?php post_class('clearfix'); ?> role="article">
 		<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 			<div class="row card-contents">
-				<div class="col-xs-3 col-sm-3 col-md-3 thumb-area" style="height:100%;">
-					<?php
-						$image_id = get_post_thumbnail_id();
-						$image_url = wp_get_attachment_image_src($image_id, true);
-					?>
-					<!--<?php the_post_thumbnail(); ?>-->
-					<div class="thumb-area" style="width:100%; height:100%; background-image:url('<?php echo $image_url[0]; ?>'); background-repeat: no-repeat;-moz-background-size:100% auto; background-position:50% 50%; background-size:100% auto;background-color:#000;"></div>
+<<<<<<< HEAD
+				<div class="col-xs-3 col-sm-3 col-md-3 thumb-area">
+					<?php the_post_thumbnail(); ?>
+=======
+				<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 " style="height:100%; ">
+					<div class="thumb-area"><?php the_post_thumbnail(); ?></div>
+>>>>>>> 7d27b3d7330f8bf023f967fbab0fb5fe21f807d1
+					<!--<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
+	  -moz-background-size:100% auto; background-position:50% 50%; background-size:100% auto;background-color:#000;"></div>-->
 				</div>
-				<div class="col-xs-9 col-sm-9 col-md-9 card-desc">
+				<div class="col-xs-9 col-sm-9 col-md-9  card-desc">
 					<div class="row ">
 						<div class="col-xs-12 col-sm-12 col-md-12 ">
 							<h1 class="topictitle"><?php the_title(); ?></h1>
@@ -29,7 +32,7 @@
 					</div>
 					<div class="row article-meta">
 						<div class="col-xs-12 col-sm-12 col-md-12 ">
-							<?php echo get_post_time('Y.m.d'); ?> 
+							2014.05.29 
 							<?php
 								$cat = get_the_category();
 								$cat = $cat[0];
@@ -48,7 +51,7 @@
 		<?php if ($loopcounter == 3) {echo ('
 	</section><!-- end new topic -->
 
-	<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8"><!-- start all topic -->
+	<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8"><!-- start all topic -->
 		<div class="row">
 			<div class="topiclabel col-xs-12 col-sm-12 col-md-12 ">
 				<span class="enheader">ALL TOPICS</span><span class="jpheader">記事一覧</span>
@@ -57,13 +60,16 @@
 		<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-6  clearfix article-card"<?php post_class('clearfix'); ?> role="article">
 			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 				<div class="row card-contents">
-					<div class="col-xs-3 col-sm-3 col-md-3 thumb-area" style="height:100%;">
-						<?php
-							$image_id = get_post_thumbnail_id();
-							$image_url = wp_get_attachment_image_src($image_id, true);
-						?>
-						<!--<?php the_post_thumbnail(); ?>-->
-						<div class="thumb-area" style="width:100%; height:100%; background-image:url('<?php echo $image_url[0]; ?>'); background-repeat: no-repeat;-moz-background-size:100% auto; background-position:50% 50%; background-size:100% auto;background-color:#000;"></div>
+<<<<<<< HEAD
+					<div class="col-xs-3 col-sm-3 col-md-3 thumb-area">
+					<?php the_post_thumbnail(); ?>
+=======
+					<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2" style="height:100%; ">
+						<div class="thumb-area"><?php the_post_thumbnail(); ?></div>
+>>>>>>> 7d27b3d7330f8bf023f967fbab0fb5fe21f807d1
+						<!--<div class="thumb-area" style="width;100%; height:100%; background-image:url('http://i.ytimg.com/vi/cfpX8lkaSdk/3.jpg'); background-repeat: no-repeat;
+	  -moz-background-size:100% auto; background-position:50% 50%;
+	  background-size:100% auto;background-color:#000;"></div>-->
 					</div>
 					<div class="col-xs-9 col-sm-9 col-md-9  card-desc">
 						<div class="row">
@@ -72,14 +78,16 @@
 							</div>
 						</div>
 						<div class="row article-meta">
+<<<<<<< HEAD
 							<div class="col-xs-12 col-sm-12 col-md-12 ">
-								<?php echo get_post_time('Y.m.d'); ?> 
-								<?php
-									$cat = get_the_category();
-									$cat = $cat[0];
-								?>
-								<span class="<?php echo $cat->category_nicename; ?> category">
-									<?php echo $cat->cat_name; ?>
+								2014.05.29 
+								<span class="category">	
+=======
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<?php the_date(); ?> 
+								<span class="cate-gory">	
+>>>>>>> 7d27b3d7330f8bf023f967fbab0fb5fe21f807d1
+										<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
 								</span>
 							</div>
 						</div>
@@ -93,6 +101,6 @@
 	</section><!-- end all topic -->
 	<?php wp_reset_query(); ?>
 
-
+	<?php get_template_part('ajax_index'); ?>
 	
 <?php get_footer(); ?>
