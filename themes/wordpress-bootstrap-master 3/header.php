@@ -73,14 +73,14 @@
 					<div class="clear"></div>
 
 					<!-- Social account button start -->
-					<a class="" href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
+					<a class="" href="https://twitter.com/makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
 					    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  button twitter">
 								<i class="fa fa-twitter" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　メークミラクル公式Twitterをフォロー</span>
 					    </div>
 					</a>
-					<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>"onclick="window.open(this.href, 'FBwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
+					<a href="http://instagram.com/makemiracle90s"onclick="window.open(this.href, 'IGwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 button facebook" >
-							<i class="fa fa-facebook" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
+							<i class="fa fa-instagram" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
 						</div>
 					</a>
 					<div class="clearfix"></div>
@@ -98,4 +98,14 @@
 					</div>
 				</div>		
 			</div> <!-- end .navbar -->
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-51373426-1', 'makemiracle.us');
+			  ga('send', 'pageview');
+
+			</script>
 		</header> <!-- end header -->

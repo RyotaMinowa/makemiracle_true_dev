@@ -29,7 +29,7 @@
 				        	<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5  button facebook">
 				        		<i class="fa fa-facebook" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">シェア</span>
 				        	</div>
-				        </a><a class="" href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
+				        </a><a href="http://line.me/R/msg/text/?<?php the_title(); ?>%0D%0A<?php the_permalink(); ?>">
 					        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2  button line">
 								<span class="share_text">LINE</span>
 					        </div>
@@ -41,7 +41,7 @@
 									<?php the_content(); ?>
 								</div>
 							</div>
-							<a class="" href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
+							<a class="" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
 						        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  button facebook">
 				           			<i class="fa fa-facebook" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　Facebookでシェアする!!</span>
 						        </div>

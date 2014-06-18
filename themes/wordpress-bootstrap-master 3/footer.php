@@ -9,14 +9,14 @@
 	</div>
 	
 	<!-- Social account button start -->
-	<a class="" href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
+	<a class="" href="https://twitter.com/makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
 	    <div class="col-xs-6 col-sm-12 col-md-6 col-lg-12  button twitter">
 				<i class="fa fa-twitter" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　メークミラクル公式Twitterをフォロー</span>
 	    </div>
 	</a>
-	<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>"onclick="window.open(this.href, 'FBwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
+	<a href="http://instagram.com/makemiracle90s"onclick="window.open(this.href, 'FBwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
 		<div class="col-xs-6 col-sm-12 col-md-6 col-lg-12 button facebook" >
-			<i class="fa fa-facebook" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
+			<i class="fa fa-instagram" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
 		</div>
 	</a>
 	<div id="category" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" role="contentinfo">
