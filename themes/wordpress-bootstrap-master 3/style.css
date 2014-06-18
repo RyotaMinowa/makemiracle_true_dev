@@ -12,9 +12,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 
 /* HEADS UP: Everything that you will normally find here can be found in the library/less/wp.less */
 body {
-  background-image: url('http://localhost:8888/dev_makemiracle/wordpress/wp-content/themes/wordpress-bootstrap-master 3/images/bg.jpg');
-
-  background-attachment: fixed;
 }
 
 
