@@ -1,0 +1,139 @@
+
+/* ーーーーーーーー記事カードのCSSーーーーーーーー */
+
+img{
+  margin:0 ;
+}
+
+.new-article-section{
+  background-color: #F7F7F7;
+}
+
+.article-card-wrap{
+  margin-top: 10px; /*card-rowではなくこっちにかけるわけがわからん
+　　　　　　　　　　　　　というかなぜcard-rowにかけたら作用しない？
+                      ---子要素が高さをもっていないから*/
+}
+
+.article-card-row{
+  background-color: white; 
+  width: 640px;
+  padding:30px;
+  border-bottom: 1px solid #929292;  
+}
+
+.article-card-thum{
+  background-color: white;
+  width: 156px;
+  height: 156px;
+  margin-right:25px;
+  padding:0; /* ここ重要。あとで確認。Bootstrapが勝手にかけているmarginを相殺している*/
+}
+
+.article-card-desc{
+  background-color:white; 
+  width: 399px; /* 400pxにするとずれる！？
+                    ----おーばーするからフロートあふれちゃうらめぇえええええ*/
+}
+
+.article-card-text{
+  line-height: 37px; /* ここ、行間指定するとバランスむっちゃ悪いねんけど */
+  margin:0px; /* ここもBootstrap指定のものを相殺してる */
+  font-size: 30px; /* 下に余裕ないっす
+                      ●----３行想定で絶対値指定してるから。
+                      ----card-rowの156px外せばok　→なんでcard-rowがかかわってくる？
+                      */
+}
+
+.article-card-meta{
+  margin-top: 30px;
+  margin-bottom:0px;
+}
+
+.category-span{
+  font-size: 20px;
+  color:#888888;
+  margin-right: 33px;
+
+}
+
+.date-span{
+  font-size: 20px;
+  color:#888888; 
+}
+
+/* ーーーーーーーーfooterのCSSーーーーーーーー */
+
+.footer-wrap{
+  background-color: black;
+  height: 200px; /*適当*/
+ /* padding:30px;　記事カードと同じでよい？*/
+}
+
+.footer-wrap-row{
+  background-color: purple;
+  margin:0px;
+}
+
+.footer-social-text{
+  color: white;
+  margin:0px;
+  padding:0px;
+}
+
+.footer-social-button{
+  background-color: red;
+  margin:0px;
+  padding: 20px 20px 20px 0px;                                                                             
+  width: 192px; /*192pxだとずれる。他の要素のmarginとpaddingは一通り相殺したのだが…。*/
+}
+
+.footer-social-icon{
+  padding:0px;
+}
+
+.footer-social-text{
+}
+
+.on-sns-span{
+  white-space: nowrap;
+}
+
+
+
+#facebook{
+  background-color: #3468AF;
+}
+
+#twitter{
+  background-color: #55ACEE;
+}
+
+#feedly{
+  background-color: #87BF3F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
