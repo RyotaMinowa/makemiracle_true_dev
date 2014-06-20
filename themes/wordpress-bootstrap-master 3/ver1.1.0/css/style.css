@@ -63,8 +63,14 @@ header .header-wrap .header-wrap-row .header-follow-toggle button{
 	background-color: white;
 }*/
 
+.header-follow .header-follow-row.header-follow-twitter-box{
+	
+}
+
 .fb-like-box,.fb-like-box span, .fb-like-box iframe {
  width: 100% !important;
  height:600px;
 }
 
+
+/*single*/
