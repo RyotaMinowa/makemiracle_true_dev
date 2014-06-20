@@ -1,0 +1,66 @@
+/* feature-article start */
+.feature-article-big-row{
+}
+
+.feature-article-big-text-area{
+	background-image: url("https://ssl-stat.amebame.com/pub/content/8265872137/user/article/28379627122935870/b52dffb7ebcbad3e3cfae5d11790ee54/cached.jpg");
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; 
+	background-color:#000;
+	height: 400px;
+	width:100%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.feature-article-small-text-area{
+}
+
+h1.feature-article-text{
+	width: 100%;
+	color: #fff;
+	text-align: left;
+	position: absolute;
+	bottom: 10px;
+	left: 8px;
+	right: 8px;
+	z-index: 1;
+	padding: 12px 15px;
+	background-color:rgba(0,0,0,.6);
+	line-height: 46px;
+	font-size: 34px;
+	font-weight: 700;
+}
+
+.feature-article-small{
+	
+}
+
+.feature-article-small-row{
+}
+
+.feature-article-small{
+	margin-top: 20px;
+}
+
+.feature-article-small img{
+	width: 290px;
+	height: 198px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.feature-article-small-text-area{
+
+}
+
+h1.feature-article-small-text{
+	font-size: 30px;
+	line-height: 39px;
+	font-weight: 700;
+}
+
+
+/* feature-article end */
