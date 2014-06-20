@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/*general*/
+*{
+	font-family:'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+	font-size: 30px;
+	line-height: 37px;
+}
+
+.container{
+	width: 100%;
+	height: 100%;	
+}
+
+.row{
+	height: 100%;
+}
+
+
+/*header*/
+header{
+	width: 100%;
+	height: 89px;
+	background-color: #fc0;
+}
+
+header .header-wrap{
+
+}
+
+header .header-wrap .header-wrap-row img{
+	width: 400px;
+	margin-top:10px;
+}
+
+header .header-wrap .header-follow-toggle{
+	height: 100%;
+}
+
+header .header-wrap .header-wrap-row .header-follow-toggle button{
+	width:100%;
+	height: 100%;
+	border: none;	
+	background-image: url("../img/follow.png");
+	background-position: center center; 
+	background-repeat: no-repeat;
+}
+
+.header-follow{
+	padding: 45px 20px 48px;
+	text-align: center;
+	background-color:black;
+	height: auto;
+}
+
+.header-follow .header-follow-row .header-follow-desc{
+	font-size: 26px;
+}
+
+/*.header-follow .header-follow-row .header-follow-fb-box{
+	width:600px;
+	height:400px;
+	background-color: white;
+}*/
+
+.fb-like-box,.fb-like-box span, .fb-like-box iframe {
+ width: 100% !important;
+ height:600px;
+}
+
