@@ -1,97 +1,48 @@
+<!doctype html> 
+ <!--[if IEMobile 7 ]> <html <?php language_attributes(); ?>class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html <?php language_attributes(); ?> class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html <?php language_attributes(); ?> class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html <?php language_attributes(); ?> class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
+<html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
+
+<?php get_template_part('head'); ?>
+
+<body <?php body_class(); ?> >
+
+<!-- GoogleAnalytics -->	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-51373426-1', 'makemiracle.us');
+	  ga('send', 'pageview');
+
+	</script>
+
+<!-- Fblikebox -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "http://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
 
 <?php get_header(); ?>
-<?php get_template_part('featured'); ?>
-<!-- start new topic -->
-<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
-	<div class="row">
-		<div class="topiclabel col-xs-12 col-sm-12 col-md-12 ">
-			<span class="enheader">NEW TOPICS</span><span class="jpheader">新着記事</span>
-		</div>
-	</div>
-	<?php if (have_posts()) : while (have_posts()) : the_post(); $loopcounter++;?>
-	<?php if($loopcounter < 3) : ?>
-	<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-6  clearfix article-card"<?php post_class('clearfix'); ?> role="article">
-		<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-			<div class="row card-contents">
-				<div class="col-xs-3 col-sm-3 col-md-3 thumb-area" style="height:100%;">
-					<?php
-						$image_id = get_post_thumbnail_id();
-						$image_url = wp_get_attachment_image_src($image_id, true);
-					?>
-					<!--<?php the_post_thumbnail(); ?>-->
-					<div class="thumb-area" style="width:100%; height:100%; background-image:url('<?php echo $image_url[0]; ?>'); background-repeat: no-repeat;-moz-background-size:100% auto; background-position:50% 50%; background-size:100% auto;background-color:#000;"></div>
-				</div>
-				<div class="col-xs-9 col-sm-9 col-md-9 card-desc">
-					<div class="row ">
-						<div class="col-xs-12 col-sm-12 col-md-12 ">
-							<h1 class="topictitle"><?php the_title(); ?></h1>
-						</div>
-					</div>
-					<div class="row article-meta">
-						<div class="col-xs-12 col-sm-12 col-md-12 ">
-							<?php echo get_post_time('Y.m.d'); ?> 
-							<?php
-								$cat = get_the_category();
-								$cat = $cat[0];
-							?>
-							<span class="<?php echo $cat->category_nicename; ?> category">
-								<?php echo $cat->cat_name; ?>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</a>	
-		<hr />
-	</article> <!-- end article -->
-	<?php else : ?>
-		<?php if ($loopcounter == 3) {echo ('
-	</section><!-- end new topic -->
 
-	<section class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8"><!-- start all topic -->
-		<div class="row">
-			<div class="topiclabel col-xs-12 col-sm-12 col-md-12 ">
-				<span class="enheader">ALL TOPICS</span><span class="jpheader">記事一覧</span>
-			</div>
-		</div>');} ?>
-		<article id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-6  clearfix article-card"<?php post_class('clearfix'); ?> role="article">
-			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-				<div class="row card-contents">
-					<div class="col-xs-3 col-sm-3 col-md-3 thumb-area" style="height:100%;">
-						<?php
-							$image_id = get_post_thumbnail_id();
-							$image_url = wp_get_attachment_image_src($image_id, true);
-						?>
-						<!--<?php the_post_thumbnail(); ?>-->
-						<div class="thumb-area" style="width:100%; height:100%; background-image:url('<?php echo $image_url[0]; ?>'); background-repeat: no-repeat;-moz-background-size:100% auto; background-position:50% 50%; background-size:100% auto;background-color:#000;"></div>
-					</div>
-					<div class="col-xs-9 col-sm-9 col-md-9  card-desc">
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12 ">
-								<h1 class="topictitle"><?php the_title(); ?></h1>
-							</div>
-						</div>
-						<div class="row article-meta">
-							<div class="col-xs-12 col-sm-12 col-md-12 ">
-								<?php echo get_post_time('Y.m.d'); ?> 
-								<?php
-									$cat = get_the_category();
-									$cat = $cat[0];
-								?>
-								<span class="<?php echo $cat->category_nicename; ?> category">
-									<?php echo $cat->cat_name; ?>
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</article>
-		<?php endif; ?>
-	<?php endwhile; ?>
-	<?php endif; ?>
-	</section><!-- end all topic -->
-	<?php wp_reset_query(); ?>
-	<?php get_template_part('ajax_index'); ?>
+<?php get_template_part('featured'); ?>
+
+<section class="new-article-section">
+<!-- 記事一覧 -->
+<?php get_template_part('articles'); ?>
+</section>
+
+<?php wp_reset_query(); ?>
+<?php get_template_part('ajax_index'); ?>
 	
 <?php get_footer(); ?>

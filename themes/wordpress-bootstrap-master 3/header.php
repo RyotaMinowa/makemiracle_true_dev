@@ -1,111 +1,31 @@
-<!doctype html> 
- <!--[if IEMobile 7 ]> <html <?php language_attributes(); ?>class="no-js iem7"> <![endif]-->
-<!--[if lt IE 7 ]> <html <?php language_attributes(); ?> class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html <?php language_attributes(); ?> class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html <?php language_attributes(); ?> class="no-js ie8"> <![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
-<html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
-	
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=640px">
-		<title><?php wp_title( '|', true, 'right' ); ?></title>	
-		<!-- media-queries.js (fallback) -->
-		<!--[if lt IE 9]>
-			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>			
-		<![endif]-->
-
-		<!-- html5.js -->
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-  		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-		<link rel="stylesheet" type="text/css" href="<?php get_stylesheet_directory_uri(); ?>/font-awesome/css/font-awesome.css">
-
-		<!-- jquery -->
-		<?php 
-		wp_enqueue_script('jquery');
-		wp_enqueue_script('style',get_bloginfo('template_url').'/library/js/style.js', array('jquery'));
-		?>
-
-		<!-- wordpress head functions -->
-		<?php wp_head(); ?>
-		<!-- end of wordpress head -->		
-	</head>
-	<body <?php body_class(); ?> >
-	
-	<!--facebooklikebox -->
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=452572048204794&version=v2.0";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>			
-		<header role="banner">		
-			<div class="navbar navbar-default">
-				<div class="container">
-					<div class="navbar-header">
-						<div class="col-xs-10" >
-							<a href="#" class="text-center">
-			    				<img class="logos" src="http://localhost:8888/dev_makemiracle/wordpress/wp-content/uploads/2014/06/logo.png">
-		    				</a>
-						<!--<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>-->
-						</div>
-						<div class="col-xs-2 toggle-area">
-							<button type="button" id="drawerbtn" class="navbar-toggle" >
-								<i class="fa fa-check-circle"></i>
-							</button>
-						</div>
-					</div>
-				</div> <!-- end .container -->
+<header>
+	<div class=" header-wrap container">
+		<div class="header-wrap-row row">
+			<div class="header-category-toggle col-xs-2">
 			</div>
-			<div class="collapse navbar-collapse navbar-responsive-collapse">
-				<div class="row">
-					<div id="follow" class="col-xs-6 col-sm-12 col-md-12 col-lg-12" role="contentinfo">
-						<span class="enheader">Social Follow</span><span class="jpheader">SNSでフォロー</span>
+			<div class="header-logo-div col-xs-8">
+				<img class="header-logo" src="<?php get_stylesheet_directory_uri(); ?>img/logo.png">
+			</div>
+			<div class="header-follow-toggle col-xs-2">
+				<button class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-follow">
+				</button>	
+			</div>
+			<div id="header-follow" class="collapse navbar-collapse col-xs-12 header-follow">
+				<div class="header-follow-row">
+					<div class="row">
+						<p class="header-follow-desc col-xs-10">
+							公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
+						</p>
 					</div>
-					<div class="fb-like-box-wrap col-xs-6 col-sm-12 col-md-12 col-lg-12 commentarea">
-					    <div class="fb-like-box" data-href="https://www.facebook.com/makemiracle90s" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-width="100%"></div>
+					<div class="row">
+						<a href="https://www.facebook.com/makemiracle90s" class="col-xs-10 button facebook text-center"><i class="fa fa-facebook"></i> 公式Facebookページ</a>
 					</div>
-					<div class="clear"></div>
-
-					<!-- Social account button start -->
-					<a class="" href="https://twitter.com/makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
-					    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  button twitter">
-								<i class="fa fa-twitter" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　メークミラクル公式Twitterをフォロー</span>
-					    </div>
-					</a>
-					<a href="http://instagram.com/makemiracle90s"onclick="window.open(this.href, 'IGwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 button facebook" >
-							<i class="fa fa-instagram" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
-						</div>
-					</a>
-					<div class="clearfix"></div>
-					<div id="category" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" role="contentinfo">
-						<span class="enheader">Category</span><span class="jpheader">カテゴリ</span>
+					<br />	 
+					<div class="row">
+						<a href="https://www.facebook.com/makemiracle90s" class="col-xs-10 button twitter text-center"><i class="fa fa-twitter"></i> 公式Twitter</a>
 					</div>
-					<div calss="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-						<?php $cat_all = get_terms( "category", "fields=all&get=all" );foreach($cat_all as $value):?>
-						<a href="<?php echo get_category_link($value->term_id); ?>">
-							<div class="categoryitem col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-								<?php echo $value->name;?>
-							</div>
-						</a>
-						<?php endforeach; ?>
-					</div>
-				</div>		
-			</div> <!-- end .navbar -->
-			<script>
-			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			  ga('create', 'UA-51373426-1', 'makemiracle.us');
-			  ga('send', 'pageview');
-
-			</script>
-		</header> <!-- end header -->
+				</div>
+			</div>
+		</div>				
+	</div>
+</header>
