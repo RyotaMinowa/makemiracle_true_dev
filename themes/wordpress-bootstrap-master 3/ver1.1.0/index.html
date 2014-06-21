@@ -18,14 +18,15 @@
 	    <script src="js/jquery.js"></script>
 	</head>
 	<body>
-	<div id="fb-root"></div>
+		<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=292292120944179&version=v2.0";
+	  js.src = "http://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
 	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
 		<header>
 			<div class=" header-wrap container">
 				<div class="header-wrap-row row">
@@ -38,18 +39,15 @@
 						<button class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-follow">
 						</button>	
 					</div>
-					<div class="row">
-						<div id="header-follow" class="collapse navbar-collapse col-xs-12 header-follow">
-							<div class="header-follow-row row">
-								<p class="header-follow-desc">
-									公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
-								</p>
-								<div class="fb-like-box">
-									<iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fmakemiracle90s&amp;width=300&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=292292120944179" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:290px;" allowTransparency="true"></iframe>
-								</div>
-								<button class="header-follow-twitter-box">
-								</button>
+					<div id="header-follow" class="collapse navbar-collapse col-xs-12 header-follow">
+						<div class="header-follow-row row">
+							<p class="header-follow-desc">
+								公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
+							</p>
+							<div class="fb-like-box" data-href="https://www.facebook.com/makemiracle90s" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-height="400"></div>
 							</div>
+							<button class="header-follow-twitter-box">
+							</button>
 						</div>
 					</div>
 				</div>				
@@ -68,7 +66,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12 feature-article-small">
+					<div class="col-xs-6 feature-article-small">
 						<div class="feature-article-small-row row">
 							<div class="col-xs-12">
 								<img class="topicthumb" src="https://ssl-stat.amebame.com/pub/content/8265872137/user/article/28751770296099503/ac5305a209d2240b248f71b2c8be8852/cached.jpg" alt=""  /><!--ここはimageをおく-->
@@ -78,7 +76,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12 feature-article-small">
+					<div class="col-xs-6 feature-article-small">
 						<div class="feature-article-small-row row">
 							<div class="col-xs-12">
 								<img class="topicthumb" src="https://ssl-stat.amebame.com/pub/content/8265872137/user/article/28751770296099503/ac5305a209d2240b248f71b2c8be8852/cached.jpg" alt=""  /><!--ここはimageをおく-->
@@ -156,10 +154,10 @@
 				</div>
 			</div>
 		</section>
-		
 
 
-		<section class="new-article-section">
+
+		<section class="pop-article-section">
 			<article class="article-card">
 				<div class="article-card-wrap container">
 					<div class="article-card-row row">
@@ -218,7 +216,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="ad-section">
 		</section>
 
