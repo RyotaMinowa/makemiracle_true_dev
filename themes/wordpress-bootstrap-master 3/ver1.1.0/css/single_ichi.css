@@ -1,0 +1,49 @@
+h1.articletitle{
+	font-size:24px;
+	line-height: 34px;
+	font-weight: 900;
+}
+
+.category-span{
+	font-size: 12px;
+	line-height: 12px;
+	color: #5aa6bf;
+}
+
+.date-span{
+	font-size: 12px;
+	line-height: 12px;
+	color: #999999;
+	text-align: right;
+}
+
+.date-span i{
+	font-size: 12px;
+}
+
+.article-meta{
+	margin-top:24px;
+}
+
+.article-head-social-row{
+	margin: 24px 0px;
+}
+
+.article-content{
+	font-size: 17px;
+	line-height: 25px;
+	color: #222222;
+}
+
+.c-ico--lineShareLarge{
+    background-image: url("http://spotlight-media.jp/img/sp/spritesheet-20140617040624.png");
+    -webkit-background-size: 248px 204px;
+    background-size: 248px 204px;
+}
+
+.c-ico--lineShareLarge {
+    background-position: -116px -42px;
+    width: 40px;
+    height: 40px;
+}
+
