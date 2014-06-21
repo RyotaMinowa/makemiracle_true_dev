@@ -9,6 +9,8 @@
       <!-- Original Style -->
       <link href="css/style.css" rel="stylesheet">
       <link href="css/shu_style.css" rel="stylesheet">
+      <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -220,47 +222,65 @@
     <footer>
       <div class="footer-wrap container">
         <div class="footer-wrap-row row">
-          <div class="footer-social-buttons col-xs-12 ">
+          <div class="footer-social-buttons col-xs-12">
             <div class="footer-social-buttons-row row">
-              <p class="footer-social-text col-xs-12">
+              <p class="footer-social-text-top col-xs-12">
+                Spotlightの公式アカウントをフォローしよう
               </p>
-              <button class="footer-social-button col-xs-4">
+              <button class="footer-social-button col-xs-4" id="facebook">
                 <div class="footer-social-button-row row">
-                  <i class="footer-social-icon col-xs-2"></i>
-                  <p class="footer-social-text col-xs-10">
-                    <span class="follow-span"></span>
-                    <span class="on-sns-span"></span>
+                  <i class="footer-social-icon col-xs-2 fa fa-facebook fa-1x"></i> <!--意味分からんとこにくるし色どうやって変えるか分からんわ！！！-->
+                  <p class="footer-social-text-sns col-xs-10">
+                    <span class="follow-span">Follow</span><br>
+                    <span class="on-sns-span">on Facebook</span>
                   </p>
                 </div>
               </button>
-              <button class="footer-social-button col-xs-4">
+              <button class="footer-social-button col-xs-4" id="twitter">
                 <div class="footer-social-button-row row">
-                  <i class="footer-social-icon col-xs-2"></i>
-                  <p class="footer-social-text col-xs-10">
-                    <span class="follow-span"></span>
-                    <span class="on-sns-span"></span>
+                  <i class="footer-social-icon col-xs-2 fa fa-twitter fa-1x"></i>
+                  <p class="footer-social-text-sns col-xs-10">
+                    <span class="follow-span">Follow</span><br> <!--なぜか改行されないからbr入れた-->
+                    <span class="on-sns-span">on Twitter</span>
                   </p>
                 </div>
               </button>
-              <button class="footer-social-button col-xs-4">
+              <button class="footer-social-button col-xs-4" id="feedly">
                 <div class="footer-social-button-row row">
                   <i class="footer-social-icon col-xs-2"></i>
-                  <p class="footer-social-text col-xs-10">
-                    <span class="follow-span"></span>
-                    <span class="on-sns-span"></span>
+                  <p class="footer-social-text-sns col-xs-10">
+                    <span class="follow-span">Follow</span><br>
+                    <span class="on-sns-span">on Feedly</span>
                   </p>
                 </div>
               </button>
             </div>
+          </div> 
 
           <div class="footer-category-area col-xs-12">
+            <div class="footer-category-1">
+              <span class="footer-category-span">トップ</span>
+              <span class="footer-category-span">トレンド</span>
+              <span class="footer-category-span">エンタメ・カルチャー</span><br>
+              <span class="footer-category-span">ライフ・社会</span>
+              <span class="footer-category-span">コラム</span>
+              <span class="footer-category-span">人気記事</span><br>
+            </div>
+            <div class="footer-category-2">
+              <span class="footer-category-span">運営会社</span>
+              <span class="footer-category-span">利用規約</span>
+              <span class="footer-category-span">プライバシーポリシー</span><br>
+              <span class="footer-category-span">お問い合わせ</span>
+             </div>
           </div>
 
           <div class="footer-copyright col-xs-12">
+            <span class="footer-copyright-span">Spotlight © CyberAgant, Inc. All Rights Reserved</span>
           </div>
 
-        </div>        
-      </div>
+
+        </div>
+     </div>
     </footer>
   <script src="js/bootstrap.min.js"></script>
   </body>

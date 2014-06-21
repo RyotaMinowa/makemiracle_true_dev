@@ -66,40 +66,50 @@ img{
 
 .footer-wrap{
   background-color: black;
-  height: 200px; /*適当*/
- /* padding:30px;　記事カードと同じでよい？*/
 }
 
 .footer-wrap-row{
-  background-color: purple;
+  background-color: black;
   margin:0px;
 }
 
-.footer-social-text{
+.footer-social-text-top{
+  font-size: 24px;
   color: white;
-  margin:0px;
+  margin:30px 0px 20px 0px;
   padding:0px;
+  text-align: center;
+}
+
+.footer-social-text-sns{
+  color: white;
 }
 
 .footer-social-button{
   background-color: red;
   margin:0px;
-  padding: 20px 20px 20px 0px;                                                                             
-  width: 192px; /*192pxだとずれる。他の要素のmarginとpaddingは一通り相殺したのだが…。*/
+  height: 75px;
+  padding: 20px 20px 20px 0px;  
+  margin-bottom: 60px;                                                                           
+  width: 192px;
 }
 
 .footer-social-icon{
   padding:0px;
+  color: white;
 }
 
-.footer-social-text{
+.follow-span{
+  font-size: 20px;
+}
+
+.on-sns-span{
+  font-size:15px;
 }
 
 .on-sns-span{
   white-space: nowrap;
 }
-
-
 
 #facebook{
   background-color: #3468AF;
@@ -113,7 +123,30 @@ img{
   background-color: #87BF3F;
 }
 
+.footer-category-area{
+  padding: 0px;
+}
 
+.footer-category-1{
+  margin-bottom: 20px;
+}
+
+.footer-category-span{
+  font-size: 20px;
+  color: white;
+  margin-right: 45px;
+  text-decoration: underline;
+}
+
+.footer-copyright{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-copyright-span{
+  font-size: 15px;
+  color: white;
+}
 
 
 
