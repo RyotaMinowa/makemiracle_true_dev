@@ -1,10 +1,6 @@
 
 /* ーーーーーーーー記事カードのCSSーーーーーーーー */
 
-img{
-  margin:0 ;
-}
-
 .new-article-section{
   background-color: #F7F7F7;
 }
@@ -48,6 +44,11 @@ img{
 .article-card-meta{
   margin-top: 30px;
   margin-bottom:0px;
+}
+
+.article-card-meta i{
+  margin-right: 5px;
+  font-size: 22px;
 }
 
 .category-span{
