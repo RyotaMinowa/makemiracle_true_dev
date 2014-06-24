@@ -1,6 +1,6 @@
 /* feature-article start */
 .feature-article-big-text-area{
-	background-image: url("https://ssl-stat.amebame.com/pub/content/8265872137/user/article/28379627122935870/b52dffb7ebcbad3e3cfae5d11790ee54/cached.jpg");
+	background-image: url("");
 	background-repeat: no-repeat;
 	background-size:100% auto;
 	background-position:50% 50%; 
@@ -60,8 +60,11 @@ h1.feature-article-small-text{
 	font-weight: 700;
 }
 
+<<<<<<< HEAD
+=======
 
 
 
 
+>>>>>>> b285be6b43b26450aa363242a17abd7d3879e318
 /* feature-article end */

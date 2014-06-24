@@ -1,6 +1,6 @@
 /* feature-article start */
 .feature-article-big-text-area{
-	background-image: url("https://ssl-stat.amebame.com/pub/content/8265872137/user/article/28379627122935870/b52dffb7ebcbad3e3cfae5d11790ee54/cached.jpg");
+	background-image: url("");
 	background-repeat: no-repeat;
 	background-size:100% auto;
 	background-position:50% 50%; 
@@ -11,12 +11,7 @@
 	padding-bottom: 20px;
 }
 
-.feature-article-section-wrap{
-	margin-bottom:10px;
-	border-bottom:1px solid #dedddd;  
- 	box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
-  	-webkit-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
-  	-moz-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+.feature-article-small-text-area{
 }
 
 h1.feature-article-text{
@@ -59,9 +54,5 @@ h1.feature-article-small-text{
 	line-height: 39px;
 	font-weight: 700;
 }
-
-
-
-
 
 /* feature-article end */

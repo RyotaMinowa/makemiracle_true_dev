@@ -11,13 +11,11 @@
     	<!-- Original Style -->
     	<link href="css/style.css" rel="stylesheet">
     	<link rel="stylesheet" href="css/featured.css"><!-- いっちーのcss -->
-<<<<<<< HEAD
     	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     	<link rel="stylesheet" href="./css/social.css">
-=======
     	<link href="css/shu_style.css" rel="stylesheet"><!-- しゅうくんのcss -->
 
->>>>>>> 97d4578da2ed69037e582018bd8cb202b88b3571
+
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
@@ -29,8 +27,6 @@
 	<body>
 <<<<<<< HEAD
 
-		
-=======
 		<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -40,6 +36,8 @@
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));
 	</script>
+=======
+>>>>>>> b285be6b43b26450aa363242a17abd7d3879e318
 		<header>
 			<div class=" header-wrap container">
 				<div class="header-wrap-row row">
@@ -57,7 +55,7 @@
 								<p class="header-follow-desc">
 									公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
 								</p>
-								<div class="fb-like-box" data-href="https://www.facebook.com/makemiracle90s" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-height="400"></div>
+							</div>
 							</div>
 							<button class="header-follow-twitter-box">
 							</button>
@@ -66,7 +64,6 @@
 				</div>				
 			</div>
 		</header>
->>>>>>> 97d4578da2ed69037e582018bd8cb202b88b3571
 
 		<section class="feature-article-section">
 			<div class="feature-article-section-wrap container">
@@ -75,12 +72,7 @@
 						<div class="feature-article-big-row row">
 							<div class="col-xs-12 feature-article-big-text-area">
 								<!--↑こいつにBGI-->
-								<h1 class="feature-article-text">	まるでインディ・ジョーンズの世界！栃木にある巨大地下空間「大谷資料館」
-<<<<<<< HEAD
-									</h1>
-=======
-								</h1>
->>>>>>> 97d4578da2ed69037e582018bd8cb202b88b3571
+								<h1 class="feature-article-text">	まるでインディ・ジョーンズの世界！栃木にある巨大地下空間「大谷資料館」</h1>
 							</div>
 						</div>
 					</div>
@@ -138,7 +130,7 @@
 							</h1>
 		              		<p class="article-card-meta">
 								<span class="category-span">ライフ・社会</span>
-								<span class="date-span">2014.06.18</span>
+								<i class="fa fa-clock-o"></i><span class="date-span">2014.06.18</span>
 							</p>
 						</div>
 					</div>
@@ -161,18 +153,23 @@
 					</div>
 		        </div>
 		    </article>
-			<div class="more-wrap container">
+		    </section>
+			<!-- <div class="more-wrap container">
 				<div class="more-row row">
 					<div class="col-xs-12 more-desc">
-						<p class="more-text"><!--もっと読む的な--></p>
+						<a href=""><p class="more-text">もっと読む</p></a>
 					</div>
 				</div>
-			</div>
-		</section>
-
-
+			</div> -->
 
 		<section class="pop-article-section">
+			<div class="pop-h container">
+				<div class="pop-h-row row">
+					<div class="col-xs-12 pop-h-desc">
+						<p class="pop-h-text">人気記事</p>
+					</div>
+				</div>
+			</div>
 			<article class="article-card">
 				<div class="article-card-wrap container">
 					<div class="article-card-row row">
@@ -184,7 +181,7 @@
 							</h1>
 		              		<p class="article-card-meta">
 								<span class="category-span">ライフ・社会</span>
-								<span class="date-span">2014.06.18</span>
+								<i class="fa fa-clock-o"></i><span class="date-span">2014.06.18</span>
 							</p>
 						</div>
 					</div>
@@ -202,7 +199,7 @@
 							</h1>
 		              		<p class="article-card-meta">
 								<span class="category-span">ライフ・社会</span>
-								<span class="date-span">2014.06.18</span>
+								<i class="fa fa-clock-o"></i><span class="date-span">2014.06.18</span>
 							</p>
 						</div>
 					</div>
@@ -219,68 +216,65 @@
 							</h1>
 		              		<p class="article-card-meta">
 								<span class="category-span">ライフ・社会</span>
-								<span class="date-span">2014.06.18</span>
+								<i class="fa fa-clock-o"></i><span class="date-span">2014.06.18</span>
 							</p>
 						</div>
 					</div>
 		        </div>
 		    </article>
 
-			<div class="more-wrap container">
+			<!--<div class="more-wrap container">
 				<div class="more-row row">
 					<div class="col-xs-12 more-desc">
-						<p class="more-text"></p>
+						<p class="more-text">もっと読む</p>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</section>
 
-		<section class="ad-section">
-		</section>
+		<!--<section class="ad-section">
+		</section>-->
 
 		<footer>
-			<div class="footer-wrap container">
-				<div class="footer-wrap-row row">
-					<div class="footer-social-buttons col-xs-12 ">
-						<div class="footer-social-buttons-row row">
-							<p class="footer-social-text col-xs-12">
-							</p>
-							<button class="footer-social-button col-xs-4">
-								<div class="footer-social-button-row row">
-									<i class="footer-social-icon col-xs-2"></i>
-									<p class="footer-social-text col-xs-10">
-										<span class="follow-span"></span>
-										<span class="on-sns-span"></span>
-									</p>
-								</div>
-							</button>
-							<button class="footer-social-button col-xs-4">
-								<div class="footer-social-button-row row">
-									<i class="footer-social-icon col-xs-2"></i>
-									<p class="footer-social-text col-xs-10">
-										<span class="follow-span"></span>
-										<span class="on-sns-span"></span>
-									</p>
-								</div>
-							</button>
-							<button class="footer-social-button col-xs-4">
-								<div class="footer-social-button-row row">
-									<i class="footer-social-icon col-xs-2"></i>
-									<p class="footer-social-text col-xs-10">
-										<span class="follow-span"></span>
-										<span class="on-sns-span"></span>
-									</p>
-								</div>
-							</button>
-						</div>
-					</div>
-					<div class="footer-category-area col-xs-12">
-					</div>
-					<div class="footer-copyright col-xs-12">
-					</div>				
-				</div>
-			</div>
-		</footer>
+	    	<div class="footer-wrap container">
+	        	<div class="footer-wrap-row row">
+	          		<div class="footer-social-buttons col-xs-12">
+	            		<div class="footer-social-buttons-row row">
+	              			<p class="footer-social-text-top col-xs-12">
+	                			Spotlightの公式アカウントをフォローしよう
+	              			</p>
+	              			<button class="footer-social-button col-xs-4 footer-social-facebook">
+	              			</button>
+	              			<button class="footer-social-button col-xs-4 footer-social-twitter">
+	              			</button>
+	              			<button class="footer-social-button col-xs-4 footer-social-feedly" >
+	              			</button>
+	            		</div>
+	          		</div> 
+
+			        <div class="footer-category-area col-xs-12">
+			            <div class="footer-category-1">
+			              	<span class="footer-category-span">トップ</span>
+			              	<span class="footer-category-span">トレンド</span>
+			              	<span class="footer-category-span">エンタメ・カルチャー</span><br>
+			              	<span class="footer-category-span">ライフ・社会</span>
+			              	<span class="footer-category-span">コラム</span>
+			              	<span class="footer-category-span">人気記事</span><br>
+			            </div>
+			            <div class="footer-category-2">
+			              	<span class="footer-category-span">運営会社</span>
+			              	<span class="footer-category-span">利用規約</span>
+			              	<span class="footer-category-span">プライバシーポリシー</span><br>
+			              	<span class="footer-category-span">お問い合わせ</span>
+			            </div>
+			          </div>
+
+			        <div class="footer-copyright col-xs-12">
+			        	<span class="footer-copyright-span">Makemiracle. All Rights Reserved</span>
+			        </div>
+	        	</div>
+	     	</div>
+    </footer>
 	<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

@@ -71,8 +71,9 @@ header .header-wrap .header-wrap-row .header-follow-toggle button{
 	
 }
 
-.pop-h-desc p{
-	margin-top:32px;
+<<<<<<< HEAD
+.header-follow-desc {
+	color:#fff;
 }
 
 /* feature-article start */
@@ -122,6 +123,11 @@ h1.feature-article-text{
 	display: block;
 }
 
+=======
+.pop-h-desc p{
+	margin-top:32px;
+}
+>>>>>>> b285be6b43b26450aa363242a17abd7d3879e318
 
 .feature-article-small-text-area{
 
