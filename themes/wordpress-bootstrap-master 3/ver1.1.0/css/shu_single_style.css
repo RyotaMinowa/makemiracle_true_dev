@@ -1,0 +1,10 @@
+.single-follow-twitter-box{
+	height: 60px; /* 目分量ですすみません */
+	width: 580px; /* paddingをどこにかければいいか分からなかったので直接指定 */
+	background-color: #55ACEE;
+	color: white;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
