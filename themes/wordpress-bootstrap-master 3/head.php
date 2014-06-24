@@ -13,13 +13,10 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">	
 	<!-- Original Style -->
 	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/featured.css"><!-- いっちーのcss -->
 	<link rel="stylesheet" type="text/css" href="<?php get_stylesheet_directory_uri(); ?>/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./css/social.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

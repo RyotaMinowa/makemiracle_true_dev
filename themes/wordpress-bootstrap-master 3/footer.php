@@ -1,43 +1,67 @@
-<footer class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
-	<div class="row">
-		<div class="topiclabel col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<span class="enheader">Social Follow</span><span class="jpheader">SNSでフォロー</span>
-		</div>
-	</div>
-	<div class="fb-like-box col-xs-12 col-sm-12 col-md-12 col-lg-12 commentarea">
-	    <div class="fb-like-box" data-href="https://www.facebook.com/makemiracle90s" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-width="100%" ></div>
-	</div>
-	
-	<!-- Social account button start -->
-	<a class="" href="https://twitter.com/makemiracle90s"onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
-	    <div class="col-xs-6 col-sm-12 col-md-6 col-lg-12  button twitter">
-				<i class="fa fa-twitter" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　メークミラクル公式Twitterをフォロー</span>
-	    </div>
-	</a>
-	<a href="http://instagram.com/makemiracle90s"onclick="window.open(this.href, 'FBwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
-		<div class="col-xs-6 col-sm-12 col-md-6 col-lg-12 button facebook" >
-			<i class="fa fa-instagram" style="font-size:3rem; vertical-align: middle;"></i><span class="share_text">　インスタグラム公式アカウントをフォロー</span>
-		</div>
-	</a>
-	<div id="category" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" role="contentinfo">
-		<span class="enheader">Category</span><span class="jpheader">カテゴリ</span>
-	</div>
-	<div calss="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-		<?php $cat_all = get_terms( "category", "fields=all&get=all" );foreach($cat_all as $value):?>
-		<a href="<?php echo get_category_link($value->term_id); ?>">
-			<div class="categoryitem col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-				<?php echo $value->name;?>
-			</div>
-		</a>
-		<?php endforeach; ?>
-	</div>
-</footer> <!-- end footer -->
+	<footer>
+      <div class="footer-wrap container">
+        <div class="footer-wrap-row row">
+          <div class="footer-social-buttons col-xs-12">
+            <div class="footer-social-buttons-row row">
+              <p class="footer-social-text-top col-xs-12">
+                Makemiracle90sの公式アカウントをフォローしよう
+              </p>
+              <button class="footer-social-button col-xs-4" id="facebook">
+                <div class="footer-social-button-row row">
+                  <i class="footer-social-icon col-xs-2 fa fa-facebook fa-1x"></i> <!--意味分からんとこにくるし色どうやって変えるか分からんわ！！！-->
+                  <p class="footer-social-text-sns col-xs-10">
+                    <span class="follow-span">Follow</span><br>
+                    <span class="on-sns-span">on Facebook</span>
+                  </p>
+                </div>
+              </button>
+              <button class="footer-social-button col-xs-4" id="twitter">
+                <div class="footer-social-button-row row">
+                  <i class="footer-social-icon col-xs-2 fa fa-twitter fa-1x"></i>
+                  <p class="footer-social-text-sns col-xs-10">
+                    <span class="follow-span">Follow</span><br> <!--なぜか改行されないからbr入れた-->
+                    <span class="on-sns-span">on Twitter</span>
+                  </p>
+                </div>
+              </button>
+              <button class="footer-social-button col-xs-4" id="feedly">
+                <div class="footer-social-button-row row">
+                  <i class="footer-social-icon col-xs-2"></i>
+                  <p class="footer-social-text-sns col-xs-10">
+                    <span class="follow-span">Follow</span><br>
+                    <span class="on-sns-span">on Feedly</span>
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div> 
 
+          <div class="footer-category-area col-xs-12">
+            <div class="footer-category-1">
+              <span class="footer-category-span">トップ</span>
+              <span class="footer-category-span">トレンド</span>
+              <span class="footer-category-span">エンタメ・カルチャー</span><br>
+              <span class="footer-category-span">ライフ・社会</span>
+              <span class="footer-category-span">コラム</span>
+              <span class="footer-category-span">人気記事</span><br>
+            </div>
+            <div class="footer-category-2">
+              <span class="footer-category-span">運営会社</span>
+              <span class="footer-category-span">利用規約</span>
+              <span class="footer-category-span">プライバシーポリシー</span><br>
+              <span class="footer-category-span">お問い合わせ</span>
+             </div>
+          </div>
+
+          <div class="footer-copyright col-xs-12">
+            <span class="footer-copyright-span">Makemiracle, Inc. All Rights Reserved</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+	<script src="js/bootstrap.min.js"></script>
 	<?php wp_footer(); // js scripts are inserted using this function ?>
-</div> <!-- end #page in header -->
-</div><!-- end row in header -->		
-</div> <!-- end row in container --></div> <!-- end row in container -->
-<script type="text/javascript">
+	<script type="text/javascript">
 	jQuery(document).ready(function() {
     	jQuery('#drawerbtn').sidr({
         	 source: '.navbar-responsive-collapse' ,
@@ -45,7 +69,4 @@
      	});
      	jQuery(".sidr-class-fb-like-box").prepend("<iframe name='f21a08ec24' width='1000px' height='1000px' frameborder='0' allowtransparency='true' scrolling='no' title='fb:like_box Facebook Social Plugin' src='http://www.facebook.com/v2.0/plugins/like_box.php?app_id=452572048204794&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FV80PAcvrynR.js%3Fversion%3D41%23cb%3Df3de90866c%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%253A8888%252Ff2c62af3a8%26relation%3Dparent.parent&amp;color_scheme=light&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmakemiracle90s&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false' style='border: none; visibility: visible; ' class=''></iframe>");
 	});
-</script>
-</body>
-
-</html>
+	</script>
