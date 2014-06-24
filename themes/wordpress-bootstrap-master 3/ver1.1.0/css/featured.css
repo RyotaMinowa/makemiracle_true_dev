@@ -11,7 +11,12 @@
 	padding-bottom: 20px;
 }
 
-.feature-article-small-text-area{
+.feature-article-section-wrap{
+	margin-bottom:10px;
+	border-bottom:1px solid #dedddd;  
+ 	box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+  	-webkit-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+  	-moz-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
 }
 
 h1.feature-article-text{
@@ -54,6 +59,8 @@ h1.feature-article-small-text{
 	line-height: 39px;
 	font-weight: 700;
 }
+
+
 
 
 
