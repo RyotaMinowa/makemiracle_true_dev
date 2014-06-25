@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=640,initial-scale=1.0">
+    	<meta name="viewport" content="width=640">
     	<!-- Bootstrap -->
     	<link rel="stylesheet" href="css/bootstrap.min.css">
     	<link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -23,6 +23,22 @@
 	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
 	    <script src="js/jquery.js"></script>
+	    <script type="text/javascript">
+			$(document).ready(function(){
+			    var flg = "close";
+			    $(".header-follow-toggle-button").click(function(){
+			        if(flg == "close"){
+			            $(this).removeClass("header-follow-toggle-button").addClass("header-follow-toggle-button-active"); 
+			            $(".header-follow-toggle").removeClass("header-follow-toggle-bg").addClass("header-follow-toggle-bg-active"); 
+			            flg = "open";
+			        }else{
+			            $(this).removeClass("header-follow-toggle-button-active").addClass("header-follow-toggle-button"); 
+			            $(".header-follow-toggle-bg-active").removeClass("header-follow-toggle-bg-active").addClass("header-follow-toggle-bg"); 
+			            flg = "close";
+			        }
+			    });
+			});
+		</script>
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -42,8 +58,8 @@
 					<div class="header-logo-div col-xs-8 col-xs-8 col-sm-8 col-md-8 col-lg-8 text-center">
 						<img class="header-logo" src="img/logo.png">
 					</div>
-					<div class="header-follow-toggle col-xs-2 col-sm-2 col-md-2 col-lg-2">
-						<button class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-follow">
+					<div class="header-follow-toggle header-follow-toggle-bg col-xs-2">
+						<button type="button" class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-follow" onclick="">
 						</button>	
 					</div>
 					<div id="header-follow" class="collapse navbar-collapse header-follow col-xs-12 col-sm-12 col-md-12 col-lg-12">
