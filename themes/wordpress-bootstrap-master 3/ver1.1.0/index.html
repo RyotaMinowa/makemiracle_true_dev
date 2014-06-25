@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width,initial-scale=0.5">
+    	<meta name="viewport" content="width=640,initial-scale=1.0">
     	<!-- Bootstrap -->
     	<link rel="stylesheet" href="css/bootstrap.min.css">
     	<link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -25,41 +25,46 @@
 	    <script src="js/jquery.js"></script>
 	</head>
 	<body>
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "http://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-	</script>
-	<header>
-		<div class=" header-wrap container">
-			<div class="header-wrap-row row">
-				<div class="header-category-toggle col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				</div>
-				<div class="header-logo-div col-xs-8 col-sm-8 col-md-8 col-lg-8 text-center">
-					<img class="header-logo" src="img/logo.png">
-				</div>
-				<div class="header-follow-toggle col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					<button class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-follow">
-					</button>	
-				</div>
-				<div id="header-follow" class="collapse navbar-collapse col-xs-12 col-sm-12 col-md-12 col-lg-12  header-follow">
-						<div class="header-follow-row row">
-							<p class="header-follow-desc">
-								公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
-							</p>
-						</div>
-						</div>
-						<button class="header-follow-twitter-box">
-						</button>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "http://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<header>
+			<div class=" header-wrap container">
+				<div class="header-wrap-row row">
+					<div class="header-category-toggle col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					</div>
+					<div class="header-logo-div col-xs-8 col-xs-8 col-sm-8 col-md-8 col-lg-8 text-center">
+						<img class="header-logo" src="img/logo.png">
+					</div>
+					<div class="header-follow-toggle col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<button class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-follow">
+						</button>	
+					</div>
+					<div id="header-follow" class="collapse navbar-collapse header-follow col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="header-social-buttons col-xs-12">
+		            		<div class="header-social-buttons-row row">
+		              			<p class="header-social-text-top col-xs-12">
+		                			公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
+		              			</p>
+		              			<button class="header-social-button col-xs-4 header-social-facebook">
+		              			</button>
+		              			<button class="header-social-button col-xs-4 header-social-twitter">
+		              			</button>
+		              			<button class="header-social-button col-xs-4 header-social-feedly" >
+		              			</button>
+		            		</div>
+		          		</div> 
 					</div>
 				</div>
-			</div>				
-		</div>
-	</header>
+			</div>
+		</header>
+>>>>>>> a817639003121a1f3306163f059c780d6afdc95d
 
 	<section class="feature-article-section">
 		<div class="feature-article-section-wrap container">
@@ -231,14 +236,13 @@
 
 	<!--<section class="ad-section">
 	</section>-->
-
 	<footer>
     	<div class="footer-wrap container">
         	<div class="footer-wrap-row row">
           		<div class="footer-social-buttons col-xs-12">
             		<div class="footer-social-buttons-row row">
               			<p class="footer-social-text-top col-xs-12">
-                			Spotlightの公式アカウントをフォローしよう
+                			公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
               			</p>
               			<button class="footer-social-button col-xs-4 footer-social-facebook">
               			</button>
@@ -248,7 +252,6 @@
               			</button>
             		</div>
           		</div> 
-
 		        <div class="footer-category-area col-xs-12">
 		            <div class="footer-category-1">
 		              	<span class="footer-category-span">トップ</span>
