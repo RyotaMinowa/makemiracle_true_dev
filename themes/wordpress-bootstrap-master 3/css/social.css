@@ -1,6 +1,6 @@
 /* social */
 .button {
-	height: 80px;
+  height: 80px;
     font-size: 24px;
     font-weight:bold;
     text-decoration:none;
@@ -13,19 +13,19 @@
 }
 
 .button i {
-	font-size: 48px;
+  font-size: 48px;
 }
 
 
 .facebook {
-	background-color: #3468AF;
+  background-color: #3468AF;
 }
 
 .twitter {
-	background-color: #55ACEE;
+  background-color: #55ACEE;
 }
 
 
 .line {
-	background-color: #00C300;
+  background-color: #00C300;
 }
