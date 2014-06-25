@@ -7,7 +7,7 @@
 					$image_id = get_post_thumbnail_id();
 					$image_url = wp_get_attachment_image_src($image_id, true);
 				?>
-				<img src="<?php echo $image_url[0]; ?>"><!--記事サムネイル-->
+				<img class="article-thumb" src="<?php echo $image_url[0]; ?>"><!--記事サムネイル-->
 			</div>
 			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 article-card-desc">
 				<h1 class="article-card-text"><?php the_title(); ?></h1>
