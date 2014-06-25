@@ -58,18 +58,39 @@ header .header-wrap .header-wrap-row .header-follow-toggle button{
 	height: auto;
 }
 
-.header-follow .header-follow-row .header-follow-desc{
-	font-size: 26px;
+
+
+.header-social-buttons-row{
+  position: relative;
 }
 
-.header-follow .header-follow-row .header-follow-fb-box{
-	width:600px;
-	height:400px;
-	background-color: white;
+.header-social-button{
+  background-color: red;
+  margin:0px;
+  height: 72px;
+  margin-bottom: 60px;                                                                           
+  width: 193px;
+  border: none;
+
 }
-.header-follow .header-follow-row.header-follow-twitter-box{
-	
+
+
+
+.header-social-facebook{
+  background-image:url(../img/social-sprt.png) ;
+  background-position: 0px 0px;
 }
+
+.header-social-twitter{
+  background-image:url(../img/social-sprt.png) ;
+  background-position: 0px 288px;
+}
+
+.header-social-feedly{
+  background-image:url(../img/social-sprt.png) ;
+  background-position: 0px 216px;
+}
+
 
 .pop-h-desc p{
 	margin-top:32px;
