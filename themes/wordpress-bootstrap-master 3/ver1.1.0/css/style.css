@@ -1,331 +1,269 @@
 @charset "UTF-8";
 
-/*general*/
-*{
-	font-family:'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-	font-size: 30px;
-	line-height: 37px;
+* {
+font-family:'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+font-size:30px;
+line-height:37px;
 }
 
-html{
-	background-color: #f0f0f0;
+html {
+background-color:#f0f0f0;
 }
 
-.container{
-	width: 100%;
-	height: 100%;
-
+.container {
+width:100%;
+height:100%;
 }
 
-.row{
-	height: 100%;
+header {
+width:100%;
+height:89px;
+background-color:#fc0;
 }
 
-
-/*header*/
-header{
-	width: 100%;
-	height: 89px;
-	background-color: #fc0;
+header .header-wrap .header-wrap-row img {
+width:400px;
+margin-top:10px;
 }
 
-header .header-wrap{
-
+header .header-wrap .header-wrap-row .header-follow-toggle button {
+width:100%;
+height:100%;
+border:none;
+background-image:url("../img/follow.png");
+background-position:center center;
+background-repeat:no-repeat;
+margin:0;
 }
 
-header .header-wrap .header-wrap-row img{
-	width: 400px;
-	margin-top:10px;
+header .header-wrap .header-wrap-row .header-follow-toggle button.header-follow-toggle-button-active {
+width:100%;
+height:100%;
+border:none;
+background-image:url("../img/follow-active.png");
+background-position:center center;
+background-repeat:no-repeat;
+background-color:#000;
+margin:0;
 }
 
-header .header-wrap .header-follow-toggle{
-	height: 100%;
+.header-follow {
+width:100%;
+text-align:center;
+background-color:#000;
+height:auto;
+padding:45px 15px 48px;
 }
 
-header .header-wrap .header-follow-toggle-bg-active{
-	background-color: black;
+.header-social-buttons {
+width:100%;
 }
 
-header .header-wrap .header-wrap-row .header-follow-toggle button{
-	width:100%;
-	height: 100%;
-	border: none;	
-	margin: 0px;
-	background-image: url("../img/follow.png");
-	background-position: center center; 
-	background-repeat: no-repeat;
+.header-social-button {
+height:72px;
+width:193px;
+border:none;
+margin:45px 0 30px;
 }
 
-header .header-wrap .header-wrap-row .header-follow-toggle button.header-follow-toggle-button-active{
-	width:100%;
-	height: 100%;
-	border: none;	
-	margin: 0px;
-	background-image: url("../img/follow-active.png");
-	background-position: center center; 
-	background-repeat: no-repeat;
-	background-color: black;
+.header-social-buttons-row {
+width:100%;
+text-align:center;
+background-color:#000;
+margin:0;
 }
 
-/*header toggle*/
-.header-follow{
-	padding: 45px 15px 48px;
-	width: 100%;
-	text-align: center;
-	background-color:black;
-	height: auto;
+.feature-article-big-text-area {
+background-image:url("https://ssl-stat.amebame.com/pub/content/8265872137/user/article/28379627122935870/b52dffb7ebcbad3e3cfae5d11790ee54/cached.jpg");
+background-repeat:no-repeat;
+background-size:100% auto;
+background-position:50% 50%;
+background-color:#000;
+height:400px;
+width:100%;
+text-align:center;
+padding-bottom:20px;
 }
 
-.header-social-text-top{
-  color: white;
+.feature-article-section-wrap {
+margin-bottom:10px;
+padding-bottom:20px;
+border-bottom:1px solid #dedddd;
+box-shadow:rgba(102, 102, 102, 0.2) 0 2px 2px 2px;
+-webkit-box-shadow:rgba(102, 102, 102, 0.2) 0 2px 2px 2px;
+-moz-box-shadow:rgba(102, 102, 102, 0.2) 0 2px 2px 2px;
 }
 
-.header-social-buttons{
-	width:100%;
+h1.feature-article-text {
+color:#fff;
+width:95%;
+text-align:left;
+background-color:rgba(0,0,0,.6);
+line-height:46px;
+font-size:34px;
+font-weight:700;
+vertical-align:middle;
+position:absolute;
+margin-bottom:0;
+bottom:20px;
+padding:30px 20px;
 }
 
-.header-social-button{
-  margin:0px;
-  height: 72px;
-
-  margin:45px 0px 30px 0px;                                                                           
-  width: 193px;
-  border: none;
-
+.feature-article-small {
+margin-top:20px;
 }
 
-.header-social-buttons-row{
-	width: 100%;
-	text-align: center;
-	background-color: black;
-  	margin:0px;
+.feature-article-small img {
+width:100%;
+display:block;
 }
 
-.header-social-facebook{
-  background-image:url(../img/social-sprt.png) ;
-  background-position: 0px 0px;
+h1.feature-article-small-text {
+font-size:30px;
+line-height:39px;
+font-weight:700;
 }
 
-.header-social-twitter{
-  background-image:url(../img/social-sprt.png) ;
-  background-position: 0px 288px;
+.pop-h-desc p {
+margin-top:32px;
 }
 
-.header-social-feedly{
-  background-image:url(../img/social-sprt.png) ;
-  background-position: 0px 216px;
+.article-card-wrap {
+margin-top:10px;
+border:0 1px solid #dedddd;
+border-top:1px solid #dedddd;
+border-bottom:1px solid #dedddd;
+box-shadow:rgba(102, 102, 102, 0.2) 0 2px 2px 2px;
+-webkit-box-shadow:rgba(102, 102, 102, 0.2) 0 2px 2px 2px;
+-moz-box-shadow:rgba(102, 102, 102, 0.2) 0 2px 2px 2px;
 }
 
-/* feature-article start */
-.feature-article-big-text-area{
-	background-image: url("https://ssl-stat.amebame.com/pub/content/8265872137/user/article/28379627122935870/b52dffb7ebcbad3e3cfae5d11790ee54/cached.jpg");
-	background-repeat: no-repeat;
-	background-size:100% auto;
-	background-position:50% 50%; 
-	background-color:#000;
-	height: 400px;
-	width:100%;
-	text-align: center;
-	padding-bottom: 20px;
+.article-card-row {
+background-color:#FFF;
+width:640px;
+padding:30px;
 }
 
-.feature-article-section-wrap{
-	margin-bottom:10px;
-	padding-bottom: 20px;
-	border-bottom:1px solid #dedddd;  
- 	box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
-  	-webkit-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
-  	-moz-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+.article-card-thum {
+background-color:#FFF;
+width:156px;
+height:156px;
+margin-right:25px;
+margin-top:10px;
+padding:0;
 }
 
-h1.feature-article-text{
-	color: #fff;
-	width:95%;
-	padding:30px 20px;
-	text-align: left;
-	background-color:rgba(0,0,0,.6);
-	line-height: 46px;
-	font-size: 34px;
-	font-weight: 700;
-	vertical-align: middle;
-	position: absolute;
-	margin-bottom: 0px;
-	bottom:20px;
+.article-card-desc {
+background-color:#FFF;
+width:399px;
 }
 
-
-.feature-article-small{
-	margin-top: 20px;
+.article-card-text {
+line-height:37px;
+font-size:30px;
+margin:0;
 }
 
-.feature-article-small img{
-	width: 100%;
-	display: block;
+.article-card-meta {
+margin-top:30px;
+margin-bottom:0;
 }
 
-
-.feature-article-small-text-area{
-
+.article-card-meta i {
+color:#888;
+margin-right:5px;
+font-size:22px;
 }
 
-h1.feature-article-small-text{
-	font-size: 30px;
-	line-height: 39px;
-	font-weight: 700;
+.category-span {
+font-size:20px;
+color:#888;
+margin-right:33px;
 }
 
-/* ーーーーーーーーarticleーーーーーーーー */
-
-.new-article-section{
-  background-color: #F7F7F7;
+.date-span {
+font-size:20px;
+color:#888;
 }
 
-.pop-article-section{
-  background-color: #F7F7F7;
+.footer-wrap-row {
+background-color:#000;
+margin:0;
+padding:15px;
 }
 
-.pop-h-desc p{
-	margin-top:32px;
+.footer-social-text-top {
+font-size:24px;
+color:#FFF;
+text-align:center;
+margin:20px 0;
+padding:0;
 }
 
-.article-card-wrap{
-  margin-top: 10px;
-  border:0 1px solid #dedddd;
-  border-top:1px solid #dedddd;
-  border-bottom:1px solid #dedddd;  
-  box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
-  -webkit-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
-  -moz-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+.footer-social-buttons-row {
+position:relative;
 }
 
-.article-card-row{
-  background-color: white; 
-  width: 640px;
-  padding:30px;
+.footer-social-button {
+background-color:red;
+height:72px;
+width:193px;
+border:none;
+margin:0 0 60px;
 }
 
-.article-card-thum{
-  background-color: white;
-  width: 156px;
-  height: 156px;
-  margin-right:25px;
-  margin-top: 10px;
-  padding:0; /* ここ重要。あとで確認。Bootstrapが勝手にかけているmarginを相殺している*/
+.footer-category-area {
+padding:0;
 }
 
-.article-card-desc{
-  background-color:white; 
-  width: 399px; /* 400pxにするとずれる！？
-                    ----おーばーするからフロートあふれちゃうらめぇえええええ*/
+.footer-category-1 {
+margin-bottom:20px;
 }
 
-.article-card-text{
-  line-height: 37px; /* ここ、行間指定するとバランスむっちゃ悪いねんけど */
-  margin:0px; /* ここもBootstrap指定のものを相殺してる */
-  font-size: 30px;
+.footer-category-span {
+font-size:20px;
+color:#FFF;
+margin-right:45px;
+text-decoration:underline;
 }
 
-.article-card-meta{
-  margin-top: 30px;
-  margin-bottom:0px;
+.footer-copyright {
+margin-top:20px;
+text-align:center;
 }
 
-.article-card-meta i{
-  color:#888888;
-  margin-right: 5px;
-  font-size: 22px;
+.footer-copyright-span {
+font-size:15px;
+color:#FFF;
 }
 
-
-.category-span{
-  font-size: 20px;
-  color:#888888;
-  margin-right: 33px;
+.row,header .header-wrap .header-follow-toggle {
+height:100%;
 }
 
-.date-span{
-  font-size: 20px;
-  color:#888888; 
+header .header-wrap .header-follow-toggle-bg-active,.footer-wrap {
+background-color:#000;
 }
 
-/* ーーーーーーーーfooterのCSSーーーーーーーー */
-
-.footer-wrap{
-  background-color: black;
+.header-social-text-top,.footer-social-text-sns {
+color:#FFF;
 }
 
-.footer-wrap-row{
-  background-color: black;
-  margin:0px;
-  padding: 15px;
+.header-social-facebook,.footer-social-facebook {
+background-image:url(../img/social-sprt.png);
+background-position:0 0;
 }
 
-.footer-social-text-top{
-  font-size: 24px;
-  color: white;
-  margin:20px 0px 20px 0px;
-  padding:0px;
-  text-align: center;
+.header-social-twitter,.footer-social-twitter {
+background-image:url(../img/social-sprt.png);
+background-position:0 288px;
 }
 
-.footer-social-text-sns{
-  color: white;
+.header-social-feedly,.footer-social-feedly {
+background-image:url(../img/social-sprt.png);
+background-position:0 216px;
 }
 
-.footer-social-buttons-row{
-  position: relative;
+.new-article-section,.pop-article-section {
+background-color:#F7F7F7;
 }
-
-
-.footer-social-button{
-  background-color: red;
-  margin:0px;
-  height: 72px;
-  margin-bottom: 60px;                                                                           
-  width: 193px;
-  border: none;
-
-}
-
-
-
-.footer-social-facebook{
-  background-image:url(../img/social-sprt.png) ;
-  background-position: 0px 0px;
-}
-
-.footer-social-twitter{
-  background-image:url(../img/social-sprt.png) ;
-  background-position: 0px 288px;
-}
-
-.footer-social-feedly{
-  background-image:url(../img/social-sprt.png) ;
-  background-position: 0px 216px;
-}
-
-.footer-category-area{
-  padding: 0px;
-}
-
-.footer-category-1{
-  margin-bottom: 20px;
-}
-
-.footer-category-span{
-  font-size: 20px;
-  color: white;
-  margin-right: 45px;
-  text-decoration: underline;
-}
-
-.footer-copyright{
-  margin-top: 20px;
-  text-align: center;
-}
-
-.footer-copyright-span{
-  font-size: 15px;
-  color: white;
-}
-
