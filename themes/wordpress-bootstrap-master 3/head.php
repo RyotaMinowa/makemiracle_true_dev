@@ -1,7 +1,8 @@
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=0.5">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=640">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>	
 		<!-- media-queries.js (fallback) -->
 		<!--[if lt IE 9]>
