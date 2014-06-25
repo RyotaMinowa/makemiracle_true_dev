@@ -1,62 +1,40 @@
-	<footer>
+  <footer>
       <div class="footer-wrap container">
-        <div class="footer-wrap-row row">
-          <div class="footer-social-buttons col-xs-12">
-            <div class="footer-social-buttons-row row">
-              <p class="footer-social-text-top col-xs-12">
-                Makemiracle90sの公式アカウントをフォローしよう
-              </p>
-              <button class="footer-social-button col-xs-4" id="facebook">
-                <div class="footer-social-button-row row">
-                  <i class="footer-social-icon col-xs-2 fa fa-facebook fa-1x"></i> <!--意味分からんとこにくるし色どうやって変えるか分からんわ！！！-->
-                  <p class="footer-social-text-sns col-xs-10">
-                    <span class="follow-span">Follow</span><br>
-                    <span class="on-sns-span">on Facebook</span>
-                  </p>
+          <div class="footer-wrap-row row">
+              <div class="footer-social-buttons col-xs-12">
+                <div class="footer-social-buttons-row row">
+                    <p class="footer-social-text-top col-xs-12">
+                      公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
+                    </p>
+                    <button class="footer-social-button col-xs-4 footer-social-facebook">
+                    </button>
+                    <button class="footer-social-button col-xs-4 footer-social-twitter">
+                    </button>
+                    <button class="footer-social-button col-xs-4 footer-social-feedly" >
+                    </button>
                 </div>
-              </button>
-              <button class="footer-social-button col-xs-4" id="twitter">
-                <div class="footer-social-button-row row">
-                  <i class="footer-social-icon col-xs-2 fa fa-twitter fa-1x"></i>
-                  <p class="footer-social-text-sns col-xs-10">
-                    <span class="follow-span">Follow</span><br> <!--なぜか改行されないからbr入れた-->
-                    <span class="on-sns-span">on Twitter</span>
-                  </p>
+              </div> 
+            <div class="footer-category-area col-xs-12">
+                <div class="footer-category-1">
+                    <span class="footer-category-span">トップ</span>
+                    <span class="footer-category-span">トレンド</span>
+                    <span class="footer-category-span">エンタメ・カルチャー</span><br>
+                    <span class="footer-category-span">ライフ・社会</span>
+                    <span class="footer-category-span">コラム</span>
+                    <span class="footer-category-span">人気記事</span><br>
                 </div>
-              </button>
-              <button class="footer-social-button col-xs-4" id="feedly">
-                <div class="footer-social-button-row row">
-                  <i class="footer-social-icon col-xs-2"></i>
-                  <p class="footer-social-text-sns col-xs-10">
-                    <span class="follow-span">Follow</span><br>
-                    <span class="on-sns-span">on Feedly</span>
-                  </p>
+                <div class="footer-category-2">
+                    <span class="footer-category-span">運営会社</span>
+                    <span class="footer-category-span">利用規約</span>
+                    <span class="footer-category-span">プライバシーポリシー</span><br>
+                    <span class="footer-category-span">お問い合わせ</span>
                 </div>
-              </button>
-            </div>
-          </div> 
+              </div>
 
-          <div class="footer-category-area col-xs-12">
-            <div class="footer-category-1">
-              <span class="footer-category-span">トップ</span>
-              <span class="footer-category-span">トレンド</span>
-              <span class="footer-category-span">エンタメ・カルチャー</span><br>
-              <span class="footer-category-span">ライフ・社会</span>
-              <span class="footer-category-span">コラム</span>
-              <span class="footer-category-span">人気記事</span><br>
+            <div class="footer-copyright col-xs-12">
+              <span class="footer-copyright-span">Makemiracle. All Rights Reserved</span>
             </div>
-            <div class="footer-category-2">
-              <span class="footer-category-span">運営会社</span>
-              <span class="footer-category-span">利用規約</span>
-              <span class="footer-category-span">プライバシーポリシー</span><br>
-              <span class="footer-category-span">お問い合わせ</span>
-             </div>
           </div>
-
-          <div class="footer-copyright col-xs-12">
-            <span class="footer-copyright-span">Makemiracle, Inc. All Rights Reserved</span>
-          </div>
-        </div>
       </div>
     </footer>
 	<script src="js/bootstrap.min.js"></script>

@@ -1,0 +1,31 @@
+/* social */
+.button {
+  height: 80px;
+    font-size: 24px;
+    font-weight:bold;
+    text-decoration:none;
+    border: none;
+    display:block;
+    text-align:center;
+    padding:8px 0 10px;
+    color:#fff;
+    line-height: ;
+}
+
+.button i {
+  font-size: 48px;
+}
+
+
+.facebook {
+  background-color: #3468AF;
+}
+
+.twitter {
+  background-color: #55ACEE;
+}
+
+
+.line {
+  background-color: #00C300;
+}
