@@ -222,10 +222,7 @@ h1.feature-article-small-text{
 .article-card-text{
   line-height: 37px; /* ここ、行間指定するとバランスむっちゃ悪いねんけど */
   margin:0px; /* ここもBootstrap指定のものを相殺してる */
-  font-size: 30px; /* 下に余裕ないっす
-                      ●----３行想定で絶対値指定してるから。
-                      ----card-rowの156px外せばok　→なんでcard-rowがかかわってくる？
-                      */
+  font-size: 30px;
 }
 
 .article-card-meta{
@@ -235,18 +232,15 @@ h1.feature-article-small-text{
 
 .article-card-meta i{
   color:#888888;
-}
-
-.article-card-meta i{
   margin-right: 5px;
   font-size: 22px;
 }
+
 
 .category-span{
   font-size: 20px;
   color:#888888;
   margin-right: 33px;
-
 }
 
 .date-span{
@@ -335,4 +329,3 @@ h1.feature-article-small-text{
   color: white;
 }
 
-/*single*/
