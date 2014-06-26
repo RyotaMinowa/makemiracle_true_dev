@@ -6,28 +6,26 @@
                     <p class="footer-social-text-top col-xs-12">
                       公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
                     </p>
-                    <button class="footer-social-button col-xs-4 footer-social-facebook">
+                    <button class="header-social-button col-xs-4 header-social-facebook" onClick="location.href='https://www.facebook.com/makemiracle90s'">
                     </button>
-                    <button class="footer-social-button col-xs-4 footer-social-twitter">
+                    <button class="header-social-button col-xs-4 header-social-twitter" onClick="location.href='https://twitter.com/makemiracle90s'">
                     </button>
-                    <button class="footer-social-button col-xs-4 footer-social-feedly" >
+                    <button class="header-social-button col-xs-4 header-social-feedly" onClick="location.href='http://line.me/R/msg/text/?<?php the_title(); ?>%0D%0A<?php the_permalink(); ?>'">
                     </button>
                 </div>
               </div> 
             <div class="footer-category-area col-xs-12">
                 <div class="footer-category-1">
                     <span class="footer-category-span">トップ</span>
-                    <span class="footer-category-span">トレンド</span>
-                    <span class="footer-category-span">エンタメ・カルチャー</span><br>
-                    <span class="footer-category-span">ライフ・社会</span>
-                    <span class="footer-category-span">コラム</span>
+                    <span class="footer-category-span">CM</span>
+                    <span class="footer-category-span">音楽</span><br>
+                    <span class="footer-category-span">バラエティ</span>
+                    <span class="footer-category-span">アニメ</span>
                     <span class="footer-category-span">人気記事</span><br>
                 </div>
                 <div class="footer-category-2">
                     <span class="footer-category-span">運営会社</span>
-                    <span class="footer-category-span">利用規約</span>
-                    <span class="footer-category-span">プライバシーポリシー</span><br>
-                    <span class="footer-category-span">お問い合わせ</span>
+                    <span class="footer-category-span">利用規約</span><br>
                 </div>
               </div>
 

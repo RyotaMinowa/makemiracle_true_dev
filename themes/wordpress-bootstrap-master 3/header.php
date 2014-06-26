@@ -17,7 +17,6 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
-
 <header>
       <div class=" header-wrap container">
         <div class="header-wrap-row row">
@@ -27,23 +26,23 @@
 				<img class="header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png">
 			</div>
           <div class="header-follow-toggle header-follow-toggle-bg col-xs-2">
-            <button type="button" class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-follow" onclick="">
-            </button> 
+          <button type="button" class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-follow" onclick="">
+          </button> 
 			</div>
 			<div id="header-follow" class="collapse navbar-collapse header-follow col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="header-social-buttons col-xs-12">
-            		<div class="header-social-buttons-row row">
-              			<p class="header-social-text-top col-xs-12">
-                			公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
-              			</p>
-              			<button class="header-social-button col-xs-4 header-social-facebook">
-              			</button>
-              			<button class="header-social-button col-xs-4 header-social-twitter">
-              			</button>
-              			<button class="header-social-button col-xs-4 header-social-feedly" >
-              			</button>
-            		</div>
-          		</div> 
+      		<div class="header-social-buttons-row row">
+        			<p class="header-social-text-top col-xs-12">
+          			公式SNSアカウントをフォローして、<br>懐かし動画をチェックしよう！
+        			</p>
+        			<button class="header-social-button col-xs-4 header-social-facebook" onClick="location.href='https://www.facebook.com/makemiracle90s'">
+        			</button>
+        			<button class="header-social-button col-xs-4 header-social-twitter" onClick="location.href='https://twitter.com/makemiracle90s'">
+        			</button>
+        			<button class="header-social-button col-xs-4 header-social-feedly" onClick="location.href='http://line.me/R/msg/text/?<?php the_title(); ?>%0D%0A<?php the_permalink(); ?>'">
+              </button>
+      		</div>
+    		</div> 
 			</div>
 		</div>
 	</div>

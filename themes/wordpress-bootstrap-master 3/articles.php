@@ -1,6 +1,7 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); $loopcounter++;?>
 <article class="article-card">
 	<div class="article-card-wrap container">
+	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 		<div class="article-card-row row">
 			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 article-card-thum">
 				<?php
@@ -10,7 +11,8 @@
 				<img class="article-thumb" src="<?php echo $image_url[0]; ?>"><!--記事サムネイル-->
 			</div>
 			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 article-card-desc">
-				<h1 class="article-card-text"><?php the_title(); ?></h1>
+				<h1 class="article-card-text"><?php if(mb_strlen($post->post_title)>44) { $title= mb_substr($post->post_title,0,44) ; echo $title. ･･･ ;
+} else {echo $post->post_title;}?></h1>
 				<p class="article-card-meta">
 					<?php
 						$cat = get_the_category();
@@ -21,7 +23,9 @@
 				</p>
 			</div>
 		</div>
+	</a>
 	</div>
+
 </article>
 <?php endwhile; ?>
 <?php endif; ?>
