@@ -37,6 +37,9 @@ html{
   background-color: #f0f0f0;
 }
 
+a:link { color: #000000; }
+a:hover { color: #2980b9; }
+
 .container{
   width: 100%;
   height: 100%;
@@ -144,7 +147,7 @@ header .header-wrap .header-wrap-row .header-follow-toggle button.header-follow-
 
 /* feature-article start */
 .feature-article-big-text-area{
-  background-image: url("https://ssl-stat.amebame.com/pub/content/8265872137/user/article/28379627122935870/b52dffb7ebcbad3e3cfae5d11790ee54/cached.jpg");
+  background-image: url("");
   background-repeat: no-repeat;
   background-size:100% auto;
   background-position:50% 50%; 
