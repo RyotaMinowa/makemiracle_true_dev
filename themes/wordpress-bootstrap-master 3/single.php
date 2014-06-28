@@ -36,7 +36,7 @@
 	              			</button>
 	              			<button class="social-share-button col-xs-4 social-share-twitter">
 	              			</button>
-	              			<button class="social-share-button col-xs-4 social-share-feedly" >
+	              			<button class="social-share-button col-xs-4 social-share-line" >
 	              			</button>
 	            		</div>
 	          		</div> 
