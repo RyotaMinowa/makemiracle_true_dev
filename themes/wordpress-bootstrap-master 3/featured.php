@@ -31,7 +31,7 @@
 						$image_id = get_post_thumbnail_id();
 						$image_url = wp_get_attachment_image_src($image_id, true);
 					?>
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 feature-article-big-text-area" style="<?php echo $image_url[0]; ?>"><!--↑こいつにBGI-->
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 feature-article-big-text-area" style="background-image: url('<?php echo $image_url[0]; ?>')"><!--↑こいつにBGI-->
 							<!--↑こいつにBGI-->
 							<h1 class="feature-article-text"><?php the_title(); ?></h1>
 						</div>
