@@ -5,12 +5,12 @@ height:auto;
 padding:15px;
 }
 
-.social-share-buttons {
+.share-buttons {
 width:100%;
 padding:0;
 }
 
-.social-share-button {
+.share-button {
 height:72px;
 width:193px;
 border:none;
@@ -18,25 +18,29 @@ margin:15px 0;
 padding:0;
 }
 
-.social-share-buttons-row {
+.share-buttons-row {
 width:100%;
 text-align:center;
 margin:0;
 }
 
-.social-share-facebook {
+.share-facebook {
 background-image:url(../img/social-sprt.png);
 background-position:0 144px;
 }
 
-.social-share-twitter {
+.share-twitter {
 background-image:url(../img/social-sprt.png);
 background-position:0 72px;
 margin-left:15px;
 margin-right:15px;
 }
 
+<<<<<<< HEAD
+.share-line {
+=======
 .social-share-line {
+>>>>>>> 戻る
 background-image:url(../img/social-sprt.png);
 background-position:0 216px;
 }

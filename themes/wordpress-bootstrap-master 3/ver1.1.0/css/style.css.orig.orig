@@ -1,61 +1,32 @@
-/*
-Theme Name: sp-wp-bootstrap
-Theme URI: http://320press.com/wpbs
-Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
-Version: 3.0
-Author: 320press
-Author URI: http://320press.com
-Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
-License: GNU General Public License v2.0 & Apache License 2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
-*/
-
-/* HEADS UP: Everything that you will normally find here can be found in the library/less/wp.less */
-/*
-Theme Name: wp-bootstrap
-Theme URI: http://320press.com/wpbs
-Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
-Version: 3.0
-Author: 320press
-Author URI: http://320press.com
-Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
-License: GNU General Public License v2.0 & Apache License 2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
-*/
-
-/* HEADS UP: Everything that you will normally find here can be found in the library/less/wp.less */
 @charset "UTF-8";
 
 /*general*/
 *{
-  font-family:'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-  font-size: 30px;
-  line-height: 37px;
+	font-family:'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+	font-size: 30px;
+	line-height: 37px;
 }
 
 html{
-  background-color: #f0f0f0;
+	background-color: #f0f0f0;
 }
 
-a:link { color: #000000; }
-a:hover { color: #2980b9; }
-
 .container{
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 
 }
 
 .row{
-  height: 100%;
+	height: 100%;
 }
 
 
 /*header*/
 header{
-  width: 100%;
-  height: 89px;
-  background-color: #fc0;
+	width: 100%;
+	height: 89px;
+	background-color: #fc0;
 }
 
 header .header-wrap{
@@ -63,46 +34,46 @@ header .header-wrap{
 }
 
 header .header-wrap .header-wrap-row img{
-  width: 400px;
-  margin-top:10px;
+	width: 400px;
+	margin-top:10px;
 }
 
 header .header-wrap .header-follow-toggle{
-  height: 100%;
+	height: 100%;
 }
 
 header .header-wrap .header-follow-toggle-bg-active{
-  background-color: black;
+	background-color: black;
 }
 
 header .header-wrap .header-wrap-row .header-follow-toggle button{
-  width:100%;
-  height: 100%;
-  border: none; 
-  margin: 0px;
-  background-image: url("../img/follow.png");
-  background-position: center center; 
-  background-repeat: no-repeat;
+	width:100%;
+	height: 100%;
+	border: none;	
+	margin: 0px;
+	background-image: url("../img/follow.png");
+	background-position: center center; 
+	background-repeat: no-repeat;
 }
 
 header .header-wrap .header-wrap-row .header-follow-toggle button.header-follow-toggle-button-active{
-  width:100%;
-  height: 100%;
-  border: none; 
-  margin: 0px;
-  background-image: url("../img/follow-active.png");
-  background-position: center center; 
-  background-repeat: no-repeat;
-  background-color: black;
+	width:100%;
+	height: 100%;
+	border: none;	
+	margin: 0px;
+	background-image: url("../img/follow-active.png");
+	background-position: center center; 
+	background-repeat: no-repeat;
+	background-color: black;
 }
 
 /*header toggle*/
 .header-follow{
-  padding: 45px 15px 48px;
-  width: 100%;
-  text-align: center;
-  background-color:black;
-  height: auto;
+	padding: 45px 15px 48px;
+	width: 100%;
+	text-align: center;
+	background-color:black;
+	height: auto;
 }
 
 .header-social-text-top{
@@ -110,7 +81,7 @@ header .header-wrap .header-wrap-row .header-follow-toggle button.header-follow-
 }
 
 .header-social-buttons{
-  width:100%;
+	width:100%;
 }
 
 .header-social-button{
@@ -124,10 +95,10 @@ header .header-wrap .header-wrap-row .header-follow-toggle button.header-follow-
 }
 
 .header-social-buttons-row{
-  width: 100%;
-  text-align: center;
-  background-color: black;
-    margin:0px;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+  	margin:0px;
 }
 
 .header-social-facebook{
@@ -151,49 +122,49 @@ header .header-wrap .header-wrap-row .header-follow-toggle button.header-follow-
 
 /* feature-article start */
 .feature-article-big-text-area{
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size:100% auto;
-  background-position:50% 50%; 
-  background-color:#000;
-  height: 400px;
-  width:100%;
-  text-align: center;
-  padding-bottom: 20px;
+	background-image: url("https://ssl-stat.amebame.com/pub/content/8265872137/user/article/28379627122935870/b52dffb7ebcbad3e3cfae5d11790ee54/cached.jpg");
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; 
+	background-color:#000;
+	height: 400px;
+	width:100%;
+	text-align: center;
+	padding-bottom: 20px;
 }
 
 .feature-article-section-wrap{
-  margin-bottom:10px;
-  padding-bottom: 20px;
-  border-bottom:1px solid #dedddd;  
-  box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
-    -webkit-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
-    -moz-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+	margin-bottom:10px;
+	padding-bottom: 20px;
+	border-bottom:1px solid #dedddd;  
+ 	box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+  	-webkit-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+  	-moz-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
 }
 
 h1.feature-article-text{
-  color: #fff;
-  width:95%;
-  padding:30px 20px;
-  text-align: left;
-  background-color:rgba(0,0,0,.6);
-  line-height: 46px;
-  font-size: 34px;
-  font-weight: 700;
-  vertical-align: middle;
-  position: absolute;
-  margin-bottom: 0px;
-  bottom:20px;
+	color: #fff;
+	width:95%;
+	padding:30px 20px;
+	text-align: left;
+	background-color:rgba(0,0,0,.6);
+	line-height: 46px;
+	font-size: 34px;
+	font-weight: 700;
+	vertical-align: middle;
+	position: absolute;
+	margin-bottom: 0px;
+	bottom:20px;
 }
 
 
 .feature-article-small{
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .feature-article-small img{
-  width: 100%;
-  display: block;
+	width: 100%;
+	display: block;
 }
 
 
@@ -202,9 +173,9 @@ h1.feature-article-text{
 }
 
 h1.feature-article-small-text{
-  font-size: 30px;
-  line-height: 39px;
-  font-weight: 700;
+	font-size: 30px;
+	line-height: 39px;
+	font-weight: 700;
 }
 
 /* ーーーーーーーーarticleーーーーーーーー */
@@ -218,7 +189,7 @@ h1.feature-article-small-text{
 }
 
 .pop-h-desc p{
-  margin-top:32px;
+	margin-top:32px;
 }
 
 .article-card-wrap{
@@ -244,11 +215,6 @@ h1.feature-article-small-text{
   margin-right:25px;
   margin-top: 10px;
   padding:0; /* ここ重要。あとで確認。Bootstrapが勝手にかけているmarginを相殺している*/
-}
-
-.article-thumb {
-  width:156px;
-  height:156px;
 }
 
 .article-card-desc{

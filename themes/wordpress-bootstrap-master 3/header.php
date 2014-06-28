@@ -39,7 +39,7 @@
         			</button>
         			<button class="header-social-button col-xs-4 header-social-twitter" onClick="location.href='https://twitter.com/makemiracle90s'">
         			</button>
-        			<button class="header-social-button col-xs-4 header-social-Line" onClick="location.href='http://line.me/R/msg/text/?<?php the_title(); ?>%0D%0A<?php the_permalink(); ?>'">
+        			<button class="header-social-button col-xs-4 header-social-line" onClick="location.href='http://line.me/R/msg/text/?<?php the_title(); ?>%0D%0A<?php the_permalink(); ?>'">
               </button>
       		</div>
     		</div> 
