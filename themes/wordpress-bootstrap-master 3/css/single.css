@@ -59,9 +59,9 @@ text-align:right;
 margin-top:24px;
 }
 
-.category-span {
+.category-span a{
 font-size:24px;
-color:#5aa6bf;
+color:#888;
 }
 
 .date-span {
@@ -85,8 +85,9 @@ line-height:25px;
 color:#222;
 }
 
+
+
 .c-ico--lineShareLarge {
-background-image:url("");
 -webkit-background-size:248px 204px;
 background-size:248px 204px;
 background-position:-116px -42px;
@@ -222,6 +223,11 @@ color:#9a9a9a;
 line-height:1.47059;
 font-size:24px;
 }
+
+.article-content p.lead{
+text-align:center;
+}
+
 
 .p-item__video>*,.p-item__tweet iframe {
 max-width:100%;

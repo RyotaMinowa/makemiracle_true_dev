@@ -14,21 +14,6 @@
                     </button>
                 </div>
               </div> 
-            <div class="footer-category-area col-xs-12">
-                <div class="footer-category-1">
-                    <span class="footer-category-span">トップ</span>
-                    <span class="footer-category-span">CM</span>
-                    <span class="footer-category-span">音楽</span><br>
-                    <span class="footer-category-span">バラエティ</span>
-                    <span class="footer-category-span">アニメ</span>
-                    <span class="footer-category-span">人気記事</span><br>
-                </div>
-                <div class="footer-category-2">
-                    <span class="footer-category-span">運営会社</span>
-                    <span class="footer-category-span">利用規約</span><br>
-                </div>
-              </div>
-
             <div class="footer-copyright col-xs-12">
               <span class="footer-copyright-span">Makemiracle. All Rights Reserved</span>
             </div>
