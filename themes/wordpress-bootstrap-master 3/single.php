@@ -18,10 +18,10 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<section class="article-section">
+<section class="article-card">
 	<article id="post-<?php the_ID(); ?>" class="article">
-		<div class="article-wrap container">
-			<div class="article-row row">
+		<div class="article-card-wrap container">
+			<div class="article-card-row row">
 				<div class="col-xs-12 article-desc">
 					<h1 class="article-title"><?php the_title(); ?></h1>
 					<p class="article-meta">
@@ -30,13 +30,13 @@
 					</p>
 				</div>
 				<div id="share" class="col-xs-12 article-share fix-social">
-					<div class="social-share-buttons col-xs-12">
-	            		<div class="social-share-buttons-row row">
-	              			<button class="social-share-button col-xs-4 social-share-facebook">
+					<div class="share-buttons col-xs-12">
+	            		<div class="share-buttons-row row">
+	              			<button class="share-button col-xs-4 share-facebook">
 	              			</button>
-	              			<button class="social-share-button col-xs-4 social-share-twitter">
+	              			<button class="share-button col-xs-4 share-twitter">
 	              			</button>
-	              			<button class="social-share-button col-xs-4 social-share-feedly" >
+	              			<button class="share-button col-xs-4 share-line" >
 	              			</button>
 	            		</div>
 	          		</div> 
