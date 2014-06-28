@@ -20,28 +20,28 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <section class="article-section">
 	<article id="post-<?php the_ID(); ?>" class="article">
-		<div class="article-wrap container">
+		<div class="article-single-wrap container">
 			<div class="article-row row">
-				<div class="col-xs-12 article-desc">
-					<h1 class="article-title"><?php the_title(); ?></h1>
-					<p class="article-meta">
-						<span class="category-span <?php echo $cat->category_nicename; ?> category meta text-right"><?php the_category(', '); ?></span>
+				<div class="col-xs-12 article-single-desc">
+					<h1 class="article-single-title"><?php the_title(); ?></h1>
+					<p class="article-single-meta">
+						<span class="category-span <?php echo $cat->category_nicename; ?> category meta text-right"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?></span>
 						<i class="fa fa-clock-o"></i><span class="date-span"><?php echo get_post_time('Y.m.d'); ?></span>
 					</p>
 				</div>
-				<div id="share" class="col-xs-12 article-share fix-social">
+				<div id="share" class="col-xs-12 article-single-share fix-social">
 					<div class="social-share-buttons col-xs-12">
 	            		<div class="social-share-buttons-row row">
-	              			<button class="social-share-button col-xs-4 social-share-facebook">
+	              			<button class="social-share-button col-xs-4 social-share-facebook" onClick="location.href='http://www.facebook.com/share.php?u=<?php the_permalink(); ?>'" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">
 	              			</button>
-	              			<button class="social-share-button col-xs-4 social-share-twitter">
+	              			<button class="social-share-button col-xs-4 social-share-twitter" onClick="location.href='https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=makemiracle90s'">
 	              			</button>
-	              			<button class="social-share-button col-xs-4 social-share-line" >
-	              			</button>
+	              			<button class="social-share-button col-xs-4 header-social-line" onClick="location.href='http://line.me/R/msg/text/?<?php the_title(); ?>%0D%0A<?php the_permalink(); ?>'">
+                    		</button>
 	            		</div>
 	          		</div> 
 				</div>
-				<div class="col-xs-12 article-content">
+				<div class="col-xs-12 article-single-content">
 						<?php the_content(); ?>
 				</div>
 			</div>
