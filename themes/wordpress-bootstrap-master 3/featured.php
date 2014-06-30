@@ -25,9 +25,13 @@
 				<?php if($featureLoopCounter == 0): ?>
 				<!-- feature big -->
 				<div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 feature-article-big">
-				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+				<a href="<?php the_permalink() ?>" rel="bookmark" title="background-image: url('<?php the_title_attribute(); ?>');">
 					<div class="feature-article-big-row row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 feature-article-big-text-area"><!--↑こいつにBGI-->
+					<?php
+						$image_id = get_post_thumbnail_id();
+						$image_url = wp_get_attachment_image_src($image_id, true);
+					?>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 feature-article-big-text-area" style="background-image: url('<?php echo $image_url[0]; ?>')"><!--↑こいつにBGI-->
 							<!--↑こいつにBGI-->
 							<h1 class="feature-article-text"><?php the_title(); ?></h1>
 						</div>

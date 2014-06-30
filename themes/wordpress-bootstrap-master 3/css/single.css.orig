@@ -27,12 +27,6 @@ margin:0;
 .social-share-facebook {
 background-image:url(../img/social-sprt.png);
 background-position:0 144px;
-border-bottom:3px solid;
-}
-
-button.social-share-facebook:hover{
-background-image:url(../img/social-sprt.png);
-background-position:0 144px;
 }
 
 .social-share-twitter {
@@ -40,15 +34,11 @@ background-image:url(../img/social-sprt.png);
 background-position:0 72px;
 margin-left:15px;
 margin-right:15px;
-border-bottom:3px solid;
-
 }
 
 .social-share-line {
 background-image:url(../img/social-sprt.png);
 background-position:0 216px;
-border-bottom:3px solid;
-
 }
 
 .fixed {
@@ -69,9 +59,9 @@ text-align:right;
 margin-top:24px;
 }
 
-.category-span {
+.category-span a{
 font-size:24px;
-color:#5aa6bf;
+color:#888;
 }
 
 .date-span {
@@ -93,10 +83,12 @@ margin:24px 0;
 font-size:24px;
 line-height:25px;
 color:#222;
+<<<<<<< HEAD
 }
 
+
+
 .c-ico--lineShareLarge {
-background-image:url("");
 -webkit-background-size:248px 204px;
 background-size:248px 204px;
 background-position:-116px -42px;
@@ -233,6 +225,11 @@ line-height:1.47059;
 font-size:24px;
 }
 
+.article-content p.lead{
+text-align:center;
+}
+
+
 .p-item__video>*,.p-item__tweet iframe {
 max-width:100%;
 margin:auto;
@@ -253,4 +250,6 @@ overflow:hidden;
 .c-media:before,.c-media:after,.c-tags:before,.c-tags:after {
 content:"";
 display:table;
+=======
+>>>>>>> da4a25b5ed91e00bf58d60df4261b955f0ba48de
 }

@@ -36,7 +36,7 @@ margin-left:15px;
 margin-right:15px;
 }
 
-.social-share-feedly {
+.social-share-line {
 background-image:url(../img/social-sprt.png);
 background-position:0 216px;
 }
@@ -54,14 +54,14 @@ line-height:34px;
 font-weight:900;
 }
 
-.article-meta {
+.article-single-meta {
 text-align:right;
 margin-top:24px;
 }
 
-.category-span {
+.category-span a{
 font-size:24px;
-color:#5aa6bf;
+color:#888;
 }
 
 .date-span {
@@ -69,24 +69,25 @@ font-size:24px;
 color:#888;
 }
 
-.article-meta i {
+.article-single-meta i {
 color:#888;
 margin-right:5px;
 font-size:22px;
 }
 
-.article-head-social-row {
+.article-single-head-social-row {
 margin:24px 0;
 }
 
-.article-content {
+.article-single-content {
 font-size:24px;
 line-height:25px;
 color:#222;
 }
 
+
+
 .c-ico--lineShareLarge {
-background-image:url("");
 -webkit-background-size:248px 204px;
 background-size:248px 204px;
 background-position:-116px -42px;
@@ -218,10 +219,15 @@ margin-top:5px;
 color:#9a9a9a;
 }
 
-.article-content p,.p-item__comment,.p-item__text {
+.article-single-content p,.p-item__comment,.p-item__text {
 line-height:1.47059;
 font-size:24px;
 }
+
+.article-single-content p.lead{
+text-align:center;
+}
+
 
 .p-item__video>*,.p-item__tweet iframe {
 max-width:100%;

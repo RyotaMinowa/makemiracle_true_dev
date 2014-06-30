@@ -27,12 +27,6 @@ margin:0;
 .social-share-facebook {
 background-image:url(../img/social-sprt.png);
 background-position:0 144px;
-border-bottom:3px solid;
-}
-
-button.social-share-facebook:hover{
-background-image:url(../img/social-sprt.png);
-background-position:0 144px;
 }
 
 .social-share-twitter {
@@ -40,15 +34,11 @@ background-image:url(../img/social-sprt.png);
 background-position:0 72px;
 margin-left:15px;
 margin-right:15px;
-border-bottom:3px solid;
-
 }
 
 .social-share-line {
 background-image:url(../img/social-sprt.png);
 background-position:0 216px;
-border-bottom:3px solid;
-
 }
 
 .fixed {

@@ -5995,7 +5995,7 @@ td.visible-print {
 /* wp-specific classes */
 /* layout */
 body {
-  padding-top: 60px;
+  padding-top: 0px;
 }
 /* Admin Top Navigation fixes */
 body.admin-bar .navbar-fixed-top {
@@ -6782,7 +6782,7 @@ blockquote.pull-left {
 }
 @media only screen and (min-width: 980px) {
   body {
-    padding-top: 60px;
+    padding-top: 0px;
   }
   .container-fluid {
     max-width: 970px;
