@@ -15,34 +15,9 @@
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=452572048204794&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<script type="text/javascript">
-	jQuery(document).ready(function(){
-	    var flg = "close";
-	    $(".header-follow-toggle-button").click(function(){
-	        if(flg == "close"){
-	            $(this).removeClass("header-follow-toggle-button").addClass("header-follow-toggle-button-active"); 
-	            $(".header-follow-toggle").removeClass("header-follow-toggle-bg").addClass("header-follow-toggle-bg-active"); 
-	            flg = "open";
-	        }else{
-	            $(this).removeClass("header-follow-toggle-button-active").addClass("header-follow-toggle-button"); 
-	            $(".header-follow-toggle-bg-active").removeClass("header-follow-toggle-bg-active").addClass("header-follow-toggle-bg"); 
-	            flg = "close";
-	        }
-	    });
-	    
-	    var tab = $(".fix-social"), 
-		offset = tab.offset();
-		$(window).scroll(function () {
-				if($(window).scrollTop() > offset.top) {
-				tab.addClass('fixed');
-				} else {
-					 tab.removeClass('fixed');
-				}
-		});
-	});
+}(document, 'script', 'facebook-jssdk'));
 </script>
+
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <section class="article-section">
