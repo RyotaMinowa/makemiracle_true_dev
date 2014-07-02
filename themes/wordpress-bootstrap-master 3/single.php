@@ -86,6 +86,9 @@
     </section>
 </article>
 <?php endif; ?>
+
+<?php get_template_part('single_featured'); ?>
+
 <?php get_footer(); ?>
 </body>
 </html>

@@ -17,7 +17,6 @@
 <!-- 記事一覧 -->
 <?php get_template_part('articles'); ?>
 </section>
-<?php get_template_part('single_featured'); ?>
 
 <?php wp_reset_query(); ?>
 	
