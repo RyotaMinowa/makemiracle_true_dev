@@ -48,6 +48,15 @@ top:0;
 background-color:#FFF;
 }
 
+.article-section{
+	border:0 1px solid #dedddd;
+	border-top:1px solid #dedddd;
+	border-bottom:1px solid #dedddd;  
+	box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+	-webkit-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+	-moz-box-shadow:rgba(102, 102, 102, 0.2) 0px 2px 2px 2px;
+}
+
 h1.articletitle {
 font-size:24px;
 line-height:34px;
@@ -57,6 +66,11 @@ font-weight:900;
 .article-single-meta {
 text-align:right;
 margin-top:24px;
+}
+
+article iframe{
+	width: 610px;
+	height: 410px;
 }
 
 .category-span a{
