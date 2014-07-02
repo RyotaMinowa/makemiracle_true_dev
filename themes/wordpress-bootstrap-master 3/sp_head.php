@@ -32,19 +32,7 @@
 	wp_enqueue_script('style',get_bloginfo('template_url').'/library/js/style.js', array('jquery'));
 	?>
     <script type="text/javascript">
-		jQuery(document).ready(function(){
-		    var flg = "close";
-		    jQuery(".header-follow-toggle-button").click(function(){
-		        if(flg == "close"){
-		            jQuery(this).removeClass("header-follow-toggle-button").addClass("header-follow-toggle-button-active"); 
-		            jQuery(".header-follow-toggle").removeClass("header-follow-toggle-bg").addClass("header-follow-toggle-bg-active"); 
-		            flg = "open";
-		        }else{
-		            $(this).removeClass("header-follow-toggle-button-active").addClass("header-follow-toggle-button"); 
-		            $(".header-follow-toggle-bg-active").removeClass("header-follow-toggle-bg-active").addClass("header-follow-toggle-bg"); 
-		            flg = "close";
-		        }
-		    });		    
+		jQuery(document).ready(function(){		    
 		    var tab = jQuery(".fix-social"), 
 			offset = tab.offset();
 			jQuery(window).scroll(function () {
