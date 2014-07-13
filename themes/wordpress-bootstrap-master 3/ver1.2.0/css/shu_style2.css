@@ -1,0 +1,175 @@
+.container{
+ width:100%;
+ height:100%;
+ max-width: 100%;
+}
+
+/* header */
+.header-wrap{
+  padding:0px;
+  height: 158px; 
+}
+
+.header-wrap-row{
+  margin: 0px;
+}
+
+.header-top{
+ height:88px;
+ background-color:#FFCC00;
+ padding:25px 20px;
+}
+
+.header-top-row{
+  padding:0px;
+  margin:0px;
+}
+
+.header-title{
+  padding:0px;
+}
+
+.header-title-img{
+  margin-right: 17px;
+}
+
+.header-title-sentence{
+ font-size: 13px;
+ margin-bottom: 0px;
+}
+
+.header-follow-toggle{
+  padding-left: 0px;
+}
+
+.header-navbar{
+  height:65px;
+  background-color:black;
+}
+
+.header-navbar-category{
+  font-size:13px;
+  color: white;
+}
+
+.header-line{
+  height:5px;
+  background-color:blue;
+}
+
+/*フォントサイズ指定 サイズごとにclassを設けた
+.font-13px{
+  font-size:13px;
+}
+*/
+
+/* main-section feature-article-section */
+.main-article-section{
+  padding:0px 0px 0px 90px;
+}
+
+.feature-article-section{
+  width: 690px;
+}
+
+.feature-article-big{
+ max-width: 690px;
+ padding:0px;
+}
+
+.feature-article-big-title{
+  font-size: 32px;
+  line-height: 42px;
+  width: 690px;
+}
+
+.feature-article-big-title-img{
+  height: 360px;
+  width: 690px; 
+  margin-bottom: 20px;
+}
+
+.feature-article-small1{
+  max-width: 334px;
+  margin-right:22px;
+  position: relative;
+  padding: 0px;
+}
+
+.feature-article-small2{
+  max-width: 334px;
+  position: relative;
+  padding: 0px;
+}
+
+
+.feature-article-small-title{
+  font-size: 20px;
+  line-height: 28px;
+  position: absolute;
+  padding-top: 120px; /*どうやって下ぴったりにしようか*/
+  color: white;
+  margin-left: 14px; /* 文字がはみでるうううう！！ */
+}
+
+.feature-article-small-title-img1{
+  height: 228px;
+  width: 334px;
+  margin-right: 22px;
+}
+
+.feature-article-small-title-img2{
+  height: 228px;
+  width: 334px;
+}
+
+/* new-article-section*/
+
+.main-article-card{
+  max-width: 690px;
+  padding:0px;
+}
+
+.main-article-card-row{
+  margin:0px;
+}
+
+.main-article-card-thum{
+  max-width: 148px;
+ padding:0px;
+}
+
+.main-article-card-desc{
+ padding: 0px;
+}
+
+.main-article-card-title{
+  font-size: 20px;
+  text-align: 28px;
+  margin:0px;
+}
+
+.main-article-card-text{
+ font-size: 12px;
+ color: gray;
+ margin:0px;
+}
+
+.main-article-card-meta{
+  margin:0px;
+  color: gray;
+}
+
+.main-article-card-category{
+  font-size: 12px;
+  margin-right: 15px;
+}
+
+.main-article-card-time{
+  font-size: 12px;
+}
+
+
+
+
+

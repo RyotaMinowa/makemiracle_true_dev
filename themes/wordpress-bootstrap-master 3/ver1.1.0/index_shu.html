@@ -1,0 +1,212 @@
+<html>
+	<head>
+		<title>POROPPO</title>
+		<meta charset="utf-8">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    	<!-- Original Style -->
+    	<link href="css/shu_style2.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->	
+	</head>
+
+	<body>
+		<header>
+			<div class="header-wrap container">
+				<div class="header-wrap-row row">
+					<div class="header-top col-md-12 col-xs-12">
+						<div class="header-top-row row"><!--ここのrowの切り方は目分量 → mdで4:5:3-->
+							<div class="header-follow-toggle header-follow-toggle-bg col-xs-2"> <!--toggle：xsになったら出てきてね-->
+								<button type="button" class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-category" onclick="">
+								</button>	
+							</div>
+
+							<div class="header-title col-md-5 col-xs-8"> 
+								 <img class="header-title-img" src="http://spotlight-media.jp/img/logo.png">
+								 <span class="header-title-sentence xs-hidden" >
+								 	人に伝えたくなるメディア
+								 </span>
+							</div>
+
+							<div class="header-follow-toggle header-follow-toggle-bg col-xs-2"> <!--toggle：xsになったら出てきてね-->
+								<button type="button" class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-follow" onclick="">
+								</button>	
+							</div>
+
+							<div class="header-social-buttons col-md-3 col-md-offset-4 collapse navbar-collapse" id="header-follow"> <!--offsetはこのcolの左にcol5ぶんのblankを空ける--> <!--datatargetのidを付与することで上のtoggleと連動している-->
+								<div class="header-social-buttons-row row">
+								    <button class="header-social-button col-md-4 header-social-facebook">       			
+								    </button>
+			              			<button class="header-social-button col-md-4 header-social-twitter">
+			              			</button>
+			              			<button class="header-social-button col-md-4 header-social-feedly" >
+			              			</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-navbar col-md-12" id="header-category"> <!--collapse navbar-collapseをclassにいれると幅がおかしなことになる-->
+						<ul class="header-navbar-row row">
+							<li class="header-navbar-top header-navbar-category col-md-2">トップ<br><span>Top</span></li>　<!--liはdivと同じ機能を持つからこれでよい-->
+							<li class="header-navbar-category col-md-2">カテゴリー1<br><span>Category1</span></li> <!--カテゴリーまだ決まってないから暫定でこれ-->
+							<li class="header-navbar-category col-md-2">カテゴリー2<br><span>Category2</span></li>
+							<li class="header-navbar-category col-md-2"> カテゴリー3<br><span>Categor3</span></li>
+							<li class="header-navbar-category col-md-2"> カテゴリー4<br><span>Categor4</span></li>
+							<li class="header-navbar-category col-md-2">人気記事<br><span>Popular</span></li>
+						</ul>
+					</div>
+					<div class="header-line col-md-12 col-xs-hidden">
+					</div>
+				</div>
+			</div>
+		</header>
+	
+		<section class="all-article-section-wrap container">
+			<div class="all-article-section-row row"> <!--全体をleft9・right3に切るためのrow-->
+				<div class="main-article-section col-md-9 col-xs-12">　<!--leftの中にfeature記事とnew記事のsectionを作る-->
+					<section class="feature-article-section row">
+						<article class="feature-article-big col-md-12 col-xs-12">
+							<h1 class="feature-article-big-title">日本で唯一選出された「世界で最も美しい駅」は金沢駅だった！</h1>
+							<img class="feature-article-big-title-img" src="https://ssl-stat.amebame.com/pub/content/8265872137/user/article/35622803315454564/cd01dc994e44f69054a72ecdf40e65f2/cached.jpg?width=690'">
+						</article>
+						<article class="feature-article-small1 col-md-6 col-xs-6">
+							<h1 class="feature-article-small-title">
+						      観覧車から見下ろした景色に思わず涙。家族・友人勢揃いで仕掛けた感動サプライズ
+						   </h1>
+							<img class="feature-article-small-title-img1" src="https://ssl-stat.amebame.com/pub/content/8265872137/user/article/35520619585542170/9cc19c6d16dd505b1a943f37d399990a/uploaded.jpg?width=334"><br>
+						</article>
+						<article class="feature-article-small2 col-md-6 col-xs-6">
+							<h1 class="feature-article-small-title">
+								「トイレ」と「うんち」をテーマにした企画展が想像以上に斜め上だった
+							</h1>
+							<img class="feature-article-small-title-img2" src="https://ssl-stat.amebame.com/pub/content/8265872137/user/article/35624381709275290/b7cdbe65428fee9f5d1e0783d625a5c4/cached.jpg?width=334">
+						</article>			 					　	
+					</section>
+					<section class="new-article-section row">
+						<article class="main-article-card col-md-12 col-xs-12">
+							<div class="main-article-card-row row">
+								<div class="main-article-card-thum col-md-3 col-xs-3">
+									<img src="http://placehold.it/148x104/E5E9EB/c2c2c2">
+								</div>
+								<div class="main-article-card-desc col-md-9 col-xs-9">
+									<h1 class="main-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+									<p class="main-article-card-text">新着記事の説明文のテスト新着記事の説明文のテスト新着記事の説明文のテスト</p>
+									<p class="main-article-card-meta">
+										<span class="main-article-card-category">ライフ・社会</span>
+										<i class="fa fa-clock-o"></i><span class="date-span main-article-card-time">2014.06.18</span>
+									</p>
+								</div>
+							</div>
+						</article>
+					</section>
+					<section class="main-article-section-more row">
+						<div class="main-article-section-more-button col-md-12 col-xs-12">
+						</div>
+						<div class="main-article-section-more-page-number col-md-12 col-xs-12">
+						</div>
+					</section>
+				</div>
+
+				<aside class="sub-article-section col-md-3 col-xs-12">　<!--rightの中にpopular記事とtopic一覧、aboutのsectionを作る-->
+					<section class="pop-article-section">
+						<header class="pop-article-section-header row">
+							<h1 class="pop-article-section-header-title col-md-3 col-xs-12">人気記事
+							</h1>
+							<p class="pop-article-section-header-time col-md-3 col-md-offset-6 xs-hidden">
+								<span class="pop-article-section-header-new">最新</span>
+								<span class="pop-article-section-header-old">歴代</span>
+							</p>
+						</header>
+						<article class="pop-article-section row">
+							<div class="pop-article-card-thum col-md-4 col-xs-3">
+								<img src="">
+							</div>
+							<div class="pop-article-card-desc col-md-8 col-xs-9">
+								<h1 class="pop-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+								<span class="main-article-card-category">ライフ・社会</span>
+							</div>
+						</article>
+						<footer class="pop-article-section-footer row">
+							<p class="pop-article-section-footer-more col-md-12 col-xs-12">人気記事一覧を見る</p>
+						</footer>
+					</section>
+
+					<section class="topic-article-section">
+						<header class="topic-article-section row">
+							<h1 class="topic-article-section-header-title col-md-12 col-xs-12">おすすめトピック
+							</h1>
+						</header>
+						<div class="topic-article-section-category">
+							<span class="footer-category-span">カテゴリ1</span>
+			              	<span class="footer-category-span">カテゴリ2</span>
+			              	<span class="footer-category-span">カテゴリ3</span><br>
+			              	<span class="footer-category-span">カテゴリ4</span>
+			              	<span class="footer-category-span">カテゴリ5</span>
+			              	<span class="footer-category-span">カテゴリ6</span><br>
+						</div>
+					</section>
+
+					<section class="about-article-section xs-hidden">
+						<header class="about-article-section-header row">
+							<h1 class="about-article-section-header-title">POROPPOとは？</h1>
+							<p class="about-article-section-desc-sentnce col-md-12">PORPOOとは、記載されている記事を誰かに伝えたくなるほにゃららほにゃらら
+							</p>
+						</header>
+						<div class="about-article-section-desc row">
+							<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fmakemiracle90s%3Ffref%3Dts&amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px;" allowTransparency="true">
+							</iframe>
+							<div class="about-article-section-sns-buttons">
+								<button class="about-article-section-sns-buttons-twitter col-md-6"></bottun>
+								<button class="about-article-section-sns-buttons-feedly col-md-6"></bottun>
+							</div>
+						</div>
+					</section>
+				</aside>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-wrap-container">
+				<div class="footer-wrap-row row">
+					<div class="footer-left col-md-8 col-xs-12">
+						<div class="footer-category row">
+							<div class="footer-category-area col-xs-12">
+					            <div class="footer-category-1">
+					              	<span class="footer-category-span">カテゴリー1</span>
+					              	<span class="footer-category-span">カテゴリー2</span>
+					              	<span class="footer-category-span">カテゴリー3</span>
+					              	<span class="footer-category-span">カテゴリー4</span>
+					              	<span class="footer-category-span">カテゴリー5</span>
+					              	<span class="footer-category-span">カテゴリー6</span><br>
+					            </div>
+					            <div class="footer-category-2">
+					              	<span class="footer-category-span">運営会社</span>
+					              	<span class="footer-category-span">利用規約</span>
+					              	<span class="footer-category-span">プライバシーポリシー</span>
+					              	<span class="footer-category-span">お問い合わせ</span>
+					            </div>
+					        </div>
+					        <div class="footer-title">
+					        	<img class="xs-hidden" src="">
+					        	<p class="footer-title-cr">All Right Reserved.</h1>
+					        </div>
+						</div>	
+					</div>
+					<div class="footer-right col-md-4 col-xs-12">
+						<button class="footer-right-facebook"></button>
+						<button class="footer-right-twitter"></button>
+						<button class="footer-right-feedly"></button>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+
