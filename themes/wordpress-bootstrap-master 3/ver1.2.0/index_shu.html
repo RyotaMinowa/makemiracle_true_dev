@@ -35,7 +35,7 @@
 								 </span>
 							</div>
 
-							<div class="header-follow-toggle header-follow-toggle-bg col-xs-2"> <!--toggle：xsになったら出てきてね-->
+							<div class="header-follow-toggle header-follow-toggle-bg col-md-hidden　col-xs-2"> <!--toggle：xsになったら出てきてね-->
 								<button type="button" class="header-follow-toggle-button navbar-toggle" data-toggle="collapse" data-target="#header-follow" onclick="">
 								</button>	
 							</div>
@@ -54,12 +54,12 @@
 					</div>
 					<div class="header-navbar col-md-12" id="header-category"> <!--collapse navbar-collapseをclassにいれると幅がおかしなことになる-->
 						<ul class="header-navbar-row row">
-							<li class="header-navbar-top header-navbar-category col-md-2">トップ<br><span>Top</span></li>　<!--liはdivと同じ機能を持つからこれでよい-->
-							<li class="header-navbar-category col-md-2">カテゴリー1<br><span>Category1</span></li> <!--カテゴリーまだ決まってないから暫定でこれ-->
-							<li class="header-navbar-category col-md-2">カテゴリー2<br><span>Category2</span></li>
-							<li class="header-navbar-category col-md-2"> カテゴリー3<br><span>Categor3</span></li>
-							<li class="header-navbar-category col-md-2"> カテゴリー4<br><span>Categor4</span></li>
-							<li class="header-navbar-category col-md-2">人気記事<br><span>Popular</span></li>
+							<li class="header-navbar-category header-navbar-category col-md-2">トップ<br><span class="header-navbar-category-sub">Top</span></li>　<!--liはdivと同じ機能を持つからこれでよい-->
+							<li class="header-navbar-category col-md-2">カテゴリー1<br><span class="header-navbar-category-sub">Category1</span></li> <!--カテゴリーまだ決まってないから暫定でこれ-->
+							<li class="header-navbar-category col-md-2">カテゴリー2<br><span class="header-navbar-category-sub">Category2</span></li>
+							<li class="header-navbar-category col-md-2"> カテゴリー3<br><span class="header-navbar-category-sub">Categor3</span></li>
+							<li class="header-navbar-category col-md-2"> カテゴリー4<br><span class="header-navbar-category-sub">Categor4</span></li>
+							<li class="header-navbar-category col-md-2">人気記事<br><span class="header-navbar-category-sub">Popular</span></li>
 						</ul>
 					</div>
 					<div class="header-line col-md-12 col-xs-hidden">
@@ -70,7 +70,7 @@
 	
 		<section class="all-article-section-wrap container">
 			<div class="all-article-section-row row"> <!--全体をleft9・right3に切るためのrow-->
-				<div class="main-article-section col-md-9 col-xs-12">　<!--leftの中にfeature記事とnew記事のsectionを作る-->
+				<div class="main-article-section col-md-8 col-xs-12">　<!--leftの中にfeature記事とnew記事のsectionを作る-->
 					<section class="feature-article-section row">
 						<article class="feature-article-big col-md-12 col-xs-12">
 							<h1 class="feature-article-big-title">日本で唯一選出された「世界で最も美しい駅」は金沢駅だった！</h1>
@@ -106,6 +106,91 @@
 							</div>
 						</article>
 					</section>
+					<section class="new-article-section row">
+						<article class="main-article-card col-md-12 col-xs-12">
+							<div class="main-article-card-row row">
+								<div class="main-article-card-thum col-md-3 col-xs-3">
+									<img src="http://placehold.it/148x104/E5E9EB/c2c2c2">
+								</div>
+								<div class="main-article-card-desc col-md-9 col-xs-9">
+									<h1 class="main-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+									<p class="main-article-card-text">新着記事の説明文のテスト新着記事の説明文のテスト新着記事の説明文のテスト</p>
+									<p class="main-article-card-meta">
+										<span class="main-article-card-category">ライフ・社会</span>
+										<i class="fa fa-clock-o"></i><span class="date-span main-article-card-time">2014.06.18</span>
+									</p>
+								</div>
+							</div>
+						</article>
+					</section>
+					<section class="new-article-section row">
+						<article class="main-article-card col-md-12 col-xs-12">
+							<div class="main-article-card-row row">
+								<div class="main-article-card-thum col-md-3 col-xs-3">
+									<img src="http://placehold.it/148x104/E5E9EB/c2c2c2">
+								</div>
+								<div class="main-article-card-desc col-md-9 col-xs-9">
+									<h1 class="main-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+									<p class="main-article-card-text">新着記事の説明文のテスト新着記事の説明文のテスト新着記事の説明文のテスト</p>
+									<p class="main-article-card-meta">
+										<span class="main-article-card-category">ライフ・社会</span>
+										<i class="fa fa-clock-o"></i><span class="date-span main-article-card-time">2014.06.18</span>
+									</p>
+								</div>
+							</div>
+						</article>
+					</section>
+					<section class="new-article-section row">
+						<article class="main-article-card col-md-12 col-xs-12">
+							<div class="main-article-card-row row">
+								<div class="main-article-card-thum col-md-3 col-xs-3">
+									<img src="http://placehold.it/148x104/E5E9EB/c2c2c2">
+								</div>
+								<div class="main-article-card-desc col-md-9 col-xs-9">
+									<h1 class="main-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+									<p class="main-article-card-text">新着記事の説明文のテスト新着記事の説明文のテスト新着記事の説明文のテスト</p>
+									<p class="main-article-card-meta">
+										<span class="main-article-card-category">ライフ・社会</span>
+										<i class="fa fa-clock-o"></i><span class="date-span main-article-card-time">2014.06.18</span>
+									</p>
+								</div>
+							</div>
+						</article>
+					</section>
+					<section class="new-article-section row">
+						<article class="main-article-card col-md-12 col-xs-12">
+							<div class="main-article-card-row row">
+								<div class="main-article-card-thum col-md-3 col-xs-3">
+									<img src="http://placehold.it/148x104/E5E9EB/c2c2c2">
+								</div>
+								<div class="main-article-card-desc col-md-9 col-xs-9">
+									<h1 class="main-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+									<p class="main-article-card-text">新着記事の説明文のテスト新着記事の説明文のテスト新着記事の説明文のテスト</p>
+									<p class="main-article-card-meta">
+										<span class="main-article-card-category">ライフ・社会</span>
+										<i class="fa fa-clock-o"></i><span class="date-span main-article-card-time">2014.06.18</span>
+									</p>
+								</div>
+							</div>
+						</article>
+					</section>
+					<section class="new-article-section row">
+						<article class="main-article-card col-md-12 col-xs-12">
+							<div class="main-article-card-row row">
+								<div class="main-article-card-thum col-md-3 col-xs-3">
+									<img src="http://placehold.it/148x104/E5E9EB/c2c2c2">
+								</div>
+								<div class="main-article-card-desc col-md-9 col-xs-9">
+									<h1 class="main-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+									<p class="main-article-card-text">新着記事の説明文のテスト新着記事の説明文のテスト新着記事の説明文のテスト</p>
+									<p class="main-article-card-meta">
+										<span class="main-article-card-category">ライフ・社会</span>
+										<i class="fa fa-clock-o"></i><span class="date-span main-article-card-time">2014.06.18</span>
+									</p>
+								</div>
+							</div>
+						</article>
+					</section>
 					<section class="main-article-section-more row">
 						<div class="main-article-section-more-button col-md-12 col-xs-12">
 						</div>
@@ -114,23 +199,90 @@
 					</section>
 				</div>
 
-				<aside class="sub-article-section col-md-3 col-xs-12">　<!--rightの中にpopular記事とtopic一覧、aboutのsectionを作る-->
+				<aside class="sub-article-section col-md-4 col-xs-12">　<!--rightの中にpopular記事とtopic一覧、aboutのsectionを作る-->
 					<section class="pop-article-section">
 						<header class="pop-article-section-header row">
-							<h1 class="pop-article-section-header-title col-md-3 col-xs-12">人気記事
-							</h1>
-							<p class="pop-article-section-header-time col-md-3 col-md-offset-6 xs-hidden">
-								<span class="pop-article-section-header-new">最新</span>
-								<span class="pop-article-section-header-old">歴代</span>
-							</p>
+								<div class="pop-article-section-header-underline col-md-12 col-xs-12">
+									<div class="pop-article-section-header-title-row row">
+										<h1 class="pop-article-section-header-title col-md-8 col-xs-12">人気記事
+										</h1>
+										<p class="pop-article-section-header-time col-md-4 xs-hidden">
+											<span class="pop-article-section-header-new">最新</span>
+											<span class="pop-article-section-header-old">歴代</span>
+										</p>
+									</div>
+								</div>
 						</header>
-						<article class="pop-article-section row">
+						<article class="pop-article-section-article row">
 							<div class="pop-article-card-thum col-md-4 col-xs-3">
-								<img src="">
+								<img src="http://placehold.it/90x90/E5E9EB/c2c2c2">
 							</div>
 							<div class="pop-article-card-desc col-md-8 col-xs-9">
-								<h1 class="pop-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
-								<span class="main-article-card-category">ライフ・社会</span>
+								<h1 class="pop-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+								<span class="pop-article-card-category">ライフ・社会</span>
+							</div>
+						</article>
+						<article class="pop-article-section-article row">
+							<div class="pop-article-card-thum col-md-4 col-xs-3">
+								<img src="http://placehold.it/90x90/E5E9EB/c2c2c2">
+							</div>
+							<div class="pop-article-card-desc col-md-8 col-xs-9">
+								<h1 class="pop-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+								<span class="pop-article-card-category">ライフ・社会</span>
+							</div>
+						</article>
+						<article class="pop-article-section-article row">
+							<div class="pop-article-card-thum col-md-4 col-xs-3">
+								<img src="http://placehold.it/90x90/E5E9EB/c2c2c2">
+							</div>
+							<div class="pop-article-card-desc col-md-8 col-xs-9">
+								<h1 class="pop-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+								<span class="pop-article-card-category">ライフ・社会</span>
+							</div>
+						</article>
+						<article class="pop-article-section-article row">
+							<div class="pop-article-card-thum col-md-4 col-xs-3">
+								<img src="http://placehold.it/90x90/E5E9EB/c2c2c2">
+							</div>
+							<div class="pop-article-card-desc col-md-8 col-xs-9">
+								<h1 class="pop-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+								<span class="pop-article-card-category">ライフ・社会</span>
+							</div>
+						</article>
+						<article class="pop-article-section-article row">
+							<div class="pop-article-card-thum col-md-4 col-xs-3">
+								<img src="http://placehold.it/90x90/E5E9EB/c2c2c2">
+							</div>
+							<div class="pop-article-card-desc col-md-8 col-xs-9">
+								<h1 class="pop-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+								<span class="pop-article-card-category">ライフ・社会</span>
+							</div>
+						</article>
+						<article class="pop-article-section-article row">
+							<div class="pop-article-card-thum col-md-4 col-xs-3">
+								<img src="http://placehold.it/90x90/E5E9EB/c2c2c2">
+							</div>
+							<div class="pop-article-card-desc col-md-8 col-xs-9">
+								<h1 class="pop-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+								<span class="pop-article-card-category">ライフ・社会</span>
+							</div>
+						</article>
+						<article class="pop-article-section-article row">
+							<div class="pop-article-card-thum col-md-4 col-xs-3">
+								<img src="http://placehold.it/90x90/E5E9EB/c2c2c2">
+							</div>
+							<div class="pop-article-card-desc col-md-8 col-xs-9">
+								<h1 class="pop-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+								<span class="pop-article-card-category">ライフ・社会</span>
+							</div>
+						</article>
+						<article class="pop-article-section-article row">
+							<div class="pop-article-card-thum col-md-4 col-xs-3">
+								<img src="http://placehold.it/90x90/E5E9EB/c2c2c2">
+							</div>
+							<div class="pop-article-card-desc col-md-8 col-xs-9">
+								<h1 class="pop-article-card-title">新着記事のタイトルのテスト新着記事のタイトルのテスト</h1> 
+								<span class="pop-article-card-category">ライフ・社会</span>
 							</div>
 						</article>
 						<footer class="pop-article-section-footer row">
@@ -139,71 +291,74 @@
 					</section>
 
 					<section class="topic-article-section">
-						<header class="topic-article-section row">
-							<h1 class="topic-article-section-header-title col-md-12 col-xs-12">おすすめトピック
-							</h1>
+						<header class="topic-article-section-header row">
+							<div class="topic-article-section-header-underline col-md-12 col-xs-12">
+								<h1 class="topic-article-section-header-title col-md-12 col-xs-12">おすすめトピック
+								</h1>
+							</div>
 						</header>
-						<div class="topic-article-section-category">
-							<span class="footer-category-span">カテゴリ1</span>
-			              	<span class="footer-category-span">カテゴリ2</span>
-			              	<span class="footer-category-span">カテゴリ3</span><br>
-			              	<span class="footer-category-span">カテゴリ4</span>
-			              	<span class="footer-category-span">カテゴリ5</span>
-			              	<span class="footer-category-span">カテゴリ6</span><br>
-						</div>
+						<article class="topic-article-section-category col-md-12 col-xs-12">
+							<span class="topic-article-section-category-span">カテゴリ1</span>
+			              	<span class="topic-article-section-category-span">カテゴリ2</span>
+			              	<span class="topic-article-section-category-span">カテゴリ3</span>
+			              	<span class="topic-article-section-category-span">カテゴリ4</span>
+			              	<span class="topic-article-section-category-span">カテゴリ5</span>
+			              	<span class="topic-article-section-category-span">カテゴリ6</span>
+						</article>
 					</section>
 
 					<section class="about-article-section xs-hidden">
 						<header class="about-article-section-header row">
-							<h1 class="about-article-section-header-title">POROPPOとは？</h1>
-							<p class="about-article-section-desc-sentnce col-md-12">PORPOOとは、記載されている記事を誰かに伝えたくなるほにゃららほにゃらら
+							<div class="about-article-section-header-underline col-md-12 col-xs-12">
+								<h1 class="about-article-section-header-title col-md-12">Poroppoとは？</h1>
+							</div>
+							<p class="about-article-section-desc-sentnce col-md-12">
+								PORPOOとは、記載されている記事を誰かに伝えたくなるほにゃららほにゃららPORPOOとは、記載されている記事を誰かに伝えたくなるほにゃららほにゃららPORPOOとは、記載されている記事を誰かに伝えたくなるほにゃららほにゃららPORPOOとは、記載されている記事を誰かに伝えたくなるほにゃららほにゃらら
 							</p>
 						</header>
-						<div class="about-article-section-desc row">
-							<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fmakemiracle90s%3Ffref%3Dts&amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px;" allowTransparency="true">
+						<div class="about-article-section-desc row"> <!--iframeよみこまねえええ-->
+							<iframe class="col-md-12 col-xs-hidden" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fmakemiracle90s%3Ffref%3Dts&amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px;" allowTransparency="true">
 							</iframe>
-							<div class="about-article-section-sns-buttons">
-								<button class="about-article-section-sns-buttons-twitter col-md-6"></bottun>
-								<button class="about-article-section-sns-buttons-feedly col-md-6"></bottun>
-							</div>
+							<button class="about-article-section-sns-buttons-twitter col-md-6"> 
+							</button>
+							<button class="about-article-section-sns-buttons-feedly col-md-6">
+							</button>
 						</div>
 					</section>
 				</aside>
 			</div>
 		</section>
 
-		<footer>
-			<div class="footer-wrap-container">
-				<div class="footer-wrap-row row">
-					<div class="footer-left col-md-8 col-xs-12">
-						<div class="footer-category row">
-							<div class="footer-category-area col-xs-12">
-					            <div class="footer-category-1">
-					              	<span class="footer-category-span">カテゴリー1</span>
-					              	<span class="footer-category-span">カテゴリー2</span>
-					              	<span class="footer-category-span">カテゴリー3</span>
-					              	<span class="footer-category-span">カテゴリー4</span>
-					              	<span class="footer-category-span">カテゴリー5</span>
-					              	<span class="footer-category-span">カテゴリー6</span><br>
-					            </div>
-					            <div class="footer-category-2">
-					              	<span class="footer-category-span">運営会社</span>
-					              	<span class="footer-category-span">利用規約</span>
-					              	<span class="footer-category-span">プライバシーポリシー</span>
-					              	<span class="footer-category-span">お問い合わせ</span>
-					            </div>
-					        </div>
-					        <div class="footer-title">
-					        	<img class="xs-hidden" src="">
-					        	<p class="footer-title-cr">All Right Reserved.</h1>
-					        </div>
-						</div>	
-					</div>
-					<div class="footer-right col-md-4 col-xs-12">
-						<button class="footer-right-facebook"></button>
-						<button class="footer-right-twitter"></button>
-						<button class="footer-right-feedly"></button>
-					</div>
+		<footer class="container">
+			<div class="footer-wrap-row row">
+				<div class="footer-left col-md-8 col-xs-12">
+					<div class="footer-category row">
+						<div class="footer-category-area col-md-12 col-xs-12">
+				            <div class="footer-category-1">
+				              	<span class="footer-category-span">カテゴリー1</span>
+				              	<span class="footer-category-span">カテゴリー2</span>
+				              	<span class="footer-category-span">カテゴリー3</span>
+				              	<span class="footer-category-span">カテゴリー4</span>
+				              	<span class="footer-category-span">カテゴリー5</span>
+				              	<span class="footer-category-span">カテゴリー6</span><br>
+				            </div>
+				            <div class="footer-category-2">
+				              	<span class="footer-category-span">運営会社</span>
+				              	<span class="footer-category-span">利用規約</span>
+				              	<span class="footer-category-span">プライバシーポリシー</span>
+				              	<span class="footer-category-span">お問い合わせ</span>
+				            </div>
+				        </div>
+				        <div class="footer-title col-md-12 footer-category-12">
+				        	<img class="xs-hidden" src="">
+				        	<p class="footer-title-cr">All Right Reserved.</p>
+				        </div>
+					</div>	
+				</div>
+				<div class="footer-right col-md-4 col-xs-12">
+					<button class="footer-right-facebook"></button>
+					<button class="footer-right-twitter"></button>
+					<button class="footer-right-feedly"></button>
 				</div>
 			</div>
 		</footer>

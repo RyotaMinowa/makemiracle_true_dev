@@ -17,7 +17,7 @@
 .header-top{
  height:88px;
  background-color:#FFCC00;
- padding:25px 20px;
+ padding:25px 0px 20px 0px;
 }
 
 .header-top-row{
@@ -47,10 +47,25 @@
   background-color:black;
 }
 
+.header-navbar-row{
+ margin: 0px;
+ padding: 17px 0px 0px 143px;
+}
+
 .header-navbar-category{
   font-size:13px;
+  line-height: 20px;
   color: white;
+  text-align: center;
+  padding: 0px;
+  width: 134px;
+  height: 60px;
 }
+
+.header-navbar-category-sub{
+ font-size: 10px;
+}
+
 
 .header-line{
   height:5px;
@@ -78,7 +93,9 @@
 }
 
 .feature-article-big-title{
+  margin:31px 0px 21px 0px;
   font-size: 32px;
+  font-weight: bold;
   line-height: 42px;
   width: 690px;
 }
@@ -105,6 +122,7 @@
 
 .feature-article-small-title{
   font-size: 20px;
+  font-weight: bold;
   line-height: 28px;
   position: absolute;
   padding-top: 120px; /*どうやって下ぴったりにしようか*/
@@ -131,7 +149,7 @@
 }
 
 .main-article-card-row{
-  margin:0px;
+  margin:0px 0px 30px 0px;
 }
 
 .main-article-card-thum{
@@ -141,18 +159,20 @@
 
 .main-article-card-desc{
  padding: 0px;
+ margin: 0px 0px 0px 20px;
 }
 
 .main-article-card-title{
   font-size: 20px;
   text-align: 28px;
-  margin:0px;
+  margin:3px 0px 15px 0px;
+  font-weight: bold;
 }
 
 .main-article-card-text{
  font-size: 12px;
  color: gray;
- margin:0px;
+ margin:0px 0px 10px 0px; /*本サイトのテキストにlign-heightがかかっていなかったため、かかっていたmargin10pxを使った*/
 }
 
 .main-article-card-meta{
@@ -169,7 +189,169 @@
   font-size: 12px;
 }
 
+/* sub-article-section*/
+.sub-article-section{
+  padding:0px;
+} /*ここにmax-widthをかけるとなぜかfooterがあがってきた！何事？！*/
+
+.pop-article-section{
+  width: 300px;
+  margin:31px 0px 41px 0px;
+}
+
+.pop-article-section-header{
+  max-width: 300px;
+  margin: 0px;
+  height: 47px; /* 人気記事の上部からサムネイルの上部までとってる */
+}
+
+.pop-article-section-header-underline{
+ border-bottom:2px solid #fc0;
+ height: 34px; /*黄色い下部線の位置を調整するためにunderline用のdivを新しく設け、そこにborder-bottomをかけた。そしてheightを指定してうまいこと線の位置を調整してやる*/
+}
+
+.pop-article-section-header-title{
+  font-size: 20px;
+  font-weight: bold;
+  margin:0px;
+  padding: 0px;
+}
+
+.pop-article-section-header-time{
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+
+.pop-article-section-header-new{
+  margin:0px 17px 0px 0px;
+}
+
+.pop-article-section-article{
+  margin:0px 0px 20px 0px;
+}
+
+.pop-article-card-thum{
+  padding:0px;
+  height: 90px;
+  width: 90px;
+  margin-right: 15px;
+}
+
+.pop-article-card-desc{
+  padding: 0px;
+  width: 191px;
+}
+
+.pop-article-card-title{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 1px 0px 10px 0px;　/*ここもline-heightを勘案したmarginにしたいが、正しい値がわからず*/
+}
+
+.pop-article-card-category{
+  font-size: 11px;
+  color: gray;
+}
+
+.pop-article-section-footer-more{
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+  font-size: 14px;
+  color: gray;
+}
+
+/*topic-article-section*/
+
+.topic-article-section{
+  max-width: 300px;
+  margin: 0px 0px 0px 0px; /*bottomに41pxのmargin入れたいができず　かわりにtopic-article-section-categoryにいれた*/
+}
+
+.topic-article-section-header{
+  margin:0px 0px 14px 0px;
+}
+
+.topic-article-section-header-underline{
+ border-bottom:2px solid #fc0;
+ height: 34px; /*黄色い下部線の位置を調整するためにunderline用のdivを新しく設け、そこにborder-bottomをかけた。そしてheightを指定してうまいこと線の位置を調整してやる*/
+ padding: 0px;
+}
+
+.topic-article-section-header-title{
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.topic-article-section-category{
+  padding: 0px;
+  width: 300px;
+  margin: 0px 0px 41px 0px;
+}
+
+.topic-article-section-category-span{
+  margin:0px 8px 8px 0px; /*margin-bottomがなぜかきかない*/
+}
 
 
 
+/*about-article-section*/
+.about-article-section{
+  width: 300px;
+}
+
+.about-article-section-header{
+  margin: 0px 0px 27px 0px;
+  width: 300px;
+}
+
+.about-article-section-header-underline{
+ border-bottom:2px solid #fc0;
+ height: 34px; /*黄色い下部線の位置を調整するためにunderline用のdivを新しく設け、そこにborder-bottomをかけた。そしてheightを指定してうまいこと線の位置を調整してやる*/
+ padding: 0px;
+ width: 300px;
+}
+
+.about-article-section-header-title{
+  width: 300px;
+  font-size: 20px;
+  font-weight: bold;
+  margin:0px 0px 27px 0px;
+  padding: 0px;
+}
+
+.about-article-section-desc-sentnce{
+  width: 300px;
+  padding: 0px;
+  margin: 12px 0px 0px 0px;
+}
+
+.about-article-section-desc{
+  width: 300px;
+}
+
+/* footer */
+.footer-wrap-row{
+  height: 156px;
+  background-color: black;
+  padding: 28px 0px 0px 90px;
+}
+
+.footer-category-area{
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+  padding: 0px;
+  margin:0px 0px 31px 0px;
+}
+
+.footer-title{
+  color: white;
+  padding: 0px;
+  font-size: 13px;
+}
 
