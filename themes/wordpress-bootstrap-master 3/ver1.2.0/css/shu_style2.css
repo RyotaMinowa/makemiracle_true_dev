@@ -1,10 +1,12 @@
-.container{
- width:100%;
- height:100%;
- max-width: 100%;
-}
+
 
 /* header */
+body > header{
+  width: 100%;
+  background-image: url(header--bgi.png);
+  background-size: contain;
+}
+
 .header-wrap{
   padding:0px;
   height: 158px; 
@@ -16,7 +18,6 @@
 
 .header-top{
  height:88px;
- background-color:#FFCC00;
  padding:25px 0px 20px 0px;
 }
 
@@ -27,6 +28,7 @@
 
 .header-title{
   padding:0px;
+  text-align: left;
 }
 
 .header-title-img{
@@ -42,14 +44,70 @@
   padding-left: 0px;
 }
 
+.header-social-buttons{
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-social-buttons-row{
+  margin: 0px;
+  }
+
+.header-social-button{
+  border: 0px;
+  padding: 0px;
+
+}
+
+.header-social-facebook{
+  width: 36px;
+  height: 36px;
+  border-radius: 25px;/* width,heightの半分 */
+  background-color: #3468AF;/* 円の色 */
+  padding-top:4px; /*ズルしてます*/
+  margin-right: 10px;
+}
+
+.fa-facebook{
+  color: white;
+}
+
+.header-social-twitter{
+  width: 36px;
+  height: 36px;
+  border-radius: 25px;/* width,heightの半分 */
+  background-color: #55ACEE;/* 円の色 */
+  padding-top:4px; /*ズルしてます*/
+  padding-left: 2px;
+  margin-right: 10px;
+}
+
+.fa-twitter{
+  color: white;
+}
+
+.header-social-rss{
+  width: 36px;
+  height: 36px;
+  border-radius: 25px;/* width,heightの半分 */
+  background-color: #87BF3F;/* 円の色 */
+  padding-top:4px; /*ズルしてます*/
+  padding-left: 2px;
+}
+
+.fa-rss{
+  color: white;
+}
+
 .header-navbar{
   height:65px;
-  background-color:black;
+  padding: 0px;
 }
 
 .header-navbar-row{
  margin: 0px;
- padding: 17px 0px 0px 143px;
+ padding: 5px 0px 0px ;
+ width: 1020px;
 }
 
 .header-navbar-category{
@@ -66,10 +124,9 @@
  font-size: 10px;
 }
 
-
 .header-line{
   height:5px;
-  background-color:blue;
+  background-color:red;
 }
 
 /*フォントサイズ指定 サイズごとにclassを設けた
@@ -78,9 +135,14 @@
 }
 */
 
+.all-article-section-wrap{
+  max-width: 1020px;
+  padding: 0px;
+}
+
 /* main-section feature-article-section */
 .main-article-section{
-  padding:0px 0px 0px 90px;
+  padding: 0px;
 }
 
 .feature-article-section{
@@ -189,8 +251,35 @@
   font-size: 12px;
 }
 
+.main-article-section-pagination-button{
+  margin:0px 0px 30px 0px;
+}
+
+.main-article-section-pagination-button-top{
+  height: 50px;
+  font-size:15px;
+}
+
+.main-article-section-pagination{
+  margin:0px;
+}
+
+.main-article-section-pagination-button{
+  padding:0px;
+}
+
+.main-article-section-pagination-number{
+  padding: 0px;
+  margin-bottom:170px;
+}
+
+.pagination{
+  margin: 0px;
+}
+
 /* sub-article-section*/
 .sub-article-section{
+  width: 300px;
   padding:0px;
 } /*ここにmax-widthをかけるとなぜかfooterがあがってきた！何事？！*/
 
@@ -335,6 +424,11 @@
 }
 
 /* footer */
+
+.footer-container{
+  width: 100%;
+}
+
 .footer-wrap-row{
   height: 156px;
   background-color: black;
@@ -349,9 +443,23 @@
   margin:0px 0px 31px 0px;
 }
 
+.footer-category-span{
+  margin-right: 23px;
+}
+
 .footer-title{
   color: white;
   padding: 0px;
   font-size: 13px;
 }
+
+.footer-left{
+  width: 690px;
+}
+
+.footer-right{
+width: 330px; 
+padding: 0px;
+}
+
 
