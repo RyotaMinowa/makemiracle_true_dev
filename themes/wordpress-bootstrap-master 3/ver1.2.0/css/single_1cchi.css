@@ -1,0 +1,261 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+h3{
+	padding-bottom: 10px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	-webkit-transition: .1s color;
+	transition: .1s color;
+}
+
+a:hover {
+color: #5aa6bf;
+}
+
+a:-webkit-any-link {
+	color: -webkit-link;
+	text-decoration: underline;
+	cursor: auto;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+/* パンくず */
+#topicpath{
+	margin-top: 22px;
+	margin-bottom: 26px;
+}
+
+.ul-container{
+	margin-left: auto;
+	margin-right: auto;
+	width:1020px;
+}
+
+.p-topicpath {
+    font-size: 12px;
+    color: #333;
+}
+
+.p-topicpath:before,
+.p-topicpath:after {
+    content: "";
+    display: table;
+}
+
+.p-topicpath:after { clear: both }
+.p-topicpath>li { float: left }
+.p-topicpath>li>a {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.p-topicpath>li+li:before{
+	display: block;
+	float: left;
+	margin: auto 10px;
+	padding: 10px 0;
+	color: #bdbdbd;
+}
+
+
+/* 全体 */
+.all-container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1020px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* titile */
+.single-content__date{
+	margin-bottom: 32px;
+	font-size: 14px;
+	color: #999;
+}
+
+.single-content__title h1{
+	font-size: 34px;
+	line-height: 1.3125;
+	margin-bottom: 14px;
+	font-weight: 700;
+}
+
+/* 日にち */
+.p-content__date {
+	font-size: 14px;
+	color: #999;
+}
+
+/* ソーシャルボタン */
+.share-button-list{
+	margin-bottom: 30px;
+}
+
+.grid{
+
+}
+
+.grid--justify{
+	display: block;
+	text-align: justify;
+}
+
+.grid__item{
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	text-rendering: auto;
+	font-family: 'Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
+}
+
+
+.article__share-button{
+	width: 126px;
+	line-height: 39px;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.article__share-button:hover { color: #fff }
+
+.btn{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btn:hover { color: inherit }
+.btn--full { width: 100% }
+.btn--facebook { background-color: #3468af }
+.btn--facebook:hover { opacity: .8 }
+.btn--twitter { background-color: #55acee }
+.btn--twitter:hover { opacity: .8 }
+.btn--line { background-color: #00c300 }
+.btn--line:hover { opacity: .8 }
+.btn--google { background-color: #df4a32 }
+.btn--google:hover { opacity: .8 }
+.btn--hatena { background-color: #0083d1 }
+.btn--hatena:hover { opacity: .8 }
+.btn--pocket { background-color: #f13d53 }
+.btn--pocket:hover { opacity: .8 }
+
+.btn--share:hover {
+    color: #fff;
+    opacity: .9;
+}
+.btn--share:active {
+    position: relative;
+    top: 3px;
+    border-bottom: 0;
+}
+.btn--share--facebook {
+    border-bottom: 3px solid #32578a;
+    background-color: #3468af;
+}
+.btn--share--facebook>.btn--share__icon { background-color: #1a4e95 }
+.btn--share--twitter {
+    border-bottom: 3px solid #477ea8;
+    background-color: #55acee;
+}
+.btn--share--twitter>.btn--share__icon { background-color: #4c99d4 }
+.btn--share__icon {
+    float: left;
+    display: block;
+    border-radius: 4px 0 0 4px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+/* 本文 */
+.single-content p{
+	padding:20px 0;
+}
+
+blockquote{
+	margin-top: 12px;
+	font-size: 10px;
+	color: #9a9a9a;
+}
+	
+/* footer social share */
+.c-btn--share--facebook {
+	border-bottom: 3px solid #32578a;
+	background-color: #3468af;
+}
+
+.c-btn--share {
+	position: relative;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	-webkit-transition: .1s opacity;
+	transition: .1s opacity;
+}
+
+
+
+
+
