@@ -1,10 +1,11 @@
 
 
+
 /* header */
 body > header{
   width: 100%;
   background-image: url(header--bgi.png);
-  background-size: contain;
+  background-size: contain; /*縦横比は保持して、背景領域に収まる最大サイズになるように背景画像を拡大縮小する*/
 }
 
 .header-wrap{
@@ -101,13 +102,13 @@ body > header{
 
 .header-navbar{
   height:65px;
-  padding: 0px;
 }
 
 .header-navbar-row{
- margin: 0px;
- padding: 5px 0px 0px ;
+ margin:0px;
+ padding-top: 14px ;/*lign-heightを勘案してる：17px-3.5px*/
  width: 1020px;
+ text-align: center;
 }
 
 .header-navbar-category{
@@ -115,13 +116,13 @@ body > header{
   line-height: 20px;
   color: white;
   text-align: center;
-  padding: 0px;
-  width: 134px;
-  height: 60px;
+  height: 51px; /* 元々のnavbar65pxからnavbarのrowのpadding14pxを引いたもの。これでlineがぴったしおさまるようにしている。もし65pxのままだとrowのpaddingが三段目のlineにもかかる */
+  display: inline-block;
 }
 
 .header-navbar-category-sub{
  font-size: 10px;
+ height: 10px
 }
 
 .header-line{
